@@ -1,0 +1,20 @@
+\begin{tabular}{llrrl}
+\toprule
+Strategy & Solver & Obj & Time & Status \\
+\midrule
+MINLP BigM & KNITRO & -23.30 & 3.50 & Optimal \\
+MINLP BigM & BARON & -23.30 & 900.44 & Optimal \\
+MINLP Hull & KNITRO & -102.67 & 4.82 & Infeasible \\
+MINLP Hull & BARON & -22.03 & 904.21 & Optimal \\
+L-Enum & KNITRO & -23.30 & 9.52 & Optimal \\
+L-Enum & BARON & -12.41 & 900.15 & maxTimeLimit \\
+LOA & KNITRO & -23.30 & 14.37 & Optimal \\
+LOA & BARON & -23.30 & 916.87 & Optimal \\
+GLOA & KNITRO & -23.30 & 15.82 & Optimal \\
+GLOA & BARON & -23.30 & 921.08 & Optimal \\
+LDSDA $L_2$ & KNITRO & -23.30 & 2.54 & unknown \\
+LDSDA $L_\infty$ & KNITRO & -23.30 & 3.22 & unknown \\
+LDSDA $L_2$ & BARON & -23.30 & 901.97 & maxTimeLimit \\
+LDSDA $L_\infty$ & BARON & -23.30 & 903.65 & maxTimeLimit \\
+\bottomrule
+\end{tabular}
