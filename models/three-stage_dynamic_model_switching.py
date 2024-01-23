@@ -1,7 +1,7 @@
 from pyomo.environ import *
 from pyomo.dae import *
 from pyomo.gdp import Disjunct, Disjunction
-
+import pyomo.contrib.gdpopt.enumerate
 
 model = ConcreteModel()
 
@@ -142,12 +142,31 @@ model.stage_mode[3, 1].mode1_dynamic_constraint.construct()
 model.stage_mode[3, 2].mode2_dynamic_constraint._constructed = False
 model.stage_mode[3, 2].mode2_dynamic_constraint.construct()
 
-model.BigM = Suffix(direction=Suffix.LOCAL)
-model.BigM[None] = 1000000
-TransformationFactory('gdp.bigm').apply_to(model)
+model.dxdt1[:].setlb(-300)
+model.dxdt1[:].setub(300)
+model.dxdt2[:].setlb(-300)
+model.dxdt2[:].setub(300)
+model.dxdt3[:].setlb(-300)
+model.dxdt3[:].setub(300)
 
+# Direct solve as MINLP
+TransformationFactory('gdp.bigm').apply_to(model)
+# TransformationFactory('gdp.hull').apply_to(model)
 solver = SolverFactory("gams")
-results = solver.solve(model, tee=True, solver='baron')
+results = solver.solve(model, tee=True, solver='baron') #DICOPT and KNITRO
+
+# Enumerate
+# solver= SolverFactory('gdpopt.enumerate')
+# results = solver.solve(model, tee=True, nlp_solver='gams', nlp_solver_args=dict(solver='CONOPT'))
+
+# LOA
+# solver= SolverFactory('gdpopt.loa')
+# results = solver.solve(model, tee=True, nlp_solver='ipopt')
+
+# LBB
+# solver= SolverFactory('gdpopt.loa')
+# results = solver.solve(model, tee=True, nlp_solver='gams', nlp_solver_args=dict(solver='CONOPT'))
+
 print(results)
 model.x1.pprint()
 model.x2.pprint()
