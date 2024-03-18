@@ -1,5 +1,5 @@
 # LD-DSA-Dynamic
-This repository contains code for Logic-Based Discrete-Steepest Descent Algorithm for Solving Mixed-Integer Dynamic Optimization Problems by Zedong Peng, Albert Lee, and David E. Bernal Neira.
+This repository includes the source code and results associated with the paper titled **"Addressing Discrete Dynamic Optimization via a Logic-Based Discrete-Steepest Descent Algorithm"**, authored by Zedong Peng, Albert Lee, and David E. Bernal Neira.
 
 # Installation
 
