@@ -1,0 +1,2254 @@
+Starting GDPopt version 22.5.13 using enumerate algorithm
+iterlim: None
+time_limit: 1800
+tee: true
+logger: <Logger pyomo.contrib.gdpopt (INFO)>
+nlp_solver: gams
+nlp_solver_args:
+  solver: ipopth
+minlp_solver: baron
+minlp_solver_args:
+local_minlp_solver: bonmin
+local_minlp_solver_args:
+small_dual_tolerance: 1e-08
+integer_tolerance: 1e-05
+constraint_tolerance: 1e-06
+variable_tolerance: 1e-08
+subproblem_initialization_method: <function restore_vars_to_original_values_enumerate at 0x7f650c38e480>
+call_before_subproblem_solve: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+call_after_subproblem_solve: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+call_after_subproblem_feasible: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+force_subproblem_nlp: false
+subproblem_presolve: true
+tighten_nlp_var_bounds: false
+round_discrete_vars: true
+max_fbbt_iterations: 3
+mip_solver: gurobi
+mip_solver_args:
+
+If you use this software, you may cite the following:
+            - Implementation:
+            Chen, Q; Johnson, ES; Bernal, DE; Valentin, R; Kale, S;
+            Bates, J; Siirola, JD; Grossmann, IE.
+            Pyomo.GDP: an ecosystem for logic based modeling and optimization
+            development.
+            Optimization and Engineering, 2021.
+Original model has 2275 constraints (1638 nonlinear) and 7 disjunctions, with 1299 variables, of which 18 are binary, 0 are integer, and 1281 are continuous.
+   1/2187        subproblem          -inf     -22.12364       inf%      0.99  *
+   2/2187        subproblem          -inf     -22.85411       inf%      1.74  *
+   3/2187        subproblem          -inf     -22.85411       inf%      1.88  
+   4/2187        subproblem          -inf     -22.85411       inf%      2.00  
+   5/2187        subproblem          -inf     -25.72323       inf%      2.74  *
+   6/2187        subproblem          -inf     -25.72323       inf%      3.49  
+   7/2187        subproblem          -inf     -25.72323       inf%      3.62  
+   8/2187        subproblem          -inf     -25.72323       inf%      3.75  
+   9/2187        subproblem          -inf     -25.72323       inf%      3.88  
+  10/2187        subproblem          -inf     -25.72323       inf%      4.00  
+  11/2187        subproblem          -inf     -25.72323       inf%      4.15  
+  12/2187        subproblem          -inf     -25.72323       inf%      4.27  
+  13/2187        subproblem          -inf     -25.72323       inf%      4.40  
+  14/2187        subproblem          -inf     -33.10919       inf%      5.11  *
+  15/2187        subproblem          -inf     -33.10919       inf%      5.84  
+  16/2187        subproblem          -inf     -33.10919       inf%      5.97  
+  17/2187        subproblem          -inf     -33.10919       inf%      6.10  
+  18/2187        subproblem          -inf     -33.10919       inf%      6.83  
+  19/2187        subproblem          -inf     -33.10919       inf%      6.96  
+  20/2187        subproblem          -inf     -33.10919       inf%      7.09  
+  21/2187        subproblem          -inf     -33.10919       inf%      7.22  
+  22/2187        subproblem          -inf     -33.10919       inf%      7.34  
+  23/2187        subproblem          -inf     -33.10919       inf%      7.47  
+  24/2187        subproblem          -inf     -33.10919       inf%      7.60  
+  25/2187        subproblem          -inf     -33.10919       inf%      7.75  
+  26/2187        subproblem          -inf     -33.10919       inf%      7.88  
+  27/2187        subproblem          -inf     -33.10919       inf%      8.00  
+  28/2187        subproblem          -inf     -33.10919       inf%      8.13  
+  29/2187        subproblem          -inf     -33.10919       inf%      8.25  
+  30/2187        subproblem          -inf     -33.10919       inf%      8.38  
+  31/2187        subproblem          -inf     -33.10919       inf%      8.50  
+  32/2187        subproblem          -inf     -33.10919       inf%      8.64  
+  33/2187        subproblem          -inf     -33.10919       inf%      8.77  
+  34/2187        subproblem          -inf     -33.10919       inf%      8.89  
+  35/2187        subproblem          -inf     -33.10919       inf%      9.02  
+  36/2187        subproblem          -inf     -33.10919       inf%      9.14  
+  37/2187        subproblem          -inf     -33.10919       inf%      9.26  
+  38/2187        subproblem          -inf     -33.10919       inf%      9.39  
+  39/2187        subproblem          -inf     -33.10919       inf%      9.53  
+  40/2187        subproblem          -inf     -33.10919       inf%      9.65  
+  41/2187        subproblem          -inf     -59.82719       inf%     10.37  *
+  42/2187        subproblem          -inf     -59.82719       inf%     11.09  
+  43/2187        subproblem          -inf     -59.82719       inf%     11.22  
+  44/2187        subproblem          -inf     -59.82719       inf%     11.36  
+  45/2187        subproblem          -inf     -59.82719       inf%     12.06  
+  46/2187        subproblem          -inf     -59.82719       inf%     12.21  
+  47/2187        subproblem          -inf     -59.82719       inf%     12.33  
+  48/2187        subproblem          -inf     -59.82719       inf%     12.45  
+  49/2187        subproblem          -inf     -59.82719       inf%     12.58  
+  50/2187        subproblem          -inf     -59.82719       inf%     12.71  
+  51/2187        subproblem          -inf     -59.82719       inf%     12.84  
+  52/2187        subproblem          -inf     -59.82719       inf%     12.96  
+  53/2187        subproblem          -inf     -59.82719       inf%     13.11  
+  54/2187        subproblem          -inf     -59.82719       inf%     13.83  
+  55/2187        subproblem          -inf     -59.82719       inf%     13.96  
+  56/2187        subproblem          -inf     -59.82719       inf%     14.08  
+  57/2187        subproblem          -inf     -59.82719       inf%     14.23  
+  58/2187        subproblem          -inf     -59.82719       inf%     14.36  
+  59/2187        subproblem          -inf     -59.82719       inf%     14.49  
+  60/2187        subproblem          -inf     -59.82719       inf%     14.62  
+  61/2187        subproblem          -inf     -59.82719       inf%     14.74  
+  62/2187        subproblem          -inf     -59.82719       inf%     14.87  
+  63/2187        subproblem          -inf     -59.82719       inf%     15.00  
+  64/2187        subproblem          -inf     -59.82719       inf%     15.14  
+  65/2187        subproblem          -inf     -59.82719       inf%     15.27  
+  66/2187        subproblem          -inf     -59.82719       inf%     15.39  
+  67/2187        subproblem          -inf     -59.82719       inf%     15.52  
+  68/2187        subproblem          -inf     -59.82719       inf%     15.64  
+  69/2187        subproblem          -inf     -59.82719       inf%     15.77  
+  70/2187        subproblem          -inf     -59.82719       inf%     15.90  
+  71/2187        subproblem          -inf     -59.82719       inf%     16.04  
+  72/2187        subproblem          -inf     -59.82719       inf%     16.17  
+  73/2187        subproblem          -inf     -59.82719       inf%     16.29  
+  74/2187        subproblem          -inf     -59.82719       inf%     16.42  
+  75/2187        subproblem          -inf     -59.82719       inf%     16.55  
+  76/2187        subproblem          -inf     -59.82719       inf%     16.68  
+  77/2187        subproblem          -inf     -59.82719       inf%     16.80  
+  78/2187        subproblem          -inf     -59.82719       inf%     16.95  
+  79/2187        subproblem          -inf     -59.82719       inf%     17.07  
+  80/2187        subproblem          -inf     -59.82719       inf%     17.20  
+  81/2187        subproblem          -inf     -59.82719       inf%     17.33  
+  82/2187        subproblem          -inf     -59.82719       inf%     17.45  
+  83/2187        subproblem          -inf     -59.82719       inf%     17.58  
+  84/2187        subproblem          -inf     -59.82719       inf%     17.70  
+  85/2187        subproblem          -inf     -59.82719       inf%     17.84  
+  86/2187        subproblem          -inf     -59.82719       inf%     17.96  
+  87/2187        subproblem          -inf     -59.82719       inf%     18.08  
+  88/2187        subproblem          -inf     -59.82719       inf%     18.21  
+  89/2187        subproblem          -inf     -59.82719       inf%     18.33  
+  90/2187        subproblem          -inf     -59.82719       inf%     18.45  
+  91/2187        subproblem          -inf     -59.82719       inf%     18.58  
+  92/2187        subproblem          -inf     -59.82719       inf%     18.70  
+  93/2187        subproblem          -inf     -59.82719       inf%     18.84  
+  94/2187        subproblem          -inf     -59.82719       inf%     18.96  
+  95/2187        subproblem          -inf     -59.82719       inf%     19.09  
+  96/2187        subproblem          -inf     -59.82719       inf%     19.21  
+  97/2187        subproblem          -inf     -59.82719       inf%     19.33  
+  98/2187        subproblem          -inf     -59.82719       inf%     19.46  
+  99/2187        subproblem          -inf     -59.82719       inf%     19.58  
+ 100/2187        subproblem          -inf     -59.82719       inf%     19.72  
+ 101/2187        subproblem          -inf     -59.82719       inf%     19.84  
+ 102/2187        subproblem          -inf     -59.82719       inf%     19.97  
+ 103/2187        subproblem          -inf     -59.82719       inf%     20.09  
+ 104/2187        subproblem          -inf     -59.82719       inf%     20.21  
+ 105/2187        subproblem          -inf     -59.82719       inf%     20.34  
+ 106/2187        subproblem          -inf     -59.82719       inf%     20.46  
+ 107/2187        subproblem          -inf     -59.82719       inf%     20.60  
+ 108/2187        subproblem          -inf     -59.82719       inf%     20.72  
+ 109/2187        subproblem          -inf     -59.82719       inf%     20.85  
+ 110/2187        subproblem          -inf     -59.82719       inf%     20.97  
+ 111/2187        subproblem          -inf     -59.82719       inf%     21.09  
+ 112/2187        subproblem          -inf     -59.82719       inf%     21.22  
+ 113/2187        subproblem          -inf     -59.82719       inf%     21.34  
+ 114/2187        subproblem          -inf     -59.82719       inf%     21.48  
+ 115/2187        subproblem          -inf     -59.82719       inf%     21.60  
+ 116/2187        subproblem          -inf     -59.82719       inf%     21.72  
+ 117/2187        subproblem          -inf     -59.82719       inf%     21.85  
+ 118/2187        subproblem          -inf     -59.82719       inf%     21.97  
+ 119/2187        subproblem          -inf     -59.82719       inf%     22.09  
+ 120/2187        subproblem          -inf     -59.82719       inf%     22.22  
+ 121/2187        subproblem          -inf     -59.82719       inf%     22.36  
+ 122/2187        subproblem          -inf     -74.04431       inf%     23.07  *
+ 123/2187        subproblem          -inf    -126.80258       inf%     23.79  *
+ 124/2187        subproblem          -inf    -126.80258       inf%     23.93  
+ 125/2187        subproblem          -inf    -126.80258       inf%     24.07  
+ 126/2187        subproblem          -inf    -126.80258       inf%     24.77  
+ 127/2187        subproblem          -inf    -126.80258       inf%     24.90  
+ 128/2187        subproblem          -inf    -126.80258       inf%     25.02  
+ 129/2187        subproblem          -inf    -126.80258       inf%     25.16  
+ 130/2187        subproblem          -inf    -126.80258       inf%     25.29  
+ 131/2187        subproblem          -inf    -126.80258       inf%     25.42  
+ 132/2187        subproblem          -inf    -126.80258       inf%     25.56  
+ 133/2187        subproblem          -inf    -126.80258       inf%     25.68  
+ 134/2187        subproblem          -inf    -126.80258       inf%     25.81  
+ 135/2187        subproblem          -inf    -126.80258       inf%     26.53  
+ 136/2187        subproblem          -inf    -126.80258       inf%     26.66  
+ 137/2187        subproblem          -inf    -126.80258       inf%     26.78  
+ 138/2187        subproblem          -inf    -126.80258       inf%     26.90  
+ 139/2187        subproblem          -inf    -126.80258       inf%     27.02  
+ 140/2187        subproblem          -inf    -126.80258       inf%     27.17  
+ 141/2187        subproblem          -inf    -126.80258       inf%     27.29  
+ 142/2187        subproblem          -inf    -126.80258       inf%     27.42  
+ 143/2187        subproblem          -inf    -126.80258       inf%     27.54  
+ 144/2187        subproblem          -inf    -126.80258       inf%     27.66  
+ 145/2187        subproblem          -inf    -126.80258       inf%     27.78  
+ 146/2187        subproblem          -inf    -126.80258       inf%     27.91  
+ 147/2187        subproblem          -inf    -126.80258       inf%     28.05  
+ 148/2187        subproblem          -inf    -126.80258       inf%     28.17  
+ 149/2187        subproblem          -inf    -126.80258       inf%     28.30  
+ 150/2187        subproblem          -inf    -126.80258       inf%     28.44  
+ 151/2187        subproblem          -inf    -126.80258       inf%     28.56  
+ 152/2187        subproblem          -inf    -126.80258       inf%     28.69  
+ 153/2187        subproblem          -inf    -126.80258       inf%     28.82  
+ 154/2187        subproblem          -inf    -126.80258       inf%     28.97  
+ 155/2187        subproblem          -inf    -126.80258       inf%     29.09  
+ 156/2187        subproblem          -inf    -126.80258       inf%     29.22  
+ 157/2187        subproblem          -inf    -126.80258       inf%     29.34  
+ 158/2187        subproblem          -inf    -126.80258       inf%     29.47  
+ 159/2187        subproblem          -inf    -126.80258       inf%     29.60  
+ 160/2187        subproblem          -inf    -126.80258       inf%     29.73  
+ 161/2187        subproblem          -inf    -126.80258       inf%     29.89  
+ 162/2187        subproblem          -inf    -126.80258       inf%     30.59  
+ 163/2187        subproblem          -inf    -126.80258       inf%     30.72  
+ 164/2187        subproblem          -inf    -126.80258       inf%     30.84  
+ 165/2187        subproblem          -inf    -126.80258       inf%     30.97  
+ 166/2187        subproblem          -inf    -126.80258       inf%     31.11  
+ 167/2187        subproblem          -inf    -126.80258       inf%     31.24  
+ 168/2187        subproblem          -inf    -126.80258       inf%     31.37  
+ 169/2187        subproblem          -inf    -126.80258       inf%     31.49  
+ 170/2187        subproblem          -inf    -126.80258       inf%     31.62  
+ 171/2187        subproblem          -inf    -126.80258       inf%     31.74  
+ 172/2187        subproblem          -inf    -126.80258       inf%     31.87  
+ 173/2187        subproblem          -inf    -126.80258       inf%     32.01  
+ 174/2187        subproblem          -inf    -126.80258       inf%     32.13  
+ 175/2187        subproblem          -inf    -126.80258       inf%     32.26  
+ 176/2187        subproblem          -inf    -126.80258       inf%     32.38  
+ 177/2187        subproblem          -inf    -126.80258       inf%     32.51  
+ 178/2187        subproblem          -inf    -126.80258       inf%     32.63  
+ 179/2187        subproblem          -inf    -126.80258       inf%     32.76  
+ 180/2187        subproblem          -inf    -126.80258       inf%     32.91  
+ 181/2187        subproblem          -inf    -126.80258       inf%     33.03  
+ 182/2187        subproblem          -inf    -126.80258       inf%     33.16  
+ 183/2187        subproblem          -inf    -126.80258       inf%     33.28  
+ 184/2187        subproblem          -inf    -126.80258       inf%     33.41  
+ 185/2187        subproblem          -inf    -126.80258       inf%     33.53  
+ 186/2187        subproblem          -inf    -126.80258       inf%     33.66  
+ 187/2187        subproblem          -inf    -126.80258       inf%     33.80  
+ 188/2187        subproblem          -inf    -126.80258       inf%     33.93  
+ 189/2187        subproblem          -inf    -126.80258       inf%     34.05  
+ 190/2187        subproblem          -inf    -126.80258       inf%     34.18  
+ 191/2187        subproblem          -inf    -126.80258       inf%     34.30  
+ 192/2187        subproblem          -inf    -126.80258       inf%     34.42  
+ 193/2187        subproblem          -inf    -126.80258       inf%     34.55  
+ 194/2187        subproblem          -inf    -126.80258       inf%     34.69  
+ 195/2187        subproblem          -inf    -126.80258       inf%     34.81  
+ 196/2187        subproblem          -inf    -126.80258       inf%     34.94  
+ 197/2187        subproblem          -inf    -126.80258       inf%     35.06  
+ 198/2187        subproblem          -inf    -126.80258       inf%     35.18  
+ 199/2187        subproblem          -inf    -126.80258       inf%     35.31  
+ 200/2187        subproblem          -inf    -126.80258       inf%     35.43  
+ 201/2187        subproblem          -inf    -126.80258       inf%     35.58  
+ 202/2187        subproblem          -inf    -126.80258       inf%     35.70  
+ 203/2187        subproblem          -inf    -126.80258       inf%     35.83  
+ 204/2187        subproblem          -inf    -126.80258       inf%     35.95  
+ 205/2187        subproblem          -inf    -126.80258       inf%     36.08  
+ 206/2187        subproblem          -inf    -126.80258       inf%     36.20  
+ 207/2187        subproblem          -inf    -126.80258       inf%     36.32  
+ 208/2187        subproblem          -inf    -126.80258       inf%     36.47  
+ 209/2187        subproblem          -inf    -126.80258       inf%     36.59  
+ 210/2187        subproblem          -inf    -126.80258       inf%     36.72  
+ 211/2187        subproblem          -inf    -126.80258       inf%     36.84  
+ 212/2187        subproblem          -inf    -126.80258       inf%     36.97  
+ 213/2187        subproblem          -inf    -126.80258       inf%     37.09  
+ 214/2187        subproblem          -inf    -126.80258       inf%     37.21  
+ 215/2187        subproblem          -inf    -126.80258       inf%     37.36  
+ 216/2187        subproblem          -inf    -126.80258       inf%     37.48  
+ 217/2187        subproblem          -inf    -126.80258       inf%     37.61  
+ 218/2187        subproblem          -inf    -126.80258       inf%     37.73  
+ 219/2187        subproblem          -inf    -126.80258       inf%     37.86  
+ 220/2187        subproblem          -inf    -126.80258       inf%     37.98  
+ 221/2187        subproblem          -inf    -126.80258       inf%     38.11  
+ 222/2187        subproblem          -inf    -126.80258       inf%     38.26  
+ 223/2187        subproblem          -inf    -126.80258       inf%     38.38  
+ 224/2187        subproblem          -inf    -126.80258       inf%     38.51  
+ 225/2187        subproblem          -inf    -126.80258       inf%     38.63  
+ 226/2187        subproblem          -inf    -126.80258       inf%     38.76  
+ 227/2187        subproblem          -inf    -126.80258       inf%     38.88  
+ 228/2187        subproblem          -inf    -126.80258       inf%     39.00  
+ 229/2187        subproblem          -inf    -126.80258       inf%     39.15  
+ 230/2187        subproblem          -inf    -126.80258       inf%     39.28  
+ 231/2187        subproblem          -inf    -126.80258       inf%     39.40  
+ 232/2187        subproblem          -inf    -126.80258       inf%     39.53  
+ 233/2187        subproblem          -inf    -126.80258       inf%     39.65  
+ 234/2187        subproblem          -inf    -126.80258       inf%     39.77  
+ 235/2187        subproblem          -inf    -126.80258       inf%     39.90  
+ 236/2187        subproblem          -inf    -126.80258       inf%     40.05  
+ 237/2187        subproblem          -inf    -126.80258       inf%     40.17  
+ 238/2187        subproblem          -inf    -126.80258       inf%     40.30  
+ 239/2187        subproblem          -inf    -126.80258       inf%     40.42  
+ 240/2187        subproblem          -inf    -126.80258       inf%     40.54  
+ 241/2187        subproblem          -inf    -126.80258       inf%     40.67  
+ 242/2187        subproblem          -inf    -126.80258       inf%     40.79  
+ 243/2187        subproblem          -inf    -126.80258       inf%     40.94  
+ 244/2187        subproblem          -inf    -126.80258       inf%     41.06  
+ 245/2187        subproblem          -inf    -126.80258       inf%     41.19  
+ 246/2187        subproblem          -inf    -126.80258       inf%     41.31  
+ 247/2187        subproblem          -inf    -126.80258       inf%     41.43  
+ 248/2187        subproblem          -inf    -126.80258       inf%     41.55  
+ 249/2187        subproblem          -inf    -126.80258       inf%     41.67  
+ 250/2187        subproblem          -inf    -126.80258       inf%     41.82  
+ 251/2187        subproblem          -inf    -126.80258       inf%     41.94  
+ 252/2187        subproblem          -inf    -126.80258       inf%     42.06  
+ 253/2187        subproblem          -inf    -126.80258       inf%     42.18  
+ 254/2187        subproblem          -inf    -126.80258       inf%     42.31  
+ 255/2187        subproblem          -inf    -126.80258       inf%     42.43  
+ 256/2187        subproblem          -inf    -126.80258       inf%     42.55  
+ 257/2187        subproblem          -inf    -126.80258       inf%     42.69  
+ 258/2187        subproblem          -inf    -126.80258       inf%     42.81  
+ 259/2187        subproblem          -inf    -126.80258       inf%     42.94  
+ 260/2187        subproblem          -inf    -126.80258       inf%     43.06  
+ 261/2187        subproblem          -inf    -126.80258       inf%     43.18  
+ 262/2187        subproblem          -inf    -126.80258       inf%     43.30  
+ 263/2187        subproblem          -inf    -126.80258       inf%     43.42  
+ 264/2187        subproblem          -inf    -126.80258       inf%     43.57  
+ 265/2187        subproblem          -inf    -126.80258       inf%     43.69  
+ 266/2187        subproblem          -inf    -126.80258       inf%     43.81  
+ 267/2187        subproblem          -inf    -126.80258       inf%     43.93  
+ 268/2187        subproblem          -inf    -126.80258       inf%     44.06  
+ 269/2187        subproblem          -inf    -126.80258       inf%     44.18  
+ 270/2187        subproblem          -inf    -126.80258       inf%     44.30  
+ 271/2187        subproblem          -inf    -126.80258       inf%     44.44  
+ 272/2187        subproblem          -inf    -126.80258       inf%     44.57  
+ 273/2187        subproblem          -inf    -126.80258       inf%     44.69  
+ 274/2187        subproblem          -inf    -126.80258       inf%     44.81  
+ 275/2187        subproblem          -inf    -126.80258       inf%     44.93  
+ 276/2187        subproblem          -inf    -126.80258       inf%     45.05  
+ 277/2187        subproblem          -inf    -126.80258       inf%     45.17  
+ 278/2187        subproblem          -inf    -126.80258       inf%     45.32  
+ 279/2187        subproblem          -inf    -126.80258       inf%     45.44  
+ 280/2187        subproblem          -inf    -126.80258       inf%     45.56  
+ 281/2187        subproblem          -inf    -126.80258       inf%     45.68  
+ 282/2187        subproblem          -inf    -126.80258       inf%     45.81  
+ 283/2187        subproblem          -inf    -126.80258       inf%     45.93  
+ 284/2187        subproblem          -inf    -126.80258       inf%     46.05  
+ 285/2187        subproblem          -inf    -126.80258       inf%     46.19  
+ 286/2187        subproblem          -inf    -126.80258       inf%     46.32  
+ 287/2187        subproblem          -inf    -126.80258       inf%     46.44  
+ 288/2187        subproblem          -inf    -126.80258       inf%     46.56  
+ 289/2187        subproblem          -inf    -126.80258       inf%     46.68  
+ 290/2187        subproblem          -inf    -126.80258       inf%     46.80  
+ 291/2187        subproblem          -inf    -126.80258       inf%     46.92  
+ 292/2187        subproblem          -inf    -126.80258       inf%     47.07  
+ 293/2187        subproblem          -inf    -126.80258       inf%     47.19  
+ 294/2187        subproblem          -inf    -126.80258       inf%     47.31  
+ 295/2187        subproblem          -inf    -126.80258       inf%     47.43  
+ 296/2187        subproblem          -inf    -126.80258       inf%     47.55  
+ 297/2187        subproblem          -inf    -126.80258       inf%     47.67  
+ 298/2187        subproblem          -inf    -126.80258       inf%     47.80  
+ 299/2187        subproblem          -inf    -126.80258       inf%     47.92  
+ 300/2187        subproblem          -inf    -126.80258       inf%     48.06  
+ 301/2187        subproblem          -inf    -126.80258       inf%     48.18  
+ 302/2187        subproblem          -inf    -126.80258       inf%     48.31  
+ 303/2187        subproblem          -inf    -126.80258       inf%     48.43  
+ 304/2187        subproblem          -inf    -126.80258       inf%     48.55  
+ 305/2187        subproblem          -inf    -126.80258       inf%     48.67  
+ 306/2187        subproblem          -inf    -126.80258       inf%     48.79  
+ 307/2187        subproblem          -inf    -126.80258       inf%     48.94  
+ 308/2187        subproblem          -inf    -126.80258       inf%     49.06  
+ 309/2187        subproblem          -inf    -126.80258       inf%     49.18  
+ 310/2187        subproblem          -inf    -126.80258       inf%     49.30  
+ 311/2187        subproblem          -inf    -126.80258       inf%     49.42  
+ 312/2187        subproblem          -inf    -126.80258       inf%     49.55  
+ 313/2187        subproblem          -inf    -126.80258       inf%     49.67  
+ 314/2187        subproblem          -inf    -126.80258       inf%     49.81  
+ 315/2187        subproblem          -inf    -126.80258       inf%     49.93  
+ 316/2187        subproblem          -inf    -126.80258       inf%     50.05  
+ 317/2187        subproblem          -inf    -126.80258       inf%     50.18  
+ 318/2187        subproblem          -inf    -126.80258       inf%     50.30  
+ 319/2187        subproblem          -inf    -126.80258       inf%     50.42  
+ 320/2187        subproblem          -inf    -126.80258       inf%     50.54  
+ 321/2187        subproblem          -inf    -126.80258       inf%     50.66  
+ 322/2187        subproblem          -inf    -126.80258       inf%     50.81  
+ 323/2187        subproblem          -inf    -126.80258       inf%     50.93  
+ 324/2187        subproblem          -inf    -126.80258       inf%     51.05  
+ 325/2187        subproblem          -inf    -126.80258       inf%     51.17  
+ 326/2187        subproblem          -inf    -126.80258       inf%     51.30  
+ 327/2187        subproblem          -inf    -126.80258       inf%     51.42  
+ 328/2187        subproblem          -inf    -126.80258       inf%     51.54  
+ 329/2187        subproblem          -inf    -126.80258       inf%     51.69  
+ 330/2187        subproblem          -inf    -126.80258       inf%     51.81  
+ 331/2187        subproblem          -inf    -126.80258       inf%     51.93  
+ 332/2187        subproblem          -inf    -126.80258       inf%     52.05  
+ 333/2187        subproblem          -inf    -126.80258       inf%     52.18  
+ 334/2187        subproblem          -inf    -126.80258       inf%     52.30  
+ 335/2187        subproblem          -inf    -126.80258       inf%     52.42  
+ 336/2187        subproblem          -inf    -126.80258       inf%     52.54  
+ 337/2187        subproblem          -inf    -126.80258       inf%     52.69  
+ 338/2187        subproblem          -inf    -126.80258       inf%     52.81  
+ 339/2187        subproblem          -inf    -126.80258       inf%     52.93  
+ 340/2187        subproblem          -inf    -126.80258       inf%     53.05  
+ 341/2187        subproblem          -inf    -126.80258       inf%     53.17  
+ 342/2187        subproblem          -inf    -126.80258       inf%     53.29  
+ 343/2187        subproblem          -inf    -126.80258       inf%     53.42  
+ 344/2187        subproblem          -inf    -126.80258       inf%     53.56  
+ 345/2187        subproblem          -inf    -126.80258       inf%     53.68  
+ 346/2187        subproblem          -inf    -126.80258       inf%     53.80  
+ 347/2187        subproblem          -inf    -126.80258       inf%     53.92  
+ 348/2187        subproblem          -inf    -126.80258       inf%     54.05  
+ 349/2187        subproblem          -inf    -126.80258       inf%     54.17  
+ 350/2187        subproblem          -inf    -126.80258       inf%     54.29  
+ 351/2187        subproblem          -inf    -126.80258       inf%     54.41  
+ 352/2187        subproblem          -inf    -126.80258       inf%     54.55  
+ 353/2187        subproblem          -inf    -126.80258       inf%     54.68  
+ 354/2187        subproblem          -inf    -126.80258       inf%     54.80  
+ 355/2187        subproblem          -inf    -126.80258       inf%     54.92  
+ 356/2187        subproblem          -inf    -126.80258       inf%     55.04  
+ 357/2187        subproblem          -inf    -126.80258       inf%     55.16  
+ 358/2187        subproblem          -inf    -126.80258       inf%     55.28  
+ 359/2187        subproblem          -inf    -126.80258       inf%     55.43  
+ 360/2187        subproblem          -inf    -126.80258       inf%     55.55  
+ 361/2187        subproblem          -inf    -126.80258       inf%     55.67  
+ 362/2187        subproblem          -inf    -126.80258       inf%     55.79  
+ 363/2187        subproblem          -inf    -126.80258       inf%     55.92  
+ 364/2187        subproblem          -inf    -126.80258       inf%     56.04  
+ 365/2187        subproblem          -inf    -126.80258       inf%     56.78  
+ 366/2187        subproblem          -inf    -133.31269       inf%     57.50  *
+ 367/2187        subproblem          -inf    -133.31269       inf%     57.63  
+ 368/2187        subproblem          -inf    -133.31269       inf%     57.76  
+ 369/2187        subproblem          -inf    -160.08149       inf%     58.50  *
+ 370/2187        subproblem          -inf    -160.08149       inf%     58.63  
+ 371/2187        subproblem          -inf    -160.08149       inf%     58.75  
+ 372/2187        subproblem          -inf    -160.08149       inf%     58.87  
+ 373/2187        subproblem          -inf    -160.08149       inf%     58.99  
+ 374/2187        subproblem          -inf    -160.08149       inf%     59.15  
+ 375/2187        subproblem          -inf    -160.08149       inf%     59.29  
+ 376/2187        subproblem          -inf    -160.08149       inf%     59.41  
+ 377/2187        subproblem          -inf    -160.08149       inf%     59.55  
+ 378/2187        subproblem          -inf    -160.08149       inf%     60.26  
+ 379/2187        subproblem          -inf    -160.08149       inf%     60.40  
+ 380/2187        subproblem          -inf    -160.08149       inf%     60.53  
+ 381/2187        subproblem          -inf    -160.08149       inf%     60.65  
+ 382/2187        subproblem          -inf    -160.08149       inf%     60.77  
+ 383/2187        subproblem          -inf    -160.08149       inf%     60.89  
+ 384/2187        subproblem          -inf    -160.08149       inf%     61.02  
+ 385/2187        subproblem          -inf    -160.08149       inf%     61.14  
+ 386/2187        subproblem          -inf    -160.08149       inf%     61.29  
+ 387/2187        subproblem          -inf    -160.08149       inf%     61.41  
+ 388/2187        subproblem          -inf    -160.08149       inf%     61.53  
+ 389/2187        subproblem          -inf    -160.08149       inf%     61.65  
+ 390/2187        subproblem          -inf    -160.08149       inf%     61.77  
+ 391/2187        subproblem          -inf    -160.08149       inf%     61.89  
+ 392/2187        subproblem          -inf    -160.08149       inf%     62.03  
+ 393/2187        subproblem          -inf    -160.08149       inf%     62.18  
+ 394/2187        subproblem          -inf    -160.08149       inf%     62.30  
+ 395/2187        subproblem          -inf    -160.08149       inf%     62.44  
+ 396/2187        subproblem          -inf    -160.08149       inf%     62.57  
+ 397/2187        subproblem          -inf    -160.08149       inf%     62.69  
+ 398/2187        subproblem          -inf    -160.08149       inf%     62.82  
+ 399/2187        subproblem          -inf    -160.08149       inf%     62.94  
+ 400/2187        subproblem          -inf    -160.08149       inf%     63.08  
+ 401/2187        subproblem          -inf    -160.08149       inf%     63.22  
+ 402/2187        subproblem          -inf    -160.08149       inf%     63.35  
+ 403/2187        subproblem          -inf    -160.08149       inf%     63.47  
+ 404/2187        subproblem          -inf    -160.08149       inf%     63.60  
+ 405/2187        subproblem          -inf    -160.08149       inf%     64.33  
+ 406/2187        subproblem          -inf    -160.08149       inf%     64.46  
+ 407/2187        subproblem          -inf    -160.08149       inf%     64.58  
+ 408/2187        subproblem          -inf    -160.08149       inf%     64.70  
+ 409/2187        subproblem          -inf    -160.08149       inf%     64.83  
+ 410/2187        subproblem          -inf    -160.08149       inf%     64.95  
+ 411/2187        subproblem          -inf    -160.08149       inf%     65.08  
+ 412/2187        subproblem          -inf    -160.08149       inf%     65.23  
+ 413/2187        subproblem          -inf    -160.08149       inf%     65.35  
+ 414/2187        subproblem          -inf    -160.08149       inf%     65.47  
+ 415/2187        subproblem          -inf    -160.08149       inf%     65.59  
+ 416/2187        subproblem          -inf    -160.08149       inf%     65.72  
+ 417/2187        subproblem          -inf    -160.08149       inf%     65.84  
+ 418/2187        subproblem          -inf    -160.08149       inf%     65.96  
+ 419/2187        subproblem          -inf    -160.08149       inf%     66.11  
+ 420/2187        subproblem          -inf    -160.08149       inf%     66.23  
+ 421/2187        subproblem          -inf    -160.08149       inf%     66.36  
+ 422/2187        subproblem          -inf    -160.08149       inf%     66.48  
+ 423/2187        subproblem          -inf    -160.08149       inf%     66.60  
+ 424/2187        subproblem          -inf    -160.08149       inf%     66.73  
+ 425/2187        subproblem          -inf    -160.08149       inf%     66.85  
+ 426/2187        subproblem          -inf    -160.08149       inf%     67.00  
+ 427/2187        subproblem          -inf    -160.08149       inf%     67.12  
+ 428/2187        subproblem          -inf    -160.08149       inf%     67.24  
+ 429/2187        subproblem          -inf    -160.08149       inf%     67.37  
+ 430/2187        subproblem          -inf    -160.08149       inf%     67.49  
+ 431/2187        subproblem          -inf    -160.08149       inf%     67.61  
+ 432/2187        subproblem          -inf    -160.08149       inf%     67.74  
+ 433/2187        subproblem          -inf    -160.08149       inf%     67.86  
+ 434/2187        subproblem          -inf    -160.08149       inf%     68.01  
+ 435/2187        subproblem          -inf    -160.08149       inf%     68.13  
+ 436/2187        subproblem          -inf    -160.08149       inf%     68.25  
+ 437/2187        subproblem          -inf    -160.08149       inf%     68.38  
+ 438/2187        subproblem          -inf    -160.08149       inf%     68.50  
+ 439/2187        subproblem          -inf    -160.08149       inf%     68.62  
+ 440/2187        subproblem          -inf    -160.08149       inf%     68.75  
+ 441/2187        subproblem          -inf    -160.08149       inf%     68.89  
+ 442/2187        subproblem          -inf    -160.08149       inf%     69.02  
+ 443/2187        subproblem          -inf    -160.08149       inf%     69.14  
+ 444/2187        subproblem          -inf    -160.08149       inf%     69.26  
+ 445/2187        subproblem          -inf    -160.08149       inf%     69.38  
+ 446/2187        subproblem          -inf    -160.08149       inf%     69.51  
+ 447/2187        subproblem          -inf    -160.08149       inf%     69.64  
+ 448/2187        subproblem          -inf    -160.08149       inf%     69.79  
+ 449/2187        subproblem          -inf    -160.08149       inf%     69.92  
+ 450/2187        subproblem          -inf    -160.08149       inf%     70.05  
+ 451/2187        subproblem          -inf    -160.08149       inf%     70.17  
+ 452/2187        subproblem          -inf    -160.08149       inf%     70.29  
+ 453/2187        subproblem          -inf    -160.08149       inf%     70.41  
+ 454/2187        subproblem          -inf    -160.08149       inf%     70.53  
+ 455/2187        subproblem          -inf    -160.08149       inf%     70.69  
+ 456/2187        subproblem          -inf    -160.08149       inf%     70.82  
+ 457/2187        subproblem          -inf    -160.08149       inf%     70.94  
+ 458/2187        subproblem          -inf    -160.08149       inf%     71.07  
+ 459/2187        subproblem          -inf    -160.08149       inf%     71.20  
+ 460/2187        subproblem          -inf    -160.08149       inf%     71.32  
+ 461/2187        subproblem          -inf    -160.08149       inf%     71.45  
+ 462/2187        subproblem          -inf    -160.08149       inf%     71.59  
+ 463/2187        subproblem          -inf    -160.08149       inf%     71.72  
+ 464/2187        subproblem          -inf    -160.08149       inf%     71.84  
+ 465/2187        subproblem          -inf    -160.08149       inf%     71.96  
+ 466/2187        subproblem          -inf    -160.08149       inf%     72.08  
+ 467/2187        subproblem          -inf    -160.08149       inf%     72.21  
+ 468/2187        subproblem          -inf    -160.08149       inf%     72.33  
+ 469/2187        subproblem          -inf    -160.08149       inf%     72.48  
+ 470/2187        subproblem          -inf    -160.08149       inf%     72.60  
+ 471/2187        subproblem          -inf    -160.08149       inf%     72.72  
+ 472/2187        subproblem          -inf    -160.08149       inf%     72.84  
+ 473/2187        subproblem          -inf    -160.08149       inf%     72.98  
+ 474/2187        subproblem          -inf    -160.08149       inf%     73.11  
+ 475/2187        subproblem          -inf    -160.08149       inf%     73.23  
+ 476/2187        subproblem          -inf    -160.08149       inf%     73.36  
+ 477/2187        subproblem          -inf    -160.08149       inf%     73.52  
+ 478/2187        subproblem          -inf    -160.08149       inf%     73.64  
+ 479/2187        subproblem          -inf    -160.08149       inf%     73.76  
+ 480/2187        subproblem          -inf    -160.08149       inf%     73.89  
+ 481/2187        subproblem          -inf    -160.08149       inf%     74.01  
+ 482/2187        subproblem          -inf    -160.08149       inf%     74.14  
+ 483/2187        subproblem          -inf    -160.08149       inf%     74.27  
+ 484/2187        subproblem          -inf    -160.08149       inf%     74.42  
+ 485/2187        subproblem          -inf    -160.08149       inf%     74.55  
+ 486/2187        subproblem          -inf    -160.08149       inf%     75.26  
+ 487/2187        subproblem          -inf    -160.08149       inf%     76.04  
+ 488/2187        subproblem          -inf    -160.08149       inf%     76.18  
+ 489/2187        subproblem          -inf    -160.08149       inf%     76.31  
+ 490/2187        subproblem          -inf    -160.08149       inf%     76.44  
+ 491/2187        subproblem          -inf    -160.08149       inf%     76.57  
+ 492/2187        subproblem          -inf    -160.08149       inf%     76.71  
+ 493/2187        subproblem          -inf    -160.08149       inf%     76.87  
+ 494/2187        subproblem          -inf    -160.08149       inf%     77.00  
+ 495/2187        subproblem          -inf    -160.08149       inf%     77.13  
+ 496/2187        subproblem          -inf    -160.08149       inf%     77.26  
+ 497/2187        subproblem          -inf    -160.08149       inf%     77.38  
+ 498/2187        subproblem          -inf    -160.08149       inf%     77.51  
+ 499/2187        subproblem          -inf    -160.08149       inf%     77.64  
+ 500/2187        subproblem          -inf    -160.08149       inf%     77.79  
+ 501/2187        subproblem          -inf    -160.08149       inf%     77.93  
+ 502/2187        subproblem          -inf    -160.08149       inf%     78.06  
+ 503/2187        subproblem          -inf    -160.08149       inf%     78.19  
+ 504/2187        subproblem          -inf    -160.08149       inf%     78.33  
+ 505/2187        subproblem          -inf    -160.08149       inf%     78.46  
+ 506/2187        subproblem          -inf    -160.08149       inf%     78.59  
+ 507/2187        subproblem          -inf    -160.08149       inf%     78.74  
+ 508/2187        subproblem          -inf    -160.08149       inf%     78.87  
+ 509/2187        subproblem          -inf    -160.08149       inf%     79.00  
+ 510/2187        subproblem          -inf    -160.08149       inf%     79.13  
+ 511/2187        subproblem          -inf    -160.08149       inf%     79.26  
+ 512/2187        subproblem          -inf    -160.08149       inf%     79.39  
+ 513/2187        subproblem          -inf    -160.08149       inf%     79.52  
+ 514/2187        subproblem          -inf    -160.08149       inf%     79.67  
+ 515/2187        subproblem          -inf    -160.08149       inf%     79.80  
+ 516/2187        subproblem          -inf    -160.08149       inf%     79.92  
+ 517/2187        subproblem          -inf    -160.08149       inf%     80.05  
+ 518/2187        subproblem          -inf    -160.08149       inf%     80.17  
+ 519/2187        subproblem          -inf    -160.08149       inf%     80.30  
+ 520/2187        subproblem          -inf    -160.08149       inf%     80.42  
+ 521/2187        subproblem          -inf    -160.08149       inf%     80.57  
+ 522/2187        subproblem          -inf    -160.08149       inf%     80.70  
+ 523/2187        subproblem          -inf    -160.08149       inf%     80.82  
+ 524/2187        subproblem          -inf    -160.08149       inf%     80.95  
+ 525/2187        subproblem          -inf    -160.08149       inf%     81.07  
+ 526/2187        subproblem          -inf    -160.08149       inf%     81.20  
+ 527/2187        subproblem          -inf    -160.08149       inf%     81.33  
+ 528/2187        subproblem          -inf    -160.08149       inf%     81.48  
+ 529/2187        subproblem          -inf    -160.08149       inf%     81.60  
+ 530/2187        subproblem          -inf    -160.08149       inf%     81.74  
+ 531/2187        subproblem          -inf    -160.08149       inf%     81.87  
+ 532/2187        subproblem          -inf    -160.08149       inf%     81.99  
+ 533/2187        subproblem          -inf    -160.08149       inf%     82.12  
+ 534/2187        subproblem          -inf    -160.08149       inf%     82.24  
+ 535/2187        subproblem          -inf    -160.08149       inf%     82.39  
+ 536/2187        subproblem          -inf    -160.08149       inf%     82.52  
+ 537/2187        subproblem          -inf    -160.08149       inf%     82.66  
+ 538/2187        subproblem          -inf    -160.08149       inf%     82.78  
+ 539/2187        subproblem          -inf    -160.08149       inf%     82.91  
+ 540/2187        subproblem          -inf    -160.08149       inf%     83.05  
+ 541/2187        subproblem          -inf    -160.08149       inf%     83.18  
+ 542/2187        subproblem          -inf    -160.08149       inf%     83.33  
+ 543/2187        subproblem          -inf    -160.08149       inf%     83.46  
+ 544/2187        subproblem          -inf    -160.08149       inf%     83.58  
+ 545/2187        subproblem          -inf    -160.08149       inf%     83.71  
+ 546/2187        subproblem          -inf    -160.08149       inf%     83.84  
+ 547/2187        subproblem          -inf    -160.08149       inf%     83.97  
+ 548/2187        subproblem          -inf    -160.08149       inf%     84.12  
+ 549/2187        subproblem          -inf    -160.08149       inf%     84.25  
+ 550/2187        subproblem          -inf    -160.08149       inf%     84.37  
+ 551/2187        subproblem          -inf    -160.08149       inf%     84.50  
+ 552/2187        subproblem          -inf    -160.08149       inf%     84.63  
+ 553/2187        subproblem          -inf    -160.08149       inf%     84.75  
+ 554/2187        subproblem          -inf    -160.08149       inf%     84.88  
+ 555/2187        subproblem          -inf    -160.08149       inf%     85.01  
+ 556/2187        subproblem          -inf    -160.08149       inf%     85.16  
+ 557/2187        subproblem          -inf    -160.08149       inf%     85.29  
+ 558/2187        subproblem          -inf    -160.08149       inf%     85.42  
+ 559/2187        subproblem          -inf    -160.08149       inf%     85.55  
+ 560/2187        subproblem          -inf    -160.08149       inf%     85.67  
+ 561/2187        subproblem          -inf    -160.08149       inf%     85.80  
+ 562/2187        subproblem          -inf    -160.08149       inf%     85.93  
+ 563/2187        subproblem          -inf    -160.08149       inf%     86.08  
+ 564/2187        subproblem          -inf    -160.08149       inf%     86.21  
+ 565/2187        subproblem          -inf    -160.08149       inf%     86.34  
+ 566/2187        subproblem          -inf    -160.08149       inf%     86.46  
+ 567/2187        subproblem          -inf    -160.08149       inf%     86.59  
+ 568/2187        subproblem          -inf    -160.08149       inf%     86.71  
+ 569/2187        subproblem          -inf    -160.08149       inf%     86.84  
+ 570/2187        subproblem          -inf    -160.08149       inf%     86.98  
+ 571/2187        subproblem          -inf    -160.08149       inf%     87.11  
+ 572/2187        subproblem          -inf    -160.08149       inf%     87.23  
+ 573/2187        subproblem          -inf    -160.08149       inf%     87.35  
+ 574/2187        subproblem          -inf    -160.08149       inf%     87.48  
+ 575/2187        subproblem          -inf    -160.08149       inf%     87.60  
+ 576/2187        subproblem          -inf    -160.08149       inf%     87.72  
+ 577/2187        subproblem          -inf    -160.08149       inf%     87.87  
+ 578/2187        subproblem          -inf    -160.08149       inf%     87.99  
+ 579/2187        subproblem          -inf    -160.08149       inf%     88.11  
+ 580/2187        subproblem          -inf    -160.08149       inf%     88.24  
+ 581/2187        subproblem          -inf    -160.08149       inf%     88.36  
+ 582/2187        subproblem          -inf    -160.08149       inf%     88.48  
+ 583/2187        subproblem          -inf    -160.08149       inf%     88.61  
+ 584/2187        subproblem          -inf    -160.08149       inf%     88.74  
+ 585/2187        subproblem          -inf    -160.08149       inf%     88.87  
+ 586/2187        subproblem          -inf    -160.08149       inf%     88.99  
+ 587/2187        subproblem          -inf    -160.08149       inf%     89.11  
+ 588/2187        subproblem          -inf    -160.08149       inf%     89.23  
+ 589/2187        subproblem          -inf    -160.08149       inf%     89.35  
+ 590/2187        subproblem          -inf    -160.08149       inf%     89.47  
+ 591/2187        subproblem          -inf    -160.08149       inf%     89.62  
+ 592/2187        subproblem          -inf    -160.08149       inf%     89.74  
+ 593/2187        subproblem          -inf    -160.08149       inf%     89.86  
+ 594/2187        subproblem          -inf    -160.08149       inf%     89.98  
+ 595/2187        subproblem          -inf    -160.08149       inf%     90.11  
+ 596/2187        subproblem          -inf    -160.08149       inf%     90.23  
+ 597/2187        subproblem          -inf    -160.08149       inf%     90.35  
+ 598/2187        subproblem          -inf    -160.08149       inf%     90.50  
+ 599/2187        subproblem          -inf    -160.08149       inf%     90.62  
+ 600/2187        subproblem          -inf    -160.08149       inf%     90.74  
+ 601/2187        subproblem          -inf    -160.08149       inf%     90.87  
+ 602/2187        subproblem          -inf    -160.08149       inf%     90.99  
+ 603/2187        subproblem          -inf    -160.08149       inf%     91.11  
+ 604/2187        subproblem          -inf    -160.08149       inf%     91.23  
+ 605/2187        subproblem          -inf    -160.08149       inf%     91.38  
+ 606/2187        subproblem          -inf    -160.08149       inf%     91.50  
+ 607/2187        subproblem          -inf    -160.08149       inf%     91.62  
+ 608/2187        subproblem          -inf    -160.08149       inf%     91.75  
+ 609/2187        subproblem          -inf    -160.08149       inf%     91.88  
+ 610/2187        subproblem          -inf    -160.08149       inf%     92.00  
+ 611/2187        subproblem          -inf    -160.08149       inf%     92.13  
+ 612/2187        subproblem          -inf    -160.08149       inf%     92.28  
+ 613/2187        subproblem          -inf    -160.08149       inf%     92.41  
+ 614/2187        subproblem          -inf    -160.08149       inf%     92.53  
+ 615/2187        subproblem          -inf    -160.08149       inf%     92.65  
+ 616/2187        subproblem          -inf    -160.08149       inf%     92.77  
+ 617/2187        subproblem          -inf    -160.08149       inf%     92.90  
+ 618/2187        subproblem          -inf    -160.08149       inf%     93.03  
+ 619/2187        subproblem          -inf    -160.08149       inf%     93.18  
+ 620/2187        subproblem          -inf    -160.08149       inf%     93.31  
+ 621/2187        subproblem          -inf    -160.08149       inf%     93.44  
+ 622/2187        subproblem          -inf    -160.08149       inf%     93.56  
+ 623/2187        subproblem          -inf    -160.08149       inf%     93.68  
+ 624/2187        subproblem          -inf    -160.08149       inf%     93.80  
+ 625/2187        subproblem          -inf    -160.08149       inf%     93.92  
+ 626/2187        subproblem          -inf    -160.08149       inf%     94.07  
+ 627/2187        subproblem          -inf    -160.08149       inf%     94.19  
+ 628/2187        subproblem          -inf    -160.08149       inf%     94.31  
+ 629/2187        subproblem          -inf    -160.08149       inf%     94.43  
+ 630/2187        subproblem          -inf    -160.08149       inf%     94.56  
+ 631/2187        subproblem          -inf    -160.08149       inf%     94.68  
+ 632/2187        subproblem          -inf    -160.08149       inf%     94.80  
+ 633/2187        subproblem          -inf    -160.08149       inf%     94.95  
+ 634/2187        subproblem          -inf    -160.08149       inf%     95.07  
+ 635/2187        subproblem          -inf    -160.08149       inf%     95.20  
+ 636/2187        subproblem          -inf    -160.08149       inf%     95.33  
+ 637/2187        subproblem          -inf    -160.08149       inf%     95.45  
+ 638/2187        subproblem          -inf    -160.08149       inf%     95.58  
+ 639/2187        subproblem          -inf    -160.08149       inf%     95.71  
+ 640/2187        subproblem          -inf    -160.08149       inf%     95.87  
+ 641/2187        subproblem          -inf    -160.08149       inf%     95.99  
+ 642/2187        subproblem          -inf    -160.08149       inf%     96.11  
+ 643/2187        subproblem          -inf    -160.08149       inf%     96.24  
+ 644/2187        subproblem          -inf    -160.08149       inf%     96.37  
+ 645/2187        subproblem          -inf    -160.08149       inf%     96.50  
+ 646/2187        subproblem          -inf    -160.08149       inf%     96.62  
+ 647/2187        subproblem          -inf    -160.08149       inf%     96.78  
+ 648/2187        subproblem          -inf    -160.08149       inf%     96.92  
+ 649/2187        subproblem          -inf    -160.08149       inf%     97.04  
+ 650/2187        subproblem          -inf    -160.08149       inf%     97.17  
+ 651/2187        subproblem          -inf    -160.08149       inf%     97.30  
+ 652/2187        subproblem          -inf    -160.08149       inf%     97.42  
+ 653/2187        subproblem          -inf    -160.08149       inf%     97.55  
+ 654/2187        subproblem          -inf    -160.08149       inf%     97.70  
+ 655/2187        subproblem          -inf    -160.08149       inf%     97.83  
+ 656/2187        subproblem          -inf    -160.08149       inf%     97.96  
+ 657/2187        subproblem          -inf    -160.08149       inf%     98.09  
+ 658/2187        subproblem          -inf    -160.08149       inf%     98.21  
+ 659/2187        subproblem          -inf    -160.08149       inf%     98.34  
+ 660/2187        subproblem          -inf    -160.08149       inf%     98.46  
+ 661/2187        subproblem          -inf    -160.08149       inf%     98.61  
+ 662/2187        subproblem          -inf    -160.08149       inf%     98.74  
+ 663/2187        subproblem          -inf    -160.08149       inf%     98.87  
+ 664/2187        subproblem          -inf    -160.08149       inf%     99.00  
+ 665/2187        subproblem          -inf    -160.08149       inf%     99.12  
+ 666/2187        subproblem          -inf    -160.08149       inf%     99.25  
+ 667/2187        subproblem          -inf    -160.08149       inf%     99.38  
+ 668/2187        subproblem          -inf    -160.08149       inf%     99.53  
+ 669/2187        subproblem          -inf    -160.08149       inf%     99.66  
+ 670/2187        subproblem          -inf    -160.08149       inf%     99.78  
+ 671/2187        subproblem          -inf    -160.08149       inf%     99.91  
+ 672/2187        subproblem          -inf    -160.08149       inf%    100.04  
+ 673/2187        subproblem          -inf    -160.08149       inf%    100.17  
+ 674/2187        subproblem          -inf    -160.08149       inf%    100.29  
+ 675/2187        subproblem          -inf    -160.08149       inf%    100.44  
+ 676/2187        subproblem          -inf    -160.08149       inf%    100.57  
+ 677/2187        subproblem          -inf    -160.08149       inf%    100.69  
+ 678/2187        subproblem          -inf    -160.08149       inf%    100.82  
+ 679/2187        subproblem          -inf    -160.08149       inf%    100.94  
+ 680/2187        subproblem          -inf    -160.08149       inf%    101.07  
+ 681/2187        subproblem          -inf    -160.08149       inf%    101.19  
+ 682/2187        subproblem          -inf    -160.08149       inf%    101.34  
+ 683/2187        subproblem          -inf    -160.08149       inf%    101.47  
+ 684/2187        subproblem          -inf    -160.08149       inf%    101.59  
+ 685/2187        subproblem          -inf    -160.08149       inf%    101.72  
+ 686/2187        subproblem          -inf    -160.08149       inf%    101.85  
+ 687/2187        subproblem          -inf    -160.08149       inf%    101.97  
+ 688/2187        subproblem          -inf    -160.08149       inf%    102.09  
+ 689/2187        subproblem          -inf    -160.08149       inf%    102.24  
+ 690/2187        subproblem          -inf    -160.08149       inf%    102.37  
+ 691/2187        subproblem          -inf    -160.08149       inf%    102.49  
+ 692/2187        subproblem          -inf    -160.08149       inf%    102.62  
+ 693/2187        subproblem          -inf    -160.08149       inf%    102.75  
+ 694/2187        subproblem          -inf    -160.08149       inf%    102.87  
+ 695/2187        subproblem          -inf    -160.08149       inf%    103.00  
+ 696/2187        subproblem          -inf    -160.08149       inf%    103.14  
+ 697/2187        subproblem          -inf    -160.08149       inf%    103.27  
+ 698/2187        subproblem          -inf    -160.08149       inf%    103.40  
+ 699/2187        subproblem          -inf    -160.08149       inf%    103.52  
+ 700/2187        subproblem          -inf    -160.08149       inf%    103.65  
+ 701/2187        subproblem          -inf    -160.08149       inf%    103.77  
+ 702/2187        subproblem          -inf    -160.08149       inf%    103.90  
+ 703/2187        subproblem          -inf    -160.08149       inf%    104.05  
+ 704/2187        subproblem          -inf    -160.08149       inf%    104.18  
+ 705/2187        subproblem          -inf    -160.08149       inf%    104.30  
+ 706/2187        subproblem          -inf    -160.08149       inf%    104.43  
+ 707/2187        subproblem          -inf    -160.08149       inf%    104.56  
+ 708/2187        subproblem          -inf    -160.08149       inf%    104.68  
+ 709/2187        subproblem          -inf    -160.08149       inf%    104.83  
+ 710/2187        subproblem          -inf    -160.08149       inf%    104.96  
+ 711/2187        subproblem          -inf    -160.08149       inf%    105.09  
+ 712/2187        subproblem          -inf    -160.08149       inf%    105.21  
+ 713/2187        subproblem          -inf    -160.08149       inf%    105.34  
+ 714/2187        subproblem          -inf    -160.08149       inf%    105.46  
+ 715/2187        subproblem          -inf    -160.08149       inf%    105.59  
+ 716/2187        subproblem          -inf    -160.08149       inf%    105.74  
+ 717/2187        subproblem          -inf    -160.08149       inf%    105.87  
+ 718/2187        subproblem          -inf    -160.08149       inf%    105.99  
+ 719/2187        subproblem          -inf    -160.08149       inf%    106.12  
+ 720/2187        subproblem          -inf    -160.08149       inf%    106.25  
+ 721/2187        subproblem          -inf    -160.08149       inf%    106.38  
+ 722/2187        subproblem          -inf    -160.08149       inf%    106.50  
+ 723/2187        subproblem          -inf    -160.08149       inf%    106.65  
+ 724/2187        subproblem          -inf    -160.08149       inf%    106.78  
+ 725/2187        subproblem          -inf    -160.08149       inf%    106.90  
+ 726/2187        subproblem          -inf    -160.08149       inf%    107.03  
+ 727/2187        subproblem          -inf    -160.08149       inf%    107.15  
+ 728/2187        subproblem          -inf    -160.08149       inf%    107.28  
+ 729/2187        subproblem          -inf    -160.08149       inf%    107.40  
+ 730/2187        subproblem          -inf    -160.08149       inf%    107.55  
+ 731/2187        subproblem          -inf    -160.08149       inf%    107.68  
+ 732/2187        subproblem          -inf    -160.08149       inf%    107.80  
+ 733/2187        subproblem          -inf    -160.08149       inf%    107.92  
+ 734/2187        subproblem          -inf    -160.08149       inf%    108.04  
+ 735/2187        subproblem          -inf    -160.08149       inf%    108.16  
+ 736/2187        subproblem          -inf    -160.08149       inf%    108.29  
+ 737/2187        subproblem          -inf    -160.08149       inf%    108.41  
+ 738/2187        subproblem          -inf    -160.08149       inf%    108.56  
+ 739/2187        subproblem          -inf    -160.08149       inf%    108.68  
+ 740/2187        subproblem          -inf    -160.08149       inf%    108.80  
+ 741/2187        subproblem          -inf    -160.08149       inf%    108.93  
+ 742/2187        subproblem          -inf    -160.08149       inf%    109.05  
+ 743/2187        subproblem          -inf    -160.08149       inf%    109.17  
+ 744/2187        subproblem          -inf    -160.08149       inf%    109.29  
+ 745/2187        subproblem          -inf    -160.08149       inf%    109.44  
+ 746/2187        subproblem          -inf    -160.08149       inf%    109.56  
+ 747/2187        subproblem          -inf    -160.08149       inf%    109.68  
+ 748/2187        subproblem          -inf    -160.08149       inf%    109.81  
+ 749/2187        subproblem          -inf    -160.08149       inf%    109.93  
+ 750/2187        subproblem          -inf    -160.08149       inf%    110.05  
+ 751/2187        subproblem          -inf    -160.08149       inf%    110.17  
+ 752/2187        subproblem          -inf    -160.08149       inf%    110.32  
+ 753/2187        subproblem          -inf    -160.08149       inf%    110.44  
+ 754/2187        subproblem          -inf    -160.08149       inf%    110.56  
+ 755/2187        subproblem          -inf    -160.08149       inf%    110.68  
+ 756/2187        subproblem          -inf    -160.08149       inf%    110.80  
+ 757/2187        subproblem          -inf    -160.08149       inf%    110.92  
+ 758/2187        subproblem          -inf    -160.08149       inf%    111.05  
+ 759/2187        subproblem          -inf    -160.08149       inf%    111.19  
+ 760/2187        subproblem          -inf    -160.08149       inf%    111.31  
+ 761/2187        subproblem          -inf    -160.08149       inf%    111.43  
+ 762/2187        subproblem          -inf    -160.08149       inf%    111.56  
+ 763/2187        subproblem          -inf    -160.08149       inf%    111.68  
+ 764/2187        subproblem          -inf    -160.08149       inf%    111.80  
+ 765/2187        subproblem          -inf    -160.08149       inf%    111.92  
+ 766/2187        subproblem          -inf    -160.08149       inf%    112.06  
+ 767/2187        subproblem          -inf    -160.08149       inf%    112.19  
+ 768/2187        subproblem          -inf    -160.08149       inf%    112.31  
+ 769/2187        subproblem          -inf    -160.08149       inf%    112.43  
+ 770/2187        subproblem          -inf    -160.08149       inf%    112.55  
+ 771/2187        subproblem          -inf    -160.08149       inf%    112.67  
+ 772/2187        subproblem          -inf    -160.08149       inf%    112.79  
+ 773/2187        subproblem          -inf    -160.08149       inf%    112.92  
+ 774/2187        subproblem          -inf    -160.08149       inf%    113.07  
+ 775/2187        subproblem          -inf    -160.08149       inf%    113.19  
+ 776/2187        subproblem          -inf    -160.08149       inf%    113.31  
+ 777/2187        subproblem          -inf    -160.08149       inf%    113.43  
+ 778/2187        subproblem          -inf    -160.08149       inf%    113.56  
+ 779/2187        subproblem          -inf    -160.08149       inf%    113.69  
+ 780/2187        subproblem          -inf    -160.08149       inf%    113.81  
+ 781/2187        subproblem          -inf    -160.08149       inf%    113.96  
+ 782/2187        subproblem          -inf    -160.08149       inf%    114.08  
+ 783/2187        subproblem          -inf    -160.08149       inf%    114.20  
+ 784/2187        subproblem          -inf    -160.08149       inf%    114.32  
+ 785/2187        subproblem          -inf    -160.08149       inf%    114.44  
+ 786/2187        subproblem          -inf    -160.08149       inf%    114.56  
+ 787/2187        subproblem          -inf    -160.08149       inf%    114.68  
+ 788/2187        subproblem          -inf    -160.08149       inf%    114.83  
+ 789/2187        subproblem          -inf    -160.08149       inf%    114.95  
+ 790/2187        subproblem          -inf    -160.08149       inf%    115.07  
+ 791/2187        subproblem          -inf    -160.08149       inf%    115.20  
+ 792/2187        subproblem          -inf    -160.08149       inf%    115.32  
+ 793/2187        subproblem          -inf    -160.08149       inf%    115.44  
+ 794/2187        subproblem          -inf    -160.08149       inf%    115.56  
+ 795/2187        subproblem          -inf    -160.08149       inf%    115.71  
+ 796/2187        subproblem          -inf    -160.08149       inf%    115.83  
+ 797/2187        subproblem          -inf    -160.08149       inf%    115.95  
+ 798/2187        subproblem          -inf    -160.08149       inf%    116.07  
+ 799/2187        subproblem          -inf    -160.08149       inf%    116.19  
+ 800/2187        subproblem          -inf    -160.08149       inf%    116.31  
+ 801/2187        subproblem          -inf    -160.08149       inf%    116.43  
+ 802/2187        subproblem          -inf    -160.08149       inf%    116.58  
+ 803/2187        subproblem          -inf    -160.08149       inf%    116.70  
+ 804/2187        subproblem          -inf    -160.08149       inf%    116.82  
+ 805/2187        subproblem          -inf    -160.08149       inf%    116.94  
+ 806/2187        subproblem          -inf    -160.08149       inf%    117.07  
+ 807/2187        subproblem          -inf    -160.08149       inf%    117.19  
+ 808/2187        subproblem          -inf    -160.08149       inf%    117.31  
+ 809/2187        subproblem          -inf    -160.08149       inf%    117.45  
+ 810/2187        subproblem          -inf    -160.08149       inf%    117.57  
+ 811/2187        subproblem          -inf    -160.08149       inf%    117.70  
+ 812/2187        subproblem          -inf    -160.08149       inf%    117.82  
+ 813/2187        subproblem          -inf    -160.08149       inf%    117.94  
+ 814/2187        subproblem          -inf    -160.08149       inf%    118.06  
+ 815/2187        subproblem          -inf    -160.08149       inf%    118.18  
+ 816/2187        subproblem          -inf    -160.08149       inf%    118.33  
+ 817/2187        subproblem          -inf    -160.08149       inf%    118.46  
+ 818/2187        subproblem          -inf    -160.08149       inf%    118.58  
+ 819/2187        subproblem          -inf    -160.08149       inf%    118.70  
+ 820/2187        subproblem          -inf    -160.08149       inf%    118.82  
+ 821/2187        subproblem          -inf    -160.08149       inf%    118.94  
+ 822/2187        subproblem          -inf    -160.08149       inf%    119.07  
+ 823/2187        subproblem          -inf    -160.08149       inf%    119.21  
+ 824/2187        subproblem          -inf    -160.08149       inf%    119.34  
+ 825/2187        subproblem          -inf    -160.08149       inf%    119.46  
+ 826/2187        subproblem          -inf    -160.08149       inf%    119.58  
+ 827/2187        subproblem          -inf    -160.08149       inf%    119.70  
+ 828/2187        subproblem          -inf    -160.08149       inf%    119.82  
+ 829/2187        subproblem          -inf    -160.08149       inf%    119.95  
+ 830/2187        subproblem          -inf    -160.08149       inf%    120.07  
+ 831/2187        subproblem          -inf    -160.08149       inf%    120.22  
+ 832/2187        subproblem          -inf    -160.08149       inf%    120.34  
+ 833/2187        subproblem          -inf    -160.08149       inf%    120.46  
+ 834/2187        subproblem          -inf    -160.08149       inf%    120.58  
+ 835/2187        subproblem          -inf    -160.08149       inf%    120.71  
+ 836/2187        subproblem          -inf    -160.08149       inf%    120.83  
+ 837/2187        subproblem          -inf    -160.08149       inf%    120.95  
+ 838/2187        subproblem          -inf    -160.08149       inf%    121.09  
+ 839/2187        subproblem          -inf    -160.08149       inf%    121.22  
+ 840/2187        subproblem          -inf    -160.08149       inf%    121.34  
+ 841/2187        subproblem          -inf    -160.08149       inf%    121.46  
+ 842/2187        subproblem          -inf    -160.08149       inf%    121.58  
+ 843/2187        subproblem          -inf    -160.08149       inf%    121.70  
+ 844/2187        subproblem          -inf    -160.08149       inf%    121.82  
+ 845/2187        subproblem          -inf    -160.08149       inf%    121.97  
+ 846/2187        subproblem          -inf    -160.08149       inf%    122.09  
+ 847/2187        subproblem          -inf    -160.08149       inf%    122.21  
+ 848/2187        subproblem          -inf    -160.08149       inf%    122.33  
+ 849/2187        subproblem          -inf    -160.08149       inf%    122.45  
+ 850/2187        subproblem          -inf    -160.08149       inf%    122.57  
+ 851/2187        subproblem          -inf    -160.08149       inf%    122.69  
+ 852/2187        subproblem          -inf    -160.08149       inf%    122.84  
+ 853/2187        subproblem          -inf    -160.08149       inf%    122.96  
+ 854/2187        subproblem          -inf    -160.08149       inf%    123.08  
+ 855/2187        subproblem          -inf    -160.08149       inf%    123.20  
+ 856/2187        subproblem          -inf    -160.08149       inf%    123.32  
+ 857/2187        subproblem          -inf    -160.08149       inf%    123.44  
+ 858/2187        subproblem          -inf    -160.08149       inf%    123.56  
+ 859/2187        subproblem          -inf    -160.08149       inf%    123.71  
+ 860/2187        subproblem          -inf    -160.08149       inf%    123.83  
+ 861/2187        subproblem          -inf    -160.08149       inf%    123.95  
+ 862/2187        subproblem          -inf    -160.08149       inf%    124.08  
+ 863/2187        subproblem          -inf    -160.08149       inf%    124.20  
+ 864/2187        subproblem          -inf    -160.08149       inf%    124.32  
+ 865/2187        subproblem          -inf    -160.08149       inf%    124.44  
+ 866/2187        subproblem          -inf    -160.08149       inf%    124.56  
+ 867/2187        subproblem          -inf    -160.08149       inf%    124.71  
+ 868/2187        subproblem          -inf    -160.08149       inf%    124.83  
+ 869/2187        subproblem          -inf    -160.08149       inf%    124.95  
+ 870/2187        subproblem          -inf    -160.08149       inf%    125.08  
+ 871/2187        subproblem          -inf    -160.08149       inf%    125.20  
+ 872/2187        subproblem          -inf    -160.08149       inf%    125.32  
+ 873/2187        subproblem          -inf    -160.08149       inf%    125.44  
+ 874/2187        subproblem          -inf    -160.08149       inf%    125.59  
+ 875/2187        subproblem          -inf    -160.08149       inf%    125.71  
+ 876/2187        subproblem          -inf    -160.08149       inf%    125.83  
+ 877/2187        subproblem          -inf    -160.08149       inf%    125.95  
+ 878/2187        subproblem          -inf    -160.08149       inf%    126.07  
+ 879/2187        subproblem          -inf    -160.08149       inf%    126.19  
+ 880/2187        subproblem          -inf    -160.08149       inf%    126.31  
+ 881/2187        subproblem          -inf    -160.08149       inf%    126.46  
+ 882/2187        subproblem          -inf    -160.08149       inf%    126.58  
+ 883/2187        subproblem          -inf    -160.08149       inf%    126.70  
+ 884/2187        subproblem          -inf    -160.08149       inf%    126.82  
+ 885/2187        subproblem          -inf    -160.08149       inf%    126.94  
+ 886/2187        subproblem          -inf    -160.08149       inf%    127.06  
+ 887/2187        subproblem          -inf    -160.08149       inf%    127.18  
+ 888/2187        subproblem          -inf    -160.08149       inf%    127.30  
+ 889/2187        subproblem          -inf    -160.08149       inf%    127.45  
+ 890/2187        subproblem          -inf    -160.08149       inf%    127.57  
+ 891/2187        subproblem          -inf    -160.08149       inf%    127.69  
+ 892/2187        subproblem          -inf    -160.08149       inf%    127.81  
+ 893/2187        subproblem          -inf    -160.08149       inf%    127.93  
+ 894/2187        subproblem          -inf    -160.08149       inf%    128.06  
+ 895/2187        subproblem          -inf    -160.08149       inf%    128.18  
+ 896/2187        subproblem          -inf    -160.08149       inf%    128.32  
+ 897/2187        subproblem          -inf    -160.08149       inf%    128.45  
+ 898/2187        subproblem          -inf    -160.08149       inf%    128.57  
+ 899/2187        subproblem          -inf    -160.08149       inf%    128.69  
+ 900/2187        subproblem          -inf    -160.08149       inf%    128.81  
+ 901/2187        subproblem          -inf    -160.08149       inf%    128.94  
+ 902/2187        subproblem          -inf    -160.08149       inf%    129.06  
+ 903/2187        subproblem          -inf    -160.08149       inf%    129.20  
+ 904/2187        subproblem          -inf    -160.08149       inf%    129.33  
+ 905/2187        subproblem          -inf    -160.08149       inf%    129.45  
+ 906/2187        subproblem          -inf    -160.08149       inf%    129.57  
+ 907/2187        subproblem          -inf    -160.08149       inf%    129.69  
+ 908/2187        subproblem          -inf    -160.08149       inf%    129.81  
+ 909/2187        subproblem          -inf    -160.08149       inf%    129.96  
+ 910/2187        subproblem          -inf    -160.08149       inf%    130.09  
+ 911/2187        subproblem          -inf    -160.08149       inf%    130.21  
+ 912/2187        subproblem          -inf    -160.08149       inf%    130.33  
+ 913/2187        subproblem          -inf    -160.08149       inf%    130.45  
+ 914/2187        subproblem          -inf    -160.08149       inf%    130.58  
+ 915/2187        subproblem          -inf    -160.08149       inf%    130.70  
+ 916/2187        subproblem          -inf    -160.08149       inf%    130.84  
+ 917/2187        subproblem          -inf    -160.08149       inf%    130.96  
+ 918/2187        subproblem          -inf    -160.08149       inf%    131.08  
+ 919/2187        subproblem          -inf    -160.08149       inf%    131.20  
+ 920/2187        subproblem          -inf    -160.08149       inf%    131.32  
+ 921/2187        subproblem          -inf    -160.08149       inf%    131.44  
+ 922/2187        subproblem          -inf    -160.08149       inf%    131.56  
+ 923/2187        subproblem          -inf    -160.08149       inf%    131.68  
+ 924/2187        subproblem          -inf    -160.08149       inf%    131.82  
+ 925/2187        subproblem          -inf    -160.08149       inf%    131.94  
+ 926/2187        subproblem          -inf    -160.08149       inf%    132.06  
+ 927/2187        subproblem          -inf    -160.08149       inf%    132.18  
+ 928/2187        subproblem          -inf    -160.08149       inf%    132.30  
+ 929/2187        subproblem          -inf    -160.08149       inf%    132.42  
+ 930/2187        subproblem          -inf    -160.08149       inf%    132.54  
+ 931/2187        subproblem          -inf    -160.08149       inf%    132.68  
+ 932/2187        subproblem          -inf    -160.08149       inf%    132.80  
+ 933/2187        subproblem          -inf    -160.08149       inf%    132.92  
+ 934/2187        subproblem          -inf    -160.08149       inf%    133.04  
+ 935/2187        subproblem          -inf    -160.08149       inf%    133.16  
+ 936/2187        subproblem          -inf    -160.08149       inf%    133.28  
+ 937/2187        subproblem          -inf    -160.08149       inf%    133.40  
+ 938/2187        subproblem          -inf    -160.08149       inf%    133.54  
+ 939/2187        subproblem          -inf    -160.08149       inf%    133.66  
+ 940/2187        subproblem          -inf    -160.08149       inf%    133.78  
+ 941/2187        subproblem          -inf    -160.08149       inf%    133.90  
+ 942/2187        subproblem          -inf    -160.08149       inf%    134.02  
+ 943/2187        subproblem          -inf    -160.08149       inf%    134.14  
+ 944/2187        subproblem          -inf    -160.08149       inf%    134.28  
+ 945/2187        subproblem          -inf    -160.08149       inf%    134.40  
+ 946/2187        subproblem          -inf    -160.08149       inf%    134.52  
+ 947/2187        subproblem          -inf    -160.08149       inf%    134.64  
+ 948/2187        subproblem          -inf    -160.08149       inf%    134.76  
+ 949/2187        subproblem          -inf    -160.08149       inf%    134.89  
+ 950/2187        subproblem          -inf    -160.08149       inf%    135.01  
+ 951/2187        subproblem          -inf    -160.08149       inf%    135.13  
+ 952/2187        subproblem          -inf    -160.08149       inf%    135.27  
+ 953/2187        subproblem          -inf    -160.08149       inf%    135.39  
+ 954/2187        subproblem          -inf    -160.08149       inf%    135.52  
+ 955/2187        subproblem          -inf    -160.08149       inf%    135.64  
+ 956/2187        subproblem          -inf    -160.08149       inf%    135.76  
+ 957/2187        subproblem          -inf    -160.08149       inf%    135.88  
+ 958/2187        subproblem          -inf    -160.08149       inf%    136.02  
+ 959/2187        subproblem          -inf    -160.08149       inf%    136.14  
+ 960/2187        subproblem          -inf    -160.08149       inf%    136.26  
+ 961/2187        subproblem          -inf    -160.08149       inf%    136.39  
+ 962/2187        subproblem          -inf    -160.08149       inf%    136.51  
+ 963/2187        subproblem          -inf    -160.08149       inf%    136.63  
+ 964/2187        subproblem          -inf    -160.08149       inf%    136.75  
+ 965/2187        subproblem          -inf    -160.08149       inf%    136.87  
+ 966/2187        subproblem          -inf    -160.08149       inf%    137.01  
+ 967/2187        subproblem          -inf    -160.08149       inf%    137.14  
+ 968/2187        subproblem          -inf    -160.08149       inf%    137.26  
+ 969/2187        subproblem          -inf    -160.08149       inf%    137.38  
+ 970/2187        subproblem          -inf    -160.08149       inf%    137.50  
+ 971/2187        subproblem          -inf    -160.08149       inf%    137.62  
+ 972/2187        subproblem          -inf    -160.08149       inf%    137.76  
+ 973/2187        subproblem          -inf    -160.08149       inf%    137.88  
+ 974/2187        subproblem          -inf    -160.08149       inf%    138.00  
+ 975/2187        subproblem          -inf    -160.08149       inf%    138.12  
+ 976/2187        subproblem          -inf    -160.08149       inf%    138.24  
+ 977/2187        subproblem          -inf    -160.08149       inf%    138.36  
+ 978/2187        subproblem          -inf    -160.08149       inf%    138.47  
+ 979/2187        subproblem          -inf    -160.08149       inf%    138.59  
+ 980/2187        subproblem          -inf    -160.08149       inf%    138.73  
+ 981/2187        subproblem          -inf    -160.08149       inf%    138.84  
+ 982/2187        subproblem          -inf    -160.08149       inf%    138.96  
+ 983/2187        subproblem          -inf    -160.08149       inf%    139.07  
+ 984/2187        subproblem          -inf    -160.08149       inf%    139.19  
+ 985/2187        subproblem          -inf    -160.08149       inf%    139.31  
+ 986/2187        subproblem          -inf    -160.08149       inf%    139.42  
+ 987/2187        subproblem          -inf    -160.08149       inf%    139.56  
+ 988/2187        subproblem          -inf    -160.08149       inf%    139.67  
+ 989/2187        subproblem          -inf    -160.08149       inf%    139.79  
+ 990/2187        subproblem          -inf    -160.08149       inf%    139.90  
+ 991/2187        subproblem          -inf    -160.08149       inf%    140.01  
+ 992/2187        subproblem          -inf    -160.08149       inf%    140.13  
+ 993/2187        subproblem          -inf    -160.08149       inf%    140.24  
+ 994/2187        subproblem          -inf    -160.08149       inf%    140.38  
+ 995/2187        subproblem          -inf    -160.08149       inf%    140.50  
+ 996/2187        subproblem          -inf    -160.08149       inf%    140.61  
+ 997/2187        subproblem          -inf    -160.08149       inf%    140.72  
+ 998/2187        subproblem          -inf    -160.08149       inf%    140.84  
+ 999/2187        subproblem          -inf    -160.08149       inf%    140.95  
+1000/2187        subproblem          -inf    -160.08149       inf%    141.07  
+1001/2187        subproblem          -inf    -160.08149       inf%    141.21  
+1002/2187        subproblem          -inf    -160.08149       inf%    141.32  
+1003/2187        subproblem          -inf    -160.08149       inf%    141.44  
+1004/2187        subproblem          -inf    -160.08149       inf%    141.55  
+1005/2187        subproblem          -inf    -160.08149       inf%    141.66  
+1006/2187        subproblem          -inf    -160.08149       inf%    141.78  
+1007/2187        subproblem          -inf    -160.08149       inf%    141.89  
+1008/2187        subproblem          -inf    -160.08149       inf%    142.01  
+1009/2187        subproblem          -inf    -160.08149       inf%    142.15  
+1010/2187        subproblem          -inf    -160.08149       inf%    142.27  
+1011/2187        subproblem          -inf    -160.08149       inf%    142.38  
+1012/2187        subproblem          -inf    -160.08149       inf%    142.50  
+1013/2187        subproblem          -inf    -160.08149       inf%    142.61  
+1014/2187        subproblem          -inf    -160.08149       inf%    142.73  
+1015/2187        subproblem          -inf    -160.08149       inf%    142.85  
+1016/2187        subproblem          -inf    -160.08149       inf%    142.98  
+1017/2187        subproblem          -inf    -160.08149       inf%    143.10  
+1018/2187        subproblem          -inf    -160.08149       inf%    143.22  
+1019/2187        subproblem          -inf    -160.08149       inf%    143.33  
+1020/2187        subproblem          -inf    -160.08149       inf%    143.44  
+1021/2187        subproblem          -inf    -160.08149       inf%    143.56  
+1022/2187        subproblem          -inf    -160.08149       inf%    143.68  
+1023/2187        subproblem          -inf    -160.08149       inf%    143.81  
+1024/2187        subproblem          -inf    -160.08149       inf%    143.93  
+1025/2187        subproblem          -inf    -160.08149       inf%    144.04  
+1026/2187        subproblem          -inf    -160.08149       inf%    144.16  
+1027/2187        subproblem          -inf    -160.08149       inf%    144.28  
+1028/2187        subproblem          -inf    -160.08149       inf%    144.39  
+1029/2187        subproblem          -inf    -160.08149       inf%    144.51  
+1030/2187        subproblem          -inf    -160.08149       inf%    144.63  
+1031/2187        subproblem          -inf    -160.08149       inf%    144.77  
+1032/2187        subproblem          -inf    -160.08149       inf%    144.88  
+1033/2187        subproblem          -inf    -160.08149       inf%    144.99  
+1034/2187        subproblem          -inf    -160.08149       inf%    145.11  
+1035/2187        subproblem          -inf    -160.08149       inf%    145.22  
+1036/2187        subproblem          -inf    -160.08149       inf%    145.34  
+1037/2187        subproblem          -inf    -160.08149       inf%    145.45  
+1038/2187        subproblem          -inf    -160.08149       inf%    145.59  
+1039/2187        subproblem          -inf    -160.08149       inf%    145.71  
+1040/2187        subproblem          -inf    -160.08149       inf%    145.82  
+1041/2187        subproblem          -inf    -160.08149       inf%    145.94  
+1042/2187        subproblem          -inf    -160.08149       inf%    146.05  
+1043/2187        subproblem          -inf    -160.08149       inf%    146.17  
+1044/2187        subproblem          -inf    -160.08149       inf%    146.28  
+1045/2187        subproblem          -inf    -160.08149       inf%    146.42  
+1046/2187        subproblem          -inf    -160.08149       inf%    146.53  
+1047/2187        subproblem          -inf    -160.08149       inf%    146.65  
+1048/2187        subproblem          -inf    -160.08149       inf%    146.76  
+1049/2187        subproblem          -inf    -160.08149       inf%    146.88  
+1050/2187        subproblem          -inf    -160.08149       inf%    146.99  
+1051/2187        subproblem          -inf    -160.08149       inf%    147.11  
+1052/2187        subproblem          -inf    -160.08149       inf%    147.22  
+1053/2187        subproblem          -inf    -160.08149       inf%    147.36  
+1054/2187        subproblem          -inf    -160.08149       inf%    147.48  
+1055/2187        subproblem          -inf    -160.08149       inf%    147.59  
+1056/2187        subproblem          -inf    -160.08149       inf%    147.71  
+1057/2187        subproblem          -inf    -160.08149       inf%    147.82  
+1058/2187        subproblem          -inf    -160.08149       inf%    147.94  
+1059/2187        subproblem          -inf    -160.08149       inf%    148.05  
+1060/2187        subproblem          -inf    -160.08149       inf%    148.19  
+1061/2187        subproblem          -inf    -160.08149       inf%    148.31  
+1062/2187        subproblem          -inf    -160.08149       inf%    148.42  
+1063/2187        subproblem          -inf    -160.08149       inf%    148.54  
+1064/2187        subproblem          -inf    -160.08149       inf%    148.66  
+1065/2187        subproblem          -inf    -160.08149       inf%    148.77  
+1066/2187        subproblem          -inf    -160.08149       inf%    148.89  
+1067/2187        subproblem          -inf    -160.08149       inf%    149.02  
+1068/2187        subproblem          -inf    -160.08149       inf%    149.14  
+1069/2187        subproblem          -inf    -160.08149       inf%    149.26  
+1070/2187        subproblem          -inf    -160.08149       inf%    149.37  
+1071/2187        subproblem          -inf    -160.08149       inf%    149.49  
+1072/2187        subproblem          -inf    -160.08149       inf%    149.61  
+1073/2187        subproblem          -inf    -160.08149       inf%    149.72  
+1074/2187        subproblem          -inf    -160.08149       inf%    149.86  
+1075/2187        subproblem          -inf    -160.08149       inf%    149.98  
+1076/2187        subproblem          -inf    -160.08149       inf%    150.09  
+1077/2187        subproblem          -inf    -160.08149       inf%    150.21  
+1078/2187        subproblem          -inf    -160.08149       inf%    150.32  
+1079/2187        subproblem          -inf    -160.08149       inf%    150.44  
+1080/2187        subproblem          -inf    -160.08149       inf%    150.55  
+1081/2187        subproblem          -inf    -160.08149       inf%    150.67  
+1082/2187        subproblem          -inf    -160.08149       inf%    150.80  
+1083/2187        subproblem          -inf    -160.08149       inf%    150.92  
+1084/2187        subproblem          -inf    -160.08149       inf%    151.04  
+1085/2187        subproblem          -inf    -160.08149       inf%    151.15  
+1086/2187        subproblem          -inf    -160.08149       inf%    151.27  
+1087/2187        subproblem          -inf    -160.08149       inf%    151.38  
+1088/2187        subproblem          -inf    -160.08149       inf%    151.50  
+1089/2187        subproblem          -inf    -160.08149       inf%    151.64  
+1090/2187        subproblem          -inf    -160.08149       inf%    151.75  
+1091/2187        subproblem          -inf    -160.08149       inf%    151.87  
+1092/2187        subproblem          -inf    -160.08149       inf%    151.99  
+1093/2187        subproblem          -inf    -160.08149       inf%    152.10  
+1094/2187        subproblem          -inf    -160.08149       inf%    152.22  
+1095/2187        subproblem          -inf    -160.08149       inf%    152.33  
+1096/2187        subproblem          -inf    -160.08149       inf%    152.47  
+1097/2187        subproblem          -inf    -160.08149       inf%    152.58  
+1098/2187        subproblem          -inf    -160.08149       inf%    152.70  
+1099/2187        subproblem          -inf    -160.08149       inf%    152.81  
+1100/2187        subproblem          -inf    -160.08149       inf%    152.93  
+1101/2187        subproblem          -inf    -160.08149       inf%    153.04  
+1102/2187        subproblem          -inf    -160.08149       inf%    153.16  
+1103/2187        subproblem          -inf    -160.08149       inf%    153.27  
+1104/2187        subproblem          -inf    -160.08149       inf%    153.41  
+1105/2187        subproblem          -inf    -160.08149       inf%    153.52  
+1106/2187        subproblem          -inf    -160.08149       inf%    153.64  
+1107/2187        subproblem          -inf    -160.08149       inf%    153.75  
+1108/2187        subproblem          -inf    -160.08149       inf%    153.87  
+1109/2187        subproblem          -inf    -160.08149       inf%    153.98  
+1110/2187        subproblem          -inf    -160.08149       inf%    154.10  
+1111/2187        subproblem          -inf    -160.08149       inf%    154.24  
+1112/2187        subproblem          -inf    -160.08149       inf%    154.35  
+1113/2187        subproblem          -inf    -160.08149       inf%    154.47  
+1114/2187        subproblem          -inf    -160.08149       inf%    154.59  
+1115/2187        subproblem          -inf    -160.08149       inf%    154.70  
+1116/2187        subproblem          -inf    -160.08149       inf%    154.82  
+1117/2187        subproblem          -inf    -160.08149       inf%    154.93  
+1118/2187        subproblem          -inf    -160.08149       inf%    155.07  
+1119/2187        subproblem          -inf    -160.08149       inf%    155.19  
+1120/2187        subproblem          -inf    -160.08149       inf%    155.30  
+1121/2187        subproblem          -inf    -160.08149       inf%    155.42  
+1122/2187        subproblem          -inf    -160.08149       inf%    155.53  
+1123/2187        subproblem          -inf    -160.08149       inf%    155.65  
+1124/2187        subproblem          -inf    -160.08149       inf%    155.76  
+1125/2187        subproblem          -inf    -160.08149       inf%    155.88  
+1126/2187        subproblem          -inf    -160.08149       inf%    156.01  
+1127/2187        subproblem          -inf    -160.08149       inf%    156.13  
+1128/2187        subproblem          -inf    -160.08149       inf%    156.24  
+1129/2187        subproblem          -inf    -160.08149       inf%    156.36  
+1130/2187        subproblem          -inf    -160.08149       inf%    156.47  
+1131/2187        subproblem          -inf    -160.08149       inf%    156.59  
+1132/2187        subproblem          -inf    -160.08149       inf%    156.71  
+1133/2187        subproblem          -inf    -160.08149       inf%    156.85  
+1134/2187        subproblem          -inf    -160.08149       inf%    156.96  
+1135/2187        subproblem          -inf    -160.08149       inf%    157.08  
+1136/2187        subproblem          -inf    -160.08149       inf%    157.20  
+1137/2187        subproblem          -inf    -160.08149       inf%    157.32  
+1138/2187        subproblem          -inf    -160.08149       inf%    157.43  
+1139/2187        subproblem          -inf    -160.08149       inf%    157.55  
+1140/2187        subproblem          -inf    -160.08149       inf%    157.69  
+1141/2187        subproblem          -inf    -160.08149       inf%    157.80  
+1142/2187        subproblem          -inf    -160.08149       inf%    157.92  
+1143/2187        subproblem          -inf    -160.08149       inf%    158.04  
+1144/2187        subproblem          -inf    -160.08149       inf%    158.15  
+1145/2187        subproblem          -inf    -160.08149       inf%    158.27  
+1146/2187        subproblem          -inf    -160.08149       inf%    158.39  
+1147/2187        subproblem          -inf    -160.08149       inf%    158.53  
+1148/2187        subproblem          -inf    -160.08149       inf%    158.64  
+1149/2187        subproblem          -inf    -160.08149       inf%    158.76  
+1150/2187        subproblem          -inf    -160.08149       inf%    158.87  
+1151/2187        subproblem          -inf    -160.08149       inf%    158.99  
+1152/2187        subproblem          -inf    -160.08149       inf%    159.11  
+1153/2187        subproblem          -inf    -160.08149       inf%    159.22  
+1154/2187        subproblem          -inf    -160.08149       inf%    159.34  
+1155/2187        subproblem          -inf    -160.08149       inf%    159.48  
+1156/2187        subproblem          -inf    -160.08149       inf%    159.60  
+1157/2187        subproblem          -inf    -160.08149       inf%    159.71  
+1158/2187        subproblem          -inf    -160.08149       inf%    159.83  
+1159/2187        subproblem          -inf    -160.08149       inf%    159.94  
+1160/2187        subproblem          -inf    -160.08149       inf%    160.06  
+1161/2187        subproblem          -inf    -160.08149       inf%    160.17  
+1162/2187        subproblem          -inf    -160.08149       inf%    160.31  
+1163/2187        subproblem          -inf    -160.08149       inf%    160.43  
+1164/2187        subproblem          -inf    -160.08149       inf%    160.54  
+1165/2187        subproblem          -inf    -160.08149       inf%    160.66  
+1166/2187        subproblem          -inf    -160.08149       inf%    160.77  
+1167/2187        subproblem          -inf    -160.08149       inf%    160.88  
+1168/2187        subproblem          -inf    -160.08149       inf%    161.00  
+1169/2187        subproblem          -inf    -160.08149       inf%    161.14  
+1170/2187        subproblem          -inf    -160.08149       inf%    161.25  
+1171/2187        subproblem          -inf    -160.08149       inf%    161.37  
+1172/2187        subproblem          -inf    -160.08149       inf%    161.48  
+1173/2187        subproblem          -inf    -160.08149       inf%    161.60  
+1174/2187        subproblem          -inf    -160.08149       inf%    161.71  
+1175/2187        subproblem          -inf    -160.08149       inf%    161.83  
+1176/2187        subproblem          -inf    -160.08149       inf%    161.94  
+1177/2187        subproblem          -inf    -160.08149       inf%    162.08  
+1178/2187        subproblem          -inf    -160.08149       inf%    162.19  
+1179/2187        subproblem          -inf    -160.08149       inf%    162.31  
+1180/2187        subproblem          -inf    -160.08149       inf%    162.42  
+1181/2187        subproblem          -inf    -160.08149       inf%    162.54  
+1182/2187        subproblem          -inf    -160.08149       inf%    162.65  
+1183/2187        subproblem          -inf    -160.08149       inf%    162.77  
+1184/2187        subproblem          -inf    -160.08149       inf%    162.91  
+1185/2187        subproblem          -inf    -160.08149       inf%    163.02  
+1186/2187        subproblem          -inf    -160.08149       inf%    163.13  
+1187/2187        subproblem          -inf    -160.08149       inf%    163.25  
+1188/2187        subproblem          -inf    -160.08149       inf%    163.36  
+1189/2187        subproblem          -inf    -160.08149       inf%    163.48  
+1190/2187        subproblem          -inf    -160.08149       inf%    163.59  
+1191/2187        subproblem          -inf    -160.08149       inf%    163.73  
+1192/2187        subproblem          -inf    -160.08149       inf%    163.85  
+1193/2187        subproblem          -inf    -160.08149       inf%    163.96  
+1194/2187        subproblem          -inf    -160.08149       inf%    164.08  
+1195/2187        subproblem          -inf    -160.08149       inf%    164.19  
+1196/2187        subproblem          -inf    -160.08149       inf%    164.31  
+1197/2187        subproblem          -inf    -160.08149       inf%    164.42  
+1198/2187        subproblem          -inf    -160.08149       inf%    164.54  
+1199/2187        subproblem          -inf    -160.08149       inf%    164.67  
+1200/2187        subproblem          -inf    -160.08149       inf%    164.79  
+1201/2187        subproblem          -inf    -160.08149       inf%    164.90  
+1202/2187        subproblem          -inf    -160.08149       inf%    165.02  
+1203/2187        subproblem          -inf    -160.08149       inf%    165.13  
+1204/2187        subproblem          -inf    -160.08149       inf%    165.25  
+1205/2187        subproblem          -inf    -160.08149       inf%    165.36  
+1206/2187        subproblem          -inf    -160.08149       inf%    165.50  
+1207/2187        subproblem          -inf    -160.08149       inf%    165.61  
+1208/2187        subproblem          -inf    -160.08149       inf%    165.72  
+1209/2187        subproblem          -inf    -160.08149       inf%    165.84  
+1210/2187        subproblem          -inf    -160.08149       inf%    165.95  
+1211/2187        subproblem          -inf    -160.08149       inf%    166.06  
+1212/2187        subproblem          -inf    -160.08149       inf%    166.18  
+1213/2187        subproblem          -inf    -160.08149       inf%    166.32  
+1214/2187        subproblem          -inf    -160.08149       inf%    166.43  
+1215/2187        subproblem          -inf    -160.08149       inf%    166.54  
+1216/2187        subproblem          -inf    -160.08149       inf%    166.67  
+1217/2187        subproblem          -inf    -160.08149       inf%    166.79  
+1218/2187        subproblem          -inf    -160.08149       inf%    166.91  
+1219/2187        subproblem          -inf    -160.08149       inf%    167.03  
+1220/2187        subproblem          -inf    -160.08149       inf%    167.17  
+1221/2187        subproblem          -inf    -160.08149       inf%    167.29  
+1222/2187        subproblem          -inf    -160.08149       inf%    167.41  
+1223/2187        subproblem          -inf    -160.08149       inf%    167.53  
+1224/2187        subproblem          -inf    -160.08149       inf%    167.65  
+1225/2187        subproblem          -inf    -160.08149       inf%    167.77  
+1226/2187        subproblem          -inf    -160.08149       inf%    167.90  
+1227/2187        subproblem          -inf    -160.08149       inf%    168.02  
+1228/2187        subproblem          -inf    -160.08149       inf%    168.16  
+1229/2187        subproblem          -inf    -160.08149       inf%    168.28  
+1230/2187        subproblem          -inf    -160.08149       inf%    168.40  
+1231/2187        subproblem          -inf    -160.08149       inf%    168.52  
+1232/2187        subproblem          -inf    -160.08149       inf%    168.65  
+1233/2187        subproblem          -inf    -160.08149       inf%    168.77  
+1234/2187        subproblem          -inf    -160.08149       inf%    168.89  
+1235/2187        subproblem          -inf    -160.08149       inf%    169.03  
+1236/2187        subproblem          -inf    -160.08149       inf%    169.15  
+1237/2187        subproblem          -inf    -160.08149       inf%    169.27  
+1238/2187        subproblem          -inf    -160.08149       inf%    169.39  
+1239/2187        subproblem          -inf    -160.08149       inf%    169.52  
+1240/2187        subproblem          -inf    -160.08149       inf%    169.64  
+1241/2187        subproblem          -inf    -160.08149       inf%    169.76  
+1242/2187        subproblem          -inf    -160.08149       inf%    169.90  
+1243/2187        subproblem          -inf    -160.08149       inf%    170.02  
+1244/2187        subproblem          -inf    -160.08149       inf%    170.15  
+1245/2187        subproblem          -inf    -160.08149       inf%    170.27  
+1246/2187        subproblem          -inf    -160.08149       inf%    170.39  
+1247/2187        subproblem          -inf    -160.08149       inf%    170.51  
+1248/2187        subproblem          -inf    -160.08149       inf%    170.63  
+1249/2187        subproblem          -inf    -160.08149       inf%    170.77  
+1250/2187        subproblem          -inf    -160.08149       inf%    170.89  
+1251/2187        subproblem          -inf    -160.08149       inf%    171.01  
+1252/2187        subproblem          -inf    -160.08149       inf%    171.13  
+1253/2187        subproblem          -inf    -160.08149       inf%    171.25  
+1254/2187        subproblem          -inf    -160.08149       inf%    171.37  
+1255/2187        subproblem          -inf    -160.08149       inf%    171.49  
+1256/2187        subproblem          -inf    -160.08149       inf%    171.63  
+1257/2187        subproblem          -inf    -160.08149       inf%    171.75  
+1258/2187        subproblem          -inf    -160.08149       inf%    171.87  
+1259/2187        subproblem          -inf    -160.08149       inf%    171.99  
+1260/2187        subproblem          -inf    -160.08149       inf%    172.11  
+1261/2187        subproblem          -inf    -160.08149       inf%    172.23  
+1262/2187        subproblem          -inf    -160.08149       inf%    172.35  
+1263/2187        subproblem          -inf    -160.08149       inf%    172.49  
+1264/2187        subproblem          -inf    -160.08149       inf%    172.61  
+1265/2187        subproblem          -inf    -160.08149       inf%    172.73  
+1266/2187        subproblem          -inf    -160.08149       inf%    172.85  
+1267/2187        subproblem          -inf    -160.08149       inf%    172.97  
+1268/2187        subproblem          -inf    -160.08149       inf%    173.09  
+1269/2187        subproblem          -inf    -160.08149       inf%    173.21  
+1270/2187        subproblem          -inf    -160.08149       inf%    173.35  
+1271/2187        subproblem          -inf    -160.08149       inf%    173.47  
+1272/2187        subproblem          -inf    -160.08149       inf%    173.59  
+1273/2187        subproblem          -inf    -160.08149       inf%    173.71  
+1274/2187        subproblem          -inf    -160.08149       inf%    173.83  
+1275/2187        subproblem          -inf    -160.08149       inf%    173.95  
+1276/2187        subproblem          -inf    -160.08149       inf%    174.07  
+1277/2187        subproblem          -inf    -160.08149       inf%    174.21  
+1278/2187        subproblem          -inf    -160.08149       inf%    174.33  
+1279/2187        subproblem          -inf    -160.08149       inf%    174.45  
+1280/2187        subproblem          -inf    -160.08149       inf%    174.57  
+1281/2187        subproblem          -inf    -160.08149       inf%    174.69  
+1282/2187        subproblem          -inf    -160.08149       inf%    174.81  
+1283/2187        subproblem          -inf    -160.08149       inf%    174.92  
+1284/2187        subproblem          -inf    -160.08149       inf%    175.07  
+1285/2187        subproblem          -inf    -160.08149       inf%    175.18  
+1286/2187        subproblem          -inf    -160.08149       inf%    175.30  
+1287/2187        subproblem          -inf    -160.08149       inf%    175.42  
+1288/2187        subproblem          -inf    -160.08149       inf%    175.54  
+1289/2187        subproblem          -inf    -160.08149       inf%    175.66  
+1290/2187        subproblem          -inf    -160.08149       inf%    175.78  
+1291/2187        subproblem          -inf    -160.08149       inf%    175.92  
+1292/2187        subproblem          -inf    -160.08149       inf%    176.04  
+1293/2187        subproblem          -inf    -160.08149       inf%    176.16  
+1294/2187        subproblem          -inf    -160.08149       inf%    176.28  
+1295/2187        subproblem          -inf    -160.08149       inf%    176.40  
+1296/2187        subproblem          -inf    -160.08149       inf%    176.52  
+1297/2187        subproblem          -inf    -160.08149       inf%    176.63  
+1298/2187        subproblem          -inf    -160.08149       inf%    176.77  
+1299/2187        subproblem          -inf    -160.08149       inf%    176.88  
+1300/2187        subproblem          -inf    -160.08149       inf%    177.00  
+1301/2187        subproblem          -inf    -160.08149       inf%    177.11  
+1302/2187        subproblem          -inf    -160.08149       inf%    177.23  
+1303/2187        subproblem          -inf    -160.08149       inf%    177.35  
+1304/2187        subproblem          -inf    -160.08149       inf%    177.46  
+1305/2187        subproblem          -inf    -160.08149       inf%    177.60  
+1306/2187        subproblem          -inf    -160.08149       inf%    177.71  
+1307/2187        subproblem          -inf    -160.08149       inf%    177.83  
+1308/2187        subproblem          -inf    -160.08149       inf%    177.94  
+1309/2187        subproblem          -inf    -160.08149       inf%    178.06  
+1310/2187        subproblem          -inf    -160.08149       inf%    178.17  
+1311/2187        subproblem          -inf    -160.08149       inf%    178.29  
+1312/2187        subproblem          -inf    -160.08149       inf%    178.40  
+1313/2187        subproblem          -inf    -160.08149       inf%    178.54  
+1314/2187        subproblem          -inf    -160.08149       inf%    178.66  
+1315/2187        subproblem          -inf    -160.08149       inf%    178.77  
+1316/2187        subproblem          -inf    -160.08149       inf%    178.88  
+1317/2187        subproblem          -inf    -160.08149       inf%    179.00  
+1318/2187        subproblem          -inf    -160.08149       inf%    179.11  
+1319/2187        subproblem          -inf    -160.08149       inf%    179.23  
+1320/2187        subproblem          -inf    -160.08149       inf%    179.37  
+1321/2187        subproblem          -inf    -160.08149       inf%    179.48  
+1322/2187        subproblem          -inf    -160.08149       inf%    179.60  
+1323/2187        subproblem          -inf    -160.08149       inf%    179.71  
+1324/2187        subproblem          -inf    -160.08149       inf%    179.82  
+1325/2187        subproblem          -inf    -160.08149       inf%    179.94  
+1326/2187        subproblem          -inf    -160.08149       inf%    180.05  
+1327/2187        subproblem          -inf    -160.08149       inf%    180.17  
+1328/2187        subproblem          -inf    -160.08149       inf%    180.31  
+1329/2187        subproblem          -inf    -160.08149       inf%    180.42  
+1330/2187        subproblem          -inf    -160.08149       inf%    180.54  
+1331/2187        subproblem          -inf    -160.08149       inf%    180.65  
+1332/2187        subproblem          -inf    -160.08149       inf%    180.77  
+1333/2187        subproblem          -inf    -160.08149       inf%    180.88  
+1334/2187        subproblem          -inf    -160.08149       inf%    181.00  
+1335/2187        subproblem          -inf    -160.08149       inf%    181.13  
+1336/2187        subproblem          -inf    -160.08149       inf%    181.25  
+1337/2187        subproblem          -inf    -160.08149       inf%    181.36  
+1338/2187        subproblem          -inf    -160.08149       inf%    181.47  
+1339/2187        subproblem          -inf    -160.08149       inf%    181.59  
+1340/2187        subproblem          -inf    -160.08149       inf%    181.70  
+1341/2187        subproblem          -inf    -160.08149       inf%    181.82  
+1342/2187        subproblem          -inf    -160.08149       inf%    181.95  
+1343/2187        subproblem          -inf    -160.08149       inf%    182.07  
+1344/2187        subproblem          -inf    -160.08149       inf%    182.18  
+1345/2187        subproblem          -inf    -160.08149       inf%    182.29  
+1346/2187        subproblem          -inf    -160.08149       inf%    182.41  
+1347/2187        subproblem          -inf    -160.08149       inf%    182.52  
+1348/2187        subproblem          -inf    -160.08149       inf%    182.64  
+1349/2187        subproblem          -inf    -160.08149       inf%    182.75  
+1350/2187        subproblem          -inf    -160.08149       inf%    182.89  
+1351/2187        subproblem          -inf    -160.08149       inf%    183.00  
+1352/2187        subproblem          -inf    -160.08149       inf%    183.12  
+1353/2187        subproblem          -inf    -160.08149       inf%    183.23  
+1354/2187        subproblem          -inf    -160.08149       inf%    183.35  
+1355/2187        subproblem          -inf    -160.08149       inf%    183.46  
+1356/2187        subproblem          -inf    -160.08149       inf%    183.58  
+1357/2187        subproblem          -inf    -160.08149       inf%    183.71  
+1358/2187        subproblem          -inf    -160.08149       inf%    183.83  
+1359/2187        subproblem          -inf    -160.08149       inf%    183.94  
+1360/2187        subproblem          -inf    -160.08149       inf%    184.06  
+1361/2187        subproblem          -inf    -160.08149       inf%    184.17  
+1362/2187        subproblem          -inf    -160.08149       inf%    184.29  
+1363/2187        subproblem          -inf    -160.08149       inf%    184.40  
+1364/2187        subproblem          -inf    -160.08149       inf%    184.54  
+1365/2187        subproblem          -inf    -160.08149       inf%    184.65  
+1366/2187        subproblem          -inf    -160.08149       inf%    184.77  
+1367/2187        subproblem          -inf    -160.08149       inf%    184.88  
+1368/2187        subproblem          -inf    -160.08149       inf%    185.00  
+1369/2187        subproblem          -inf    -160.08149       inf%    185.11  
+1370/2187        subproblem          -inf    -160.08149       inf%    185.23  
+1371/2187        subproblem          -inf    -160.08149       inf%    185.34  
+1372/2187        subproblem          -inf    -160.08149       inf%    185.48  
+1373/2187        subproblem          -inf    -160.08149       inf%    185.59  
+1374/2187        subproblem          -inf    -160.08149       inf%    185.71  
+1375/2187        subproblem          -inf    -160.08149       inf%    185.82  
+1376/2187        subproblem          -inf    -160.08149       inf%    185.94  
+1377/2187        subproblem          -inf    -160.08149       inf%    186.05  
+1378/2187        subproblem          -inf    -160.08149       inf%    186.17  
+1379/2187        subproblem          -inf    -160.08149       inf%    186.32  
+1380/2187        subproblem          -inf    -160.08149       inf%    186.44  
+1381/2187        subproblem          -inf    -160.08149       inf%    186.55  
+1382/2187        subproblem          -inf    -160.08149       inf%    186.67  
+1383/2187        subproblem          -inf    -160.08149       inf%    186.79  
+1384/2187        subproblem          -inf    -160.08149       inf%    186.91  
+1385/2187        subproblem          -inf    -160.08149       inf%    187.03  
+1386/2187        subproblem          -inf    -160.08149       inf%    187.17  
+1387/2187        subproblem          -inf    -160.08149       inf%    187.29  
+1388/2187        subproblem          -inf    -160.08149       inf%    187.41  
+1389/2187        subproblem          -inf    -160.08149       inf%    187.53  
+1390/2187        subproblem          -inf    -160.08149       inf%    187.65  
+1391/2187        subproblem          -inf    -160.08149       inf%    187.77  
+1392/2187        subproblem          -inf    -160.08149       inf%    187.89  
+1393/2187        subproblem          -inf    -160.08149       inf%    188.01  
+1394/2187        subproblem          -inf    -160.08149       inf%    188.15  
+1395/2187        subproblem          -inf    -160.08149       inf%    188.27  
+1396/2187        subproblem          -inf    -160.08149       inf%    188.39  
+1397/2187        subproblem          -inf    -160.08149       inf%    188.51  
+1398/2187        subproblem          -inf    -160.08149       inf%    188.63  
+1399/2187        subproblem          -inf    -160.08149       inf%    188.75  
+1400/2187        subproblem          -inf    -160.08149       inf%    188.87  
+1401/2187        subproblem          -inf    -160.08149       inf%    189.02  
+1402/2187        subproblem          -inf    -160.08149       inf%    189.14  
+1403/2187        subproblem          -inf    -160.08149       inf%    189.26  
+1404/2187        subproblem          -inf    -160.08149       inf%    189.38  
+1405/2187        subproblem          -inf    -160.08149       inf%    189.49  
+1406/2187        subproblem          -inf    -160.08149       inf%    189.61  
+1407/2187        subproblem          -inf    -160.08149       inf%    189.73  
+1408/2187        subproblem          -inf    -160.08149       inf%    189.87  
+1409/2187        subproblem          -inf    -160.08149       inf%    189.98  
+1410/2187        subproblem          -inf    -160.08149       inf%    190.10  
+1411/2187        subproblem          -inf    -160.08149       inf%    190.21  
+1412/2187        subproblem          -inf    -160.08149       inf%    190.33  
+1413/2187        subproblem          -inf    -160.08149       inf%    190.45  
+1414/2187        subproblem          -inf    -160.08149       inf%    190.56  
+1415/2187        subproblem          -inf    -160.08149       inf%    190.70  
+1416/2187        subproblem          -inf    -160.08149       inf%    190.82  
+1417/2187        subproblem          -inf    -160.08149       inf%    190.93  
+1418/2187        subproblem          -inf    -160.08149       inf%    191.05  
+1419/2187        subproblem          -inf    -160.08149       inf%    191.17  
+1420/2187        subproblem          -inf    -160.08149       inf%    191.28  
+1421/2187        subproblem          -inf    -160.08149       inf%    191.40  
+1422/2187        subproblem          -inf    -160.08149       inf%    191.52  
+1423/2187        subproblem          -inf    -160.08149       inf%    191.66  
+1424/2187        subproblem          -inf    -160.08149       inf%    191.78  
+1425/2187        subproblem          -inf    -160.08149       inf%    191.90  
+1426/2187        subproblem          -inf    -160.08149       inf%    192.01  
+1427/2187        subproblem          -inf    -160.08149       inf%    192.13  
+1428/2187        subproblem          -inf    -160.08149       inf%    192.25  
+1429/2187        subproblem          -inf    -160.08149       inf%    192.37  
+1430/2187        subproblem          -inf    -160.08149       inf%    192.51  
+1431/2187        subproblem          -inf    -160.08149       inf%    192.62  
+1432/2187        subproblem          -inf    -160.08149       inf%    192.74  
+1433/2187        subproblem          -inf    -160.08149       inf%    192.86  
+1434/2187        subproblem          -inf    -160.08149       inf%    192.99  
+1435/2187        subproblem          -inf    -160.08149       inf%    193.11  
+1436/2187        subproblem          -inf    -160.08149       inf%    193.23  
+1437/2187        subproblem          -inf    -160.08149       inf%    193.37  
+1438/2187        subproblem          -inf    -160.08149       inf%    193.49  
+1439/2187        subproblem          -inf    -160.08149       inf%    193.61  
+1440/2187        subproblem          -inf    -160.08149       inf%    193.73  
+1441/2187        subproblem          -inf    -160.08149       inf%    193.85  
+1442/2187        subproblem          -inf    -160.08149       inf%    193.97  
+1443/2187        subproblem          -inf    -160.08149       inf%    194.09  
+1444/2187        subproblem          -inf    -160.08149       inf%    194.23  
+1445/2187        subproblem          -inf    -160.08149       inf%    194.35  
+1446/2187        subproblem          -inf    -160.08149       inf%    194.46  
+1447/2187        subproblem          -inf    -160.08149       inf%    194.58  
+1448/2187        subproblem          -inf    -160.08149       inf%    194.70  
+1449/2187        subproblem          -inf    -160.08149       inf%    194.82  
+1450/2187        subproblem          -inf    -160.08149       inf%    194.94  
+1451/2187        subproblem          -inf    -160.08149       inf%    195.08  
+1452/2187        subproblem          -inf    -160.08149       inf%    195.20  
+1453/2187        subproblem          -inf    -160.08149       inf%    195.32  
+1454/2187        subproblem          -inf    -160.08149       inf%    195.44  
+1455/2187        subproblem          -inf    -160.08149       inf%    195.56  
+1456/2187        subproblem          -inf    -160.08149       inf%    195.68  
+1457/2187        subproblem          -inf    -160.08149       inf%    195.80  
+1458/2187        subproblem          -inf    -160.08149       inf%    196.52  
+1459/2187        subproblem          -inf    -160.08149       inf%    197.25  
+1460/2187        subproblem          -inf    -160.08149       inf%    197.42  
+1461/2187        subproblem          -inf    -160.08149       inf%    197.55  
+1462/2187        subproblem          -inf    -160.08149       inf%    197.67  
+1463/2187        subproblem          -inf    -160.08149       inf%    197.81  
+1464/2187        subproblem          -inf    -160.08149       inf%    197.94  
+1465/2187        subproblem          -inf    -160.08149       inf%    198.07  
+1466/2187        subproblem          -inf    -160.08149       inf%    198.20  
+1467/2187        subproblem          -inf    -160.08149       inf%    198.35  
+1468/2187        subproblem          -inf    -160.08149       inf%    198.48  
+1469/2187        subproblem          -inf    -160.08149       inf%    198.61  
+1470/2187        subproblem          -inf    -160.08149       inf%    198.74  
+1471/2187        subproblem          -inf    -160.08149       inf%    198.86  
+1472/2187        subproblem          -inf    -160.08149       inf%    199.00  
+1473/2187        subproblem          -inf    -160.08149       inf%    199.13  
+1474/2187        subproblem          -inf    -160.08149       inf%    199.28  
+1475/2187        subproblem          -inf    -160.08149       inf%    199.41  
+1476/2187        subproblem          -inf    -160.08149       inf%    199.54  
+1477/2187        subproblem          -inf    -160.08149       inf%    199.67  
+1478/2187        subproblem          -inf    -160.08149       inf%    199.80  
+1479/2187        subproblem          -inf    -160.08149       inf%    199.93  
+1480/2187        subproblem          -inf    -160.08149       inf%    200.06  
+1481/2187        subproblem          -inf    -160.08149       inf%    200.21  
+1482/2187        subproblem          -inf    -160.08149       inf%    200.34  
+1483/2187        subproblem          -inf    -160.08149       inf%    200.47  
+1484/2187        subproblem          -inf    -160.08149       inf%    200.60  
+1485/2187        subproblem          -inf    -160.08149       inf%    200.73  
+1486/2187        subproblem          -inf    -160.08149       inf%    200.86  
+1487/2187        subproblem          -inf    -160.08149       inf%    200.98  
+1488/2187        subproblem          -inf    -160.08149       inf%    201.13  
+1489/2187        subproblem          -inf    -160.08149       inf%    201.26  
+1490/2187        subproblem          -inf    -160.08149       inf%    201.38  
+1491/2187        subproblem          -inf    -160.08149       inf%    201.51  
+1492/2187        subproblem          -inf    -160.08149       inf%    201.63  
+1493/2187        subproblem          -inf    -160.08149       inf%    201.76  
+1494/2187        subproblem          -inf    -160.08149       inf%    201.88  
+1495/2187        subproblem          -inf    -160.08149       inf%    202.03  
+1496/2187        subproblem          -inf    -160.08149       inf%    202.16  
+1497/2187        subproblem          -inf    -160.08149       inf%    202.28  
+1498/2187        subproblem          -inf    -160.08149       inf%    202.41  
+1499/2187        subproblem          -inf    -160.08149       inf%    202.54  
+1500/2187        subproblem          -inf    -160.08149       inf%    202.67  
+1501/2187        subproblem          -inf    -160.08149       inf%    202.80  
+1502/2187        subproblem          -inf    -160.08149       inf%    202.95  
+1503/2187        subproblem          -inf    -160.08149       inf%    203.08  
+1504/2187        subproblem          -inf    -160.08149       inf%    203.21  
+1505/2187        subproblem          -inf    -160.08149       inf%    203.33  
+1506/2187        subproblem          -inf    -160.08149       inf%    203.46  
+1507/2187        subproblem          -inf    -160.08149       inf%    203.58  
+1508/2187        subproblem          -inf    -160.08149       inf%    203.71  
+1509/2187        subproblem          -inf    -160.08149       inf%    203.87  
+1510/2187        subproblem          -inf    -160.08149       inf%    204.00  
+1511/2187        subproblem          -inf    -160.08149       inf%    204.13  
+1512/2187        subproblem          -inf    -160.08149       inf%    204.26  
+1513/2187        subproblem          -inf    -160.08149       inf%    204.39  
+1514/2187        subproblem          -inf    -160.08149       inf%    204.52  
+1515/2187        subproblem          -inf    -160.08149       inf%    204.65  
+1516/2187        subproblem          -inf    -160.08149       inf%    204.80  
+1517/2187        subproblem          -inf    -160.08149       inf%    204.93  
+1518/2187        subproblem          -inf    -160.08149       inf%    205.06  
+1519/2187        subproblem          -inf    -160.08149       inf%    205.18  
+1520/2187        subproblem          -inf    -160.08149       inf%    205.31  
+1521/2187        subproblem          -inf    -160.08149       inf%    205.44  
+1522/2187        subproblem          -inf    -160.08149       inf%    205.56  
+1523/2187        subproblem          -inf    -160.08149       inf%    205.72  
+1524/2187        subproblem          -inf    -160.08149       inf%    205.84  
+1525/2187        subproblem          -inf    -160.08149       inf%    205.97  
+1526/2187        subproblem          -inf    -160.08149       inf%    206.09  
+1527/2187        subproblem          -inf    -160.08149       inf%    206.22  
+1528/2187        subproblem          -inf    -160.08149       inf%    206.35  
+1529/2187        subproblem          -inf    -160.08149       inf%    206.47  
+1530/2187        subproblem          -inf    -160.08149       inf%    206.62  
+1531/2187        subproblem          -inf    -160.08149       inf%    206.75  
+1532/2187        subproblem          -inf    -160.08149       inf%    206.88  
+1533/2187        subproblem          -inf    -160.08149       inf%    207.01  
+1534/2187        subproblem          -inf    -160.08149       inf%    207.13  
+1535/2187        subproblem          -inf    -160.08149       inf%    207.26  
+1536/2187        subproblem          -inf    -160.08149       inf%    207.39  
+1537/2187        subproblem          -inf    -160.08149       inf%    207.54  
+1538/2187        subproblem          -inf    -160.08149       inf%    207.66  
+1539/2187        subproblem          -inf    -160.08149       inf%    207.79  
+1540/2187        subproblem          -inf    -160.08149       inf%    207.92  
+1541/2187        subproblem          -inf    -160.08149       inf%    208.04  
+1542/2187        subproblem          -inf    -160.08149       inf%    208.17  
+1543/2187        subproblem          -inf    -160.08149       inf%    208.29  
+1544/2187        subproblem          -inf    -160.08149       inf%    208.44  
+1545/2187        subproblem          -inf    -160.08149       inf%    208.57  
+1546/2187        subproblem          -inf    -160.08149       inf%    208.69  
+1547/2187        subproblem          -inf    -160.08149       inf%    208.81  
+1548/2187        subproblem          -inf    -160.08149       inf%    208.94  
+1549/2187        subproblem          -inf    -160.08149       inf%    209.06  
+1550/2187        subproblem          -inf    -160.08149       inf%    209.19  
+1551/2187        subproblem          -inf    -160.08149       inf%    209.34  
+1552/2187        subproblem          -inf    -160.08149       inf%    209.46  
+1553/2187        subproblem          -inf    -160.08149       inf%    209.59  
+1554/2187        subproblem          -inf    -160.08149       inf%    209.71  
+1555/2187        subproblem          -inf    -160.08149       inf%    209.84  
+1556/2187        subproblem          -inf    -160.08149       inf%    209.96  
+1557/2187        subproblem          -inf    -160.08149       inf%    210.09  
+1558/2187        subproblem          -inf    -160.08149       inf%    210.24  
+1559/2187        subproblem          -inf    -160.08149       inf%    210.36  
+1560/2187        subproblem          -inf    -160.08149       inf%    210.49  
+1561/2187        subproblem          -inf    -160.08149       inf%    210.61  
+1562/2187        subproblem          -inf    -160.08149       inf%    210.73  
+1563/2187        subproblem          -inf    -160.08149       inf%    210.86  
+1564/2187        subproblem          -inf    -160.08149       inf%    210.98  
+1565/2187        subproblem          -inf    -160.08149       inf%    211.13  
+1566/2187        subproblem          -inf    -160.08149       inf%    211.25  
+1567/2187        subproblem          -inf    -160.08149       inf%    211.38  
+1568/2187        subproblem          -inf    -160.08149       inf%    211.50  
+1569/2187        subproblem          -inf    -160.08149       inf%    211.63  
+1570/2187        subproblem          -inf    -160.08149       inf%    211.75  
+1571/2187        subproblem          -inf    -160.08149       inf%    211.88  
+1572/2187        subproblem          -inf    -160.08149       inf%    212.03  
+1573/2187        subproblem          -inf    -160.08149       inf%    212.15  
+1574/2187        subproblem          -inf    -160.08149       inf%    212.28  
+1575/2187        subproblem          -inf    -160.08149       inf%    212.40  
+1576/2187        subproblem          -inf    -160.08149       inf%    212.53  
+1577/2187        subproblem          -inf    -160.08149       inf%    212.65  
+1578/2187        subproblem          -inf    -160.08149       inf%    212.77  
+1579/2187        subproblem          -inf    -160.08149       inf%    212.92  
+1580/2187        subproblem          -inf    -160.08149       inf%    213.05  
+1581/2187        subproblem          -inf    -160.08149       inf%    213.18  
+1582/2187        subproblem          -inf    -160.08149       inf%    213.30  
+1583/2187        subproblem          -inf    -160.08149       inf%    213.43  
+1584/2187        subproblem          -inf    -160.08149       inf%    213.56  
+1585/2187        subproblem          -inf    -160.08149       inf%    213.69  
+1586/2187        subproblem          -inf    -160.08149       inf%    213.84  
+1587/2187        subproblem          -inf    -160.08149       inf%    213.96  
+1588/2187        subproblem          -inf    -160.08149       inf%    214.08  
+1589/2187        subproblem          -inf    -160.08149       inf%    214.21  
+1590/2187        subproblem          -inf    -160.08149       inf%    214.34  
+1591/2187        subproblem          -inf    -160.08149       inf%    214.47  
+1592/2187        subproblem          -inf    -160.08149       inf%    214.60  
+1593/2187        subproblem          -inf    -160.08149       inf%    214.76  
+1594/2187        subproblem          -inf    -160.08149       inf%    214.88  
+1595/2187        subproblem          -inf    -160.08149       inf%    215.00  
+1596/2187        subproblem          -inf    -160.08149       inf%    215.13  
+1597/2187        subproblem          -inf    -160.08149       inf%    215.25  
+1598/2187        subproblem          -inf    -160.08149       inf%    215.37  
+1599/2187        subproblem          -inf    -160.08149       inf%    215.50  
+1600/2187        subproblem          -inf    -160.08149       inf%    215.62  
+1601/2187        subproblem          -inf    -160.08149       inf%    215.77  
+1602/2187        subproblem          -inf    -160.08149       inf%    215.89  
+1603/2187        subproblem          -inf    -160.08149       inf%    216.01  
+1604/2187        subproblem          -inf    -160.08149       inf%    216.14  
+1605/2187        subproblem          -inf    -160.08149       inf%    216.26  
+1606/2187        subproblem          -inf    -160.08149       inf%    216.38  
+1607/2187        subproblem          -inf    -160.08149       inf%    216.54  
+1608/2187        subproblem          -inf    -160.08149       inf%    216.67  
+1609/2187        subproblem          -inf    -160.08149       inf%    216.80  
+1610/2187        subproblem          -inf    -160.08149       inf%    216.93  
+1611/2187        subproblem          -inf    -160.08149       inf%    217.06  
+1612/2187        subproblem          -inf    -160.08149       inf%    217.18  
+1613/2187        subproblem          -inf    -160.08149       inf%    217.30  
+1614/2187        subproblem          -inf    -160.08149       inf%    217.45  
+1615/2187        subproblem          -inf    -160.08149       inf%    217.57  
+1616/2187        subproblem          -inf    -160.08149       inf%    217.70  
+1617/2187        subproblem          -inf    -160.08149       inf%    217.83  
+1618/2187        subproblem          -inf    -160.08149       inf%    217.96  
+1619/2187        subproblem          -inf    -160.08149       inf%    218.08  
+1620/2187        subproblem          -inf    -160.08149       inf%    218.21  
+1621/2187        subproblem          -inf    -160.08149       inf%    218.34  
+1622/2187        subproblem          -inf    -160.08149       inf%    218.49  
+1623/2187        subproblem          -inf    -160.08149       inf%    218.62  
+1624/2187        subproblem          -inf    -160.08149       inf%    218.74  
+1625/2187        subproblem          -inf    -160.08149       inf%    218.87  
+1626/2187        subproblem          -inf    -160.08149       inf%    219.00  
+1627/2187        subproblem          -inf    -160.08149       inf%    219.12  
+1628/2187        subproblem          -inf    -160.08149       inf%    219.25  
+1629/2187        subproblem          -inf    -160.08149       inf%    219.40  
+1630/2187        subproblem          -inf    -160.08149       inf%    219.52  
+1631/2187        subproblem          -inf    -160.08149       inf%    219.65  
+1632/2187        subproblem          -inf    -160.08149       inf%    219.77  
+1633/2187        subproblem          -inf    -160.08149       inf%    219.90  
+1634/2187        subproblem          -inf    -160.08149       inf%    220.03  
+1635/2187        subproblem          -inf    -160.08149       inf%    220.15  
+1636/2187        subproblem          -inf    -160.08149       inf%    220.30  
+1637/2187        subproblem          -inf    -160.08149       inf%    220.43  
+1638/2187        subproblem          -inf    -160.08149       inf%    220.55  
+1639/2187        subproblem          -inf    -160.08149       inf%    220.68  
+1640/2187        subproblem          -inf    -160.08149       inf%    220.81  
+1641/2187        subproblem          -inf    -160.08149       inf%    220.93  
+1642/2187        subproblem          -inf    -160.08149       inf%    221.06  
+1643/2187        subproblem          -inf    -160.08149       inf%    221.21  
+1644/2187        subproblem          -inf    -160.08149       inf%    221.34  
+1645/2187        subproblem          -inf    -160.08149       inf%    221.46  
+1646/2187        subproblem          -inf    -160.08149       inf%    221.59  
+1647/2187        subproblem          -inf    -160.08149       inf%    221.72  
+1648/2187        subproblem          -inf    -160.08149       inf%    221.84  
+1649/2187        subproblem          -inf    -160.08149       inf%    221.97  
+1650/2187        subproblem          -inf    -160.08149       inf%    222.11  
+1651/2187        subproblem          -inf    -160.08149       inf%    222.24  
+1652/2187        subproblem          -inf    -160.08149       inf%    222.36  
+1653/2187        subproblem          -inf    -160.08149       inf%    222.49  
+1654/2187        subproblem          -inf    -160.08149       inf%    222.61  
+1655/2187        subproblem          -inf    -160.08149       inf%    222.74  
+1656/2187        subproblem          -inf    -160.08149       inf%    222.86  
+1657/2187        subproblem          -inf    -160.08149       inf%    223.01  
+1658/2187        subproblem          -inf    -160.08149       inf%    223.13  
+1659/2187        subproblem          -inf    -160.08149       inf%    223.26  
+1660/2187        subproblem          -inf    -160.08149       inf%    223.38  
+1661/2187        subproblem          -inf    -160.08149       inf%    223.51  
+1662/2187        subproblem          -inf    -160.08149       inf%    223.63  
+1663/2187        subproblem          -inf    -160.08149       inf%    223.76  
+1664/2187        subproblem          -inf    -160.08149       inf%    223.91  
+1665/2187        subproblem          -inf    -160.08149       inf%    224.04  
+1666/2187        subproblem          -inf    -160.08149       inf%    224.16  
+1667/2187        subproblem          -inf    -160.08149       inf%    224.29  
+1668/2187        subproblem          -inf    -160.08149       inf%    224.41  
+1669/2187        subproblem          -inf    -160.08149       inf%    224.53  
+1670/2187        subproblem          -inf    -160.08149       inf%    224.66  
+1671/2187        subproblem          -inf    -160.08149       inf%    224.81  
+1672/2187        subproblem          -inf    -160.08149       inf%    224.94  
+1673/2187        subproblem          -inf    -160.08149       inf%    225.06  
+1674/2187        subproblem          -inf    -160.08149       inf%    225.19  
+1675/2187        subproblem          -inf    -160.08149       inf%    225.32  
+1676/2187        subproblem          -inf    -160.08149       inf%    225.44  
+1677/2187        subproblem          -inf    -160.08149       inf%    225.57  
+1678/2187        subproblem          -inf    -160.08149       inf%    225.72  
+1679/2187        subproblem          -inf    -160.08149       inf%    225.85  
+1680/2187        subproblem          -inf    -160.08149       inf%    225.98  
+1681/2187        subproblem          -inf    -160.08149       inf%    226.10  
+1682/2187        subproblem          -inf    -160.08149       inf%    226.23  
+1683/2187        subproblem          -inf    -160.08149       inf%    226.36  
+1684/2187        subproblem          -inf    -160.08149       inf%    226.48  
+1685/2187        subproblem          -inf    -160.08149       inf%    226.63  
+1686/2187        subproblem          -inf    -160.08149       inf%    226.76  
+1687/2187        subproblem          -inf    -160.08149       inf%    226.88  
+1688/2187        subproblem          -inf    -160.08149       inf%    227.01  
+1689/2187        subproblem          -inf    -160.08149       inf%    227.14  
+1690/2187        subproblem          -inf    -160.08149       inf%    227.27  
+1691/2187        subproblem          -inf    -160.08149       inf%    227.39  
+1692/2187        subproblem          -inf    -160.08149       inf%    227.55  
+1693/2187        subproblem          -inf    -160.08149       inf%    227.67  
+1694/2187        subproblem          -inf    -160.08149       inf%    227.80  
+1695/2187        subproblem          -inf    -160.08149       inf%    227.93  
+1696/2187        subproblem          -inf    -160.08149       inf%    228.05  
+1697/2187        subproblem          -inf    -160.08149       inf%    228.18  
+1698/2187        subproblem          -inf    -160.08149       inf%    228.31  
+1699/2187        subproblem          -inf    -160.08149       inf%    228.45  
+1700/2187        subproblem          -inf    -160.08149       inf%    228.58  
+1701/2187        subproblem          -inf    -160.08149       inf%    228.71  
+1702/2187        subproblem          -inf    -160.08149       inf%    228.82  
+1703/2187        subproblem          -inf    -160.08149       inf%    228.94  
+1704/2187        subproblem          -inf    -160.08149       inf%    229.06  
+1705/2187        subproblem          -inf    -160.08149       inf%    229.18  
+1706/2187        subproblem          -inf    -160.08149       inf%    229.32  
+1707/2187        subproblem          -inf    -160.08149       inf%    229.43  
+1708/2187        subproblem          -inf    -160.08149       inf%    229.55  
+1709/2187        subproblem          -inf    -160.08149       inf%    229.66  
+1710/2187        subproblem          -inf    -160.08149       inf%    229.78  
+1711/2187        subproblem          -inf    -160.08149       inf%    229.89  
+1712/2187        subproblem          -inf    -160.08149       inf%    230.01  
+1713/2187        subproblem          -inf    -160.08149       inf%    230.13  
+1714/2187        subproblem          -inf    -160.08149       inf%    230.26  
+1715/2187        subproblem          -inf    -160.08149       inf%    230.38  
+1716/2187        subproblem          -inf    -160.08149       inf%    230.50  
+1717/2187        subproblem          -inf    -160.08149       inf%    230.61  
+1718/2187        subproblem          -inf    -160.08149       inf%    230.73  
+1719/2187        subproblem          -inf    -160.08149       inf%    230.85  
+1720/2187        subproblem          -inf    -160.08149       inf%    230.96  
+1721/2187        subproblem          -inf    -160.08149       inf%    231.10  
+1722/2187        subproblem          -inf    -160.08149       inf%    231.22  
+1723/2187        subproblem          -inf    -160.08149       inf%    231.33  
+1724/2187        subproblem          -inf    -160.08149       inf%    231.45  
+1725/2187        subproblem          -inf    -160.08149       inf%    231.57  
+1726/2187        subproblem          -inf    -160.08149       inf%    231.68  
+1727/2187        subproblem          -inf    -160.08149       inf%    231.80  
+1728/2187        subproblem          -inf    -160.08149       inf%    231.94  
+1729/2187        subproblem          -inf    -160.08149       inf%    232.06  
+1730/2187        subproblem          -inf    -160.08149       inf%    232.17  
+1731/2187        subproblem          -inf    -160.08149       inf%    232.29  
+1732/2187        subproblem          -inf    -160.08149       inf%    232.41  
+1733/2187        subproblem          -inf    -160.08149       inf%    232.53  
+1734/2187        subproblem          -inf    -160.08149       inf%    232.64  
+1735/2187        subproblem          -inf    -160.08149       inf%    232.78  
+1736/2187        subproblem          -inf    -160.08149       inf%    232.90  
+1737/2187        subproblem          -inf    -160.08149       inf%    233.01  
+1738/2187        subproblem          -inf    -160.08149       inf%    233.13  
+1739/2187        subproblem          -inf    -160.08149       inf%    233.24  
+1740/2187        subproblem          -inf    -160.08149       inf%    233.36  
+1741/2187        subproblem          -inf    -160.08149       inf%    233.48  
+1742/2187        subproblem          -inf    -160.08149       inf%    233.59  
+1743/2187        subproblem          -inf    -160.08149       inf%    233.73  
+1744/2187        subproblem          -inf    -160.08149       inf%    233.85  
+1745/2187        subproblem          -inf    -160.08149       inf%    233.96  
+1746/2187        subproblem          -inf    -160.08149       inf%    234.08  
+1747/2187        subproblem          -inf    -160.08149       inf%    234.20  
+1748/2187        subproblem          -inf    -160.08149       inf%    234.31  
+1749/2187        subproblem          -inf    -160.08149       inf%    234.43  
+1750/2187        subproblem          -inf    -160.08149       inf%    234.57  
+1751/2187        subproblem          -inf    -160.08149       inf%    234.69  
+1752/2187        subproblem          -inf    -160.08149       inf%    234.80  
+1753/2187        subproblem          -inf    -160.08149       inf%    234.92  
+1754/2187        subproblem          -inf    -160.08149       inf%    235.03  
+1755/2187        subproblem          -inf    -160.08149       inf%    235.15  
+1756/2187        subproblem          -inf    -160.08149       inf%    235.27  
+1757/2187        subproblem          -inf    -160.08149       inf%    235.41  
+1758/2187        subproblem          -inf    -160.08149       inf%    235.53  
+1759/2187        subproblem          -inf    -160.08149       inf%    235.65  
+1760/2187        subproblem          -inf    -160.08149       inf%    235.76  
+1761/2187        subproblem          -inf    -160.08149       inf%    235.88  
+1762/2187        subproblem          -inf    -160.08149       inf%    236.00  
+1763/2187        subproblem          -inf    -160.08149       inf%    236.11  
+1764/2187        subproblem          -inf    -160.08149       inf%    236.23  
+1765/2187        subproblem          -inf    -160.08149       inf%    236.37  
+1766/2187        subproblem          -inf    -160.08149       inf%    236.48  
+1767/2187        subproblem          -inf    -160.08149       inf%    236.60  
+1768/2187        subproblem          -inf    -160.08149       inf%    236.71  
+1769/2187        subproblem          -inf    -160.08149       inf%    236.83  
+1770/2187        subproblem          -inf    -160.08149       inf%    236.94  
+1771/2187        subproblem          -inf    -160.08149       inf%    237.06  
+1772/2187        subproblem          -inf    -160.08149       inf%    237.20  
+1773/2187        subproblem          -inf    -160.08149       inf%    237.31  
+1774/2187        subproblem          -inf    -160.08149       inf%    237.43  
+1775/2187        subproblem          -inf    -160.08149       inf%    237.55  
+1776/2187        subproblem          -inf    -160.08149       inf%    237.66  
+1777/2187        subproblem          -inf    -160.08149       inf%    237.78  
+1778/2187        subproblem          -inf    -160.08149       inf%    237.90  
+1779/2187        subproblem          -inf    -160.08149       inf%    238.04  
+1780/2187        subproblem          -inf    -160.08149       inf%    238.16  
+1781/2187        subproblem          -inf    -160.08149       inf%    238.27  
+1782/2187        subproblem          -inf    -160.08149       inf%    238.39  
+1783/2187        subproblem          -inf    -160.08149       inf%    238.51  
+1784/2187        subproblem          -inf    -160.08149       inf%    238.62  
+1785/2187        subproblem          -inf    -160.08149       inf%    238.74  
+1786/2187        subproblem          -inf    -160.08149       inf%    238.86  
+1787/2187        subproblem          -inf    -160.08149       inf%    239.00  
+1788/2187        subproblem          -inf    -160.08149       inf%    239.12  
+1789/2187        subproblem          -inf    -160.08149       inf%    239.23  
+1790/2187        subproblem          -inf    -160.08149       inf%    239.35  
+1791/2187        subproblem          -inf    -160.08149       inf%    239.47  
+1792/2187        subproblem          -inf    -160.08149       inf%    239.58  
+1793/2187        subproblem          -inf    -160.08149       inf%    239.70  
+1794/2187        subproblem          -inf    -160.08149       inf%    239.84  
+1795/2187        subproblem          -inf    -160.08149       inf%    239.96  
+1796/2187        subproblem          -inf    -160.08149       inf%    240.07  
+1797/2187        subproblem          -inf    -160.08149       inf%    240.19  
+1798/2187        subproblem          -inf    -160.08149       inf%    240.30  
+1799/2187        subproblem          -inf    -160.08149       inf%    240.42  
+1800/2187        subproblem          -inf    -160.08149       inf%    240.54  
+1801/2187        subproblem          -inf    -160.08149       inf%    240.68  
+1802/2187        subproblem          -inf    -160.08149       inf%    240.79  
+1803/2187        subproblem          -inf    -160.08149       inf%    240.91  
+1804/2187        subproblem          -inf    -160.08149       inf%    241.03  
+1805/2187        subproblem          -inf    -160.08149       inf%    241.14  
+1806/2187        subproblem          -inf    -160.08149       inf%    241.26  
+1807/2187        subproblem          -inf    -160.08149       inf%    241.37  
+1808/2187        subproblem          -inf    -160.08149       inf%    241.52  
+1809/2187        subproblem          -inf    -160.08149       inf%    241.63  
+1810/2187        subproblem          -inf    -160.08149       inf%    241.75  
+1811/2187        subproblem          -inf    -160.08149       inf%    241.86  
+1812/2187        subproblem          -inf    -160.08149       inf%    241.98  
+1813/2187        subproblem          -inf    -160.08149       inf%    242.10  
+1814/2187        subproblem          -inf    -160.08149       inf%    242.21  
+1815/2187        subproblem          -inf    -160.08149       inf%    242.33  
+1816/2187        subproblem          -inf    -160.08149       inf%    242.47  
+1817/2187        subproblem          -inf    -160.08149       inf%    242.59  
+1818/2187        subproblem          -inf    -160.08149       inf%    242.70  
+1819/2187        subproblem          -inf    -160.08149       inf%    242.82  
+1820/2187        subproblem          -inf    -160.08149       inf%    242.94  
+1821/2187        subproblem          -inf    -160.08149       inf%    243.06  
+1822/2187        subproblem          -inf    -160.08149       inf%    243.17  
+1823/2187        subproblem          -inf    -160.08149       inf%    243.31  
+1824/2187        subproblem          -inf    -160.08149       inf%    243.43  
+1825/2187        subproblem          -inf    -160.08149       inf%    243.55  
+1826/2187        subproblem          -inf    -160.08149       inf%    243.66  
+1827/2187        subproblem          -inf    -160.08149       inf%    243.78  
+1828/2187        subproblem          -inf    -160.08149       inf%    243.89  
+1829/2187        subproblem          -inf    -160.08149       inf%    244.01  
+1830/2187        subproblem          -inf    -160.08149       inf%    244.15  
+1831/2187        subproblem          -inf    -160.08149       inf%    244.26  
+1832/2187        subproblem          -inf    -160.08149       inf%    244.38  
+1833/2187        subproblem          -inf    -160.08149       inf%    244.49  
+1834/2187        subproblem          -inf    -160.08149       inf%    244.61  
+1835/2187        subproblem          -inf    -160.08149       inf%    244.72  
+1836/2187        subproblem          -inf    -160.08149       inf%    244.84  
+1837/2187        subproblem          -inf    -160.08149       inf%    244.95  
+1838/2187        subproblem          -inf    -160.08149       inf%    245.09  
+1839/2187        subproblem          -inf    -160.08149       inf%    245.21  
+1840/2187        subproblem          -inf    -160.08149       inf%    245.32  
+1841/2187        subproblem          -inf    -160.08149       inf%    245.44  
+1842/2187        subproblem          -inf    -160.08149       inf%    245.55  
+1843/2187        subproblem          -inf    -160.08149       inf%    245.67  
+1844/2187        subproblem          -inf    -160.08149       inf%    245.78  
+1845/2187        subproblem          -inf    -160.08149       inf%    245.92  
+1846/2187        subproblem          -inf    -160.08149       inf%    246.04  
+1847/2187        subproblem          -inf    -160.08149       inf%    246.15  
+1848/2187        subproblem          -inf    -160.08149       inf%    246.26  
+1849/2187        subproblem          -inf    -160.08149       inf%    246.38  
+1850/2187        subproblem          -inf    -160.08149       inf%    246.50  
+1851/2187        subproblem          -inf    -160.08149       inf%    246.61  
+1852/2187        subproblem          -inf    -160.08149       inf%    246.75  
+1853/2187        subproblem          -inf    -160.08149       inf%    246.86  
+1854/2187        subproblem          -inf    -160.08149       inf%    246.98  
+1855/2187        subproblem          -inf    -160.08149       inf%    247.09  
+1856/2187        subproblem          -inf    -160.08149       inf%    247.21  
+1857/2187        subproblem          -inf    -160.08149       inf%    247.32  
+1858/2187        subproblem          -inf    -160.08149       inf%    247.44  
+1859/2187        subproblem          -inf    -160.08149       inf%    247.56  
+1860/2187        subproblem          -inf    -160.08149       inf%    247.69  
+1861/2187        subproblem          -inf    -160.08149       inf%    247.81  
+1862/2187        subproblem          -inf    -160.08149       inf%    247.92  
+1863/2187        subproblem          -inf    -160.08149       inf%    248.04  
+1864/2187        subproblem          -inf    -160.08149       inf%    248.15  
+1865/2187        subproblem          -inf    -160.08149       inf%    248.27  
+1866/2187        subproblem          -inf    -160.08149       inf%    248.38  
+1867/2187        subproblem          -inf    -160.08149       inf%    248.52  
+1868/2187        subproblem          -inf    -160.08149       inf%    248.64  
+1869/2187        subproblem          -inf    -160.08149       inf%    248.75  
+1870/2187        subproblem          -inf    -160.08149       inf%    248.86  
+1871/2187        subproblem          -inf    -160.08149       inf%    248.98  
+1872/2187        subproblem          -inf    -160.08149       inf%    249.10  
+1873/2187        subproblem          -inf    -160.08149       inf%    249.21  
+1874/2187        subproblem          -inf    -160.08149       inf%    249.35  
+1875/2187        subproblem          -inf    -160.08149       inf%    249.47  
+1876/2187        subproblem          -inf    -160.08149       inf%    249.58  
+1877/2187        subproblem          -inf    -160.08149       inf%    249.70  
+1878/2187        subproblem          -inf    -160.08149       inf%    249.81  
+1879/2187        subproblem          -inf    -160.08149       inf%    249.93  
+1880/2187        subproblem          -inf    -160.08149       inf%    250.04  
+1881/2187        subproblem          -inf    -160.08149       inf%    250.18  
+1882/2187        subproblem          -inf    -160.08149       inf%    250.30  
+1883/2187        subproblem          -inf    -160.08149       inf%    250.41  
+1884/2187        subproblem          -inf    -160.08149       inf%    250.53  
+1885/2187        subproblem          -inf    -160.08149       inf%    250.64  
+1886/2187        subproblem          -inf    -160.08149       inf%    250.75  
+1887/2187        subproblem          -inf    -160.08149       inf%    250.87  
+1888/2187        subproblem          -inf    -160.08149       inf%    250.98  
+1889/2187        subproblem          -inf    -160.08149       inf%    251.12  
+1890/2187        subproblem          -inf    -160.08149       inf%    251.23  
+1891/2187        subproblem          -inf    -160.08149       inf%    251.35  
+1892/2187        subproblem          -inf    -160.08149       inf%    251.46  
+1893/2187        subproblem          -inf    -160.08149       inf%    251.58  
+1894/2187        subproblem          -inf    -160.08149       inf%    251.69  
+1895/2187        subproblem          -inf    -160.08149       inf%    251.81  
+1896/2187        subproblem          -inf    -160.08149       inf%    251.94  
+1897/2187        subproblem          -inf    -160.08149       inf%    252.06  
+1898/2187        subproblem          -inf    -160.08149       inf%    252.17  
+1899/2187        subproblem          -inf    -160.08149       inf%    252.29  
+1900/2187        subproblem          -inf    -160.08149       inf%    252.40  
+1901/2187        subproblem          -inf    -160.08149       inf%    252.52  
+1902/2187        subproblem          -inf    -160.08149       inf%    252.63  
+1903/2187        subproblem          -inf    -160.08149       inf%    252.77  
+1904/2187        subproblem          -inf    -160.08149       inf%    252.89  
+1905/2187        subproblem          -inf    -160.08149       inf%    253.00  
+1906/2187        subproblem          -inf    -160.08149       inf%    253.12  
+1907/2187        subproblem          -inf    -160.08149       inf%    253.23  
+1908/2187        subproblem          -inf    -160.08149       inf%    253.34  
+1909/2187        subproblem          -inf    -160.08149       inf%    253.46  
+1910/2187        subproblem          -inf    -160.08149       inf%    253.57  
+1911/2187        subproblem          -inf    -160.08149       inf%    253.71  
+1912/2187        subproblem          -inf    -160.08149       inf%    253.83  
+1913/2187        subproblem          -inf    -160.08149       inf%    253.94  
+1914/2187        subproblem          -inf    -160.08149       inf%    254.05  
+1915/2187        subproblem          -inf    -160.08149       inf%    254.17  
+1916/2187        subproblem          -inf    -160.08149       inf%    254.28  
+1917/2187        subproblem          -inf    -160.08149       inf%    254.40  
+1918/2187        subproblem          -inf    -160.08149       inf%    254.53  
+1919/2187        subproblem          -inf    -160.08149       inf%    254.65  
+1920/2187        subproblem          -inf    -160.08149       inf%    254.76  
+1921/2187        subproblem          -inf    -160.08149       inf%    254.88  
+1922/2187        subproblem          -inf    -160.08149       inf%    254.99  
+1923/2187        subproblem          -inf    -160.08149       inf%    255.11  
+1924/2187        subproblem          -inf    -160.08149       inf%    255.22  
+1925/2187        subproblem          -inf    -160.08149       inf%    255.36  
+1926/2187        subproblem          -inf    -160.08149       inf%    255.48  
+1927/2187        subproblem          -inf    -160.08149       inf%    255.59  
+1928/2187        subproblem          -inf    -160.08149       inf%    255.70  
+1929/2187        subproblem          -inf    -160.08149       inf%    255.82  
+1930/2187        subproblem          -inf    -160.08149       inf%    255.93  
+1931/2187        subproblem          -inf    -160.08149       inf%    256.05  
+1932/2187        subproblem          -inf    -160.08149       inf%    256.16  
+1933/2187        subproblem          -inf    -160.08149       inf%    256.30  
+1934/2187        subproblem          -inf    -160.08149       inf%    256.41  
+1935/2187        subproblem          -inf    -160.08149       inf%    256.53  
+1936/2187        subproblem          -inf    -160.08149       inf%    256.64  
+1937/2187        subproblem          -inf    -160.08149       inf%    256.76  
+1938/2187        subproblem          -inf    -160.08149       inf%    256.87  
+1939/2187        subproblem          -inf    -160.08149       inf%    256.99  
+1940/2187        subproblem          -inf    -160.08149       inf%    257.13  
+1941/2187        subproblem          -inf    -160.08149       inf%    257.24  
+1942/2187        subproblem          -inf    -160.08149       inf%    257.36  
+1943/2187        subproblem          -inf    -160.08149       inf%    257.47  
+1944/2187        subproblem          -inf    -160.08149       inf%    257.59  
+1945/2187        subproblem          -inf    -160.08149       inf%    258.34  
+1946/2187        subproblem          -inf    -160.08149       inf%    258.47  
+1947/2187        subproblem          -inf    -160.08149       inf%    258.60  
+1948/2187        subproblem          -inf    -160.08149       inf%    258.72  
+1949/2187        subproblem          -inf    -160.08149       inf%    258.85  
+1950/2187        subproblem          -inf    -160.08149       inf%    258.98  
+1951/2187        subproblem          -inf    -160.08149       inf%    259.11  
+1952/2187        subproblem          -inf    -160.08149       inf%    259.26  
+1953/2187        subproblem          -inf    -160.08149       inf%    259.39  
+1954/2187        subproblem          -inf    -160.08149       inf%    259.51  
+1955/2187        subproblem          -inf    -160.08149       inf%    259.64  
+1956/2187        subproblem          -inf    -160.08149       inf%    259.76  
+1957/2187        subproblem          -inf    -160.08149       inf%    259.88  
+1958/2187        subproblem          -inf    -160.08149       inf%    260.03  
+1959/2187        subproblem          -inf    -160.08149       inf%    260.16  
+1960/2187        subproblem          -inf    -160.08149       inf%    260.28  
+1961/2187        subproblem          -inf    -160.08149       inf%    260.41  
+1962/2187        subproblem          -inf    -160.08149       inf%    260.54  
+1963/2187        subproblem          -inf    -160.08149       inf%    260.67  
+1964/2187        subproblem          -inf    -160.08149       inf%    260.79  
+1965/2187        subproblem          -inf    -160.08149       inf%    260.94  
+1966/2187        subproblem          -inf    -160.08149       inf%    261.06  
+1967/2187        subproblem          -inf    -160.08149       inf%    261.19  
+1968/2187        subproblem          -inf    -160.08149       inf%    261.32  
+1969/2187        subproblem          -inf    -160.08149       inf%    261.44  
+1970/2187        subproblem          -inf    -160.08149       inf%    261.57  
+1971/2187        subproblem          -inf    -160.08149       inf%    261.70  
+1972/2187        subproblem          -inf    -160.08149       inf%    261.84  
+1973/2187        subproblem          -inf    -160.08149       inf%    261.96  
+1974/2187        subproblem          -inf    -160.08149       inf%    262.09  
+1975/2187        subproblem          -inf    -160.08149       inf%    262.21  
+1976/2187        subproblem          -inf    -160.08149       inf%    262.34  
+1977/2187        subproblem          -inf    -160.08149       inf%    262.46  
+1978/2187        subproblem          -inf    -160.08149       inf%    262.59  
+1979/2187        subproblem          -inf    -160.08149       inf%    262.74  
+1980/2187        subproblem          -inf    -160.08149       inf%    262.86  
+1981/2187        subproblem          -inf    -160.08149       inf%    262.98  
+1982/2187        subproblem          -inf    -160.08149       inf%    263.11  
+1983/2187        subproblem          -inf    -160.08149       inf%    263.23  
+1984/2187        subproblem          -inf    -160.08149       inf%    263.35  
+1985/2187        subproblem          -inf    -160.08149       inf%    263.49  
+1986/2187        subproblem          -inf    -160.08149       inf%    263.64  
+1987/2187        subproblem          -inf    -160.08149       inf%    263.76  
+1988/2187        subproblem          -inf    -160.08149       inf%    263.89  
+1989/2187        subproblem          -inf    -160.08149       inf%    264.02  
+1990/2187        subproblem          -inf    -160.08149       inf%    264.15  
+1991/2187        subproblem          -inf    -160.08149       inf%    264.27  
+1992/2187        subproblem          -inf    -160.08149       inf%    264.40  
+1993/2187        subproblem          -inf    -160.08149       inf%    264.54  
+1994/2187        subproblem          -inf    -160.08149       inf%    264.67  
+1995/2187        subproblem          -inf    -160.08149       inf%    264.80  
+1996/2187        subproblem          -inf    -160.08149       inf%    264.92  
+1997/2187        subproblem          -inf    -160.08149       inf%    265.05  
+1998/2187        subproblem          -inf    -160.08149       inf%    265.18  
+1999/2187        subproblem          -inf    -160.08149       inf%    265.31  
+2000/2187        subproblem          -inf    -160.08149       inf%    265.46  
+2001/2187        subproblem          -inf    -160.08149       inf%    265.59  
+2002/2187        subproblem          -inf    -160.08149       inf%    265.71  
+2003/2187        subproblem          -inf    -160.08149       inf%    265.84  
+2004/2187        subproblem          -inf    -160.08149       inf%    265.96  
+2005/2187        subproblem          -inf    -160.08149       inf%    266.09  
+2006/2187        subproblem          -inf    -160.08149       inf%    266.21  
+2007/2187        subproblem          -inf    -160.08149       inf%    266.36  
+2008/2187        subproblem          -inf    -160.08149       inf%    266.48  
+2009/2187        subproblem          -inf    -160.08149       inf%    266.61  
+2010/2187        subproblem          -inf    -160.08149       inf%    266.73  
+2011/2187        subproblem          -inf    -160.08149       inf%    266.85  
+2012/2187        subproblem          -inf    -160.08149       inf%    266.98  
+2013/2187        subproblem          -inf    -160.08149       inf%    267.10  
+2014/2187        subproblem          -inf    -160.08149       inf%    267.25  
+2015/2187        subproblem          -inf    -160.08149       inf%    267.37  
+2016/2187        subproblem          -inf    -160.08149       inf%    267.50  
+2017/2187        subproblem          -inf    -160.08149       inf%    267.62  
+2018/2187        subproblem          -inf    -160.08149       inf%    267.75  
+2019/2187        subproblem          -inf    -160.08149       inf%    267.88  
+2020/2187        subproblem          -inf    -160.08149       inf%    268.00  
+2021/2187        subproblem          -inf    -160.08149       inf%    268.14  
+2022/2187        subproblem          -inf    -160.08149       inf%    268.27  
+2023/2187        subproblem          -inf    -160.08149       inf%    268.39  
+2024/2187        subproblem          -inf    -160.08149       inf%    268.52  
+2025/2187        subproblem          -inf    -160.08149       inf%    268.64  
+2026/2187        subproblem          -inf    -160.08149       inf%    268.76  
+2027/2187        subproblem          -inf    -160.08149       inf%    268.87  
+2028/2187        subproblem          -inf    -160.08149       inf%    269.01  
+2029/2187        subproblem          -inf    -160.08149       inf%    269.13  
+2030/2187        subproblem          -inf    -160.08149       inf%    269.24  
+2031/2187        subproblem          -inf    -160.08149       inf%    269.36  
+2032/2187        subproblem          -inf    -160.08149       inf%    269.47  
+2033/2187        subproblem          -inf    -160.08149       inf%    269.59  
+2034/2187        subproblem          -inf    -160.08149       inf%    269.70  
+2035/2187        subproblem          -inf    -160.08149       inf%    269.84  
+2036/2187        subproblem          -inf    -160.08149       inf%    269.96  
+2037/2187        subproblem          -inf    -160.08149       inf%    270.07  
+2038/2187        subproblem          -inf    -160.08149       inf%    270.19  
+2039/2187        subproblem          -inf    -160.08149       inf%    270.30  
+2040/2187        subproblem          -inf    -160.08149       inf%    270.42  
+2041/2187        subproblem          -inf    -160.08149       inf%    270.53  
+2042/2187        subproblem          -inf    -160.08149       inf%    270.67  
+2043/2187        subproblem          -inf    -160.08149       inf%    270.79  
+2044/2187        subproblem          -inf    -160.08149       inf%    270.90  
+2045/2187        subproblem          -inf    -160.08149       inf%    271.02  
+2046/2187        subproblem          -inf    -160.08149       inf%    271.13  
+2047/2187        subproblem          -inf    -160.08149       inf%    271.25  
+2048/2187        subproblem          -inf    -160.08149       inf%    271.36  
+2049/2187        subproblem          -inf    -160.08149       inf%    271.49  
+2050/2187        subproblem          -inf    -160.08149       inf%    271.61  
+2051/2187        subproblem          -inf    -160.08149       inf%    271.72  
+2052/2187        subproblem          -inf    -160.08149       inf%    271.84  
+2053/2187        subproblem          -inf    -160.08149       inf%    271.96  
+2054/2187        subproblem          -inf    -160.08149       inf%    272.07  
+2055/2187        subproblem          -inf    -160.08149       inf%    272.19  
+2056/2187        subproblem          -inf    -160.08149       inf%    272.30  
+2057/2187        subproblem          -inf    -160.08149       inf%    272.44  
+2058/2187        subproblem          -inf    -160.08149       inf%    272.56  
+2059/2187        subproblem          -inf    -160.08149       inf%    272.67  
+2060/2187        subproblem          -inf    -160.08149       inf%    272.79  
+2061/2187        subproblem          -inf    -160.08149       inf%    272.90  
+2062/2187        subproblem          -inf    -160.08149       inf%    273.02  
+2063/2187        subproblem          -inf    -160.08149       inf%    273.14  
+2064/2187        subproblem          -inf    -160.08149       inf%    273.27  
+2065/2187        subproblem          -inf    -160.08149       inf%    273.39  
+2066/2187        subproblem          -inf    -160.08149       inf%    273.50  
+2067/2187        subproblem          -inf    -160.08149       inf%    273.62  
+2068/2187        subproblem          -inf    -160.08149       inf%    273.74  
+2069/2187        subproblem          -inf    -160.08149       inf%    273.85  
+2070/2187        subproblem          -inf    -160.08149       inf%    273.97  
+2071/2187        subproblem          -inf    -160.08149       inf%    274.10  
+2072/2187        subproblem          -inf    -160.08149       inf%    274.22  
+2073/2187        subproblem          -inf    -160.08149       inf%    274.33  
+2074/2187        subproblem          -inf    -160.08149       inf%    274.45  
+2075/2187        subproblem          -inf    -160.08149       inf%    274.56  
+2076/2187        subproblem          -inf    -160.08149       inf%    274.68  
+2077/2187        subproblem          -inf    -160.08149       inf%    274.79  
+2078/2187        subproblem          -inf    -160.08149       inf%    274.93  
+2079/2187        subproblem          -inf    -160.08149       inf%    275.04  
+2080/2187        subproblem          -inf    -160.08149       inf%    275.16  
+2081/2187        subproblem          -inf    -160.08149       inf%    275.27  
+2082/2187        subproblem          -inf    -160.08149       inf%    275.39  
+2083/2187        subproblem          -inf    -160.08149       inf%    275.50  
+2084/2187        subproblem          -inf    -160.08149       inf%    275.62  
+2085/2187        subproblem          -inf    -160.08149       inf%    275.73  
+2086/2187        subproblem          -inf    -160.08149       inf%    275.87  
+2087/2187        subproblem          -inf    -160.08149       inf%    275.98  
+2088/2187        subproblem          -inf    -160.08149       inf%    276.10  
+2089/2187        subproblem          -inf    -160.08149       inf%    276.22  
+2090/2187        subproblem          -inf    -160.08149       inf%    276.33  
+2091/2187        subproblem          -inf    -160.08149       inf%    276.45  
+2092/2187        subproblem          -inf    -160.08149       inf%    276.56  
+2093/2187        subproblem          -inf    -160.08149       inf%    276.70  
+2094/2187        subproblem          -inf    -160.08149       inf%    276.81  
+2095/2187        subproblem          -inf    -160.08149       inf%    276.93  
+2096/2187        subproblem          -inf    -160.08149       inf%    277.04  
+2097/2187        subproblem          -inf    -160.08149       inf%    277.16  
+2098/2187        subproblem          -inf    -160.08149       inf%    277.27  
+2099/2187        subproblem          -inf    -160.08149       inf%    277.39  
+2100/2187        subproblem          -inf    -160.08149       inf%    277.50  
+2101/2187        subproblem          -inf    -160.08149       inf%    277.64  
+2102/2187        subproblem          -inf    -160.08149       inf%    277.76  
+2103/2187        subproblem          -inf    -160.08149       inf%    277.87  
+2104/2187        subproblem          -inf    -160.08149       inf%    277.99  
+2105/2187        subproblem          -inf    -160.08149       inf%    278.10  
+2106/2187        subproblem          -inf    -160.08149       inf%    278.21  
+2107/2187        subproblem          -inf    -160.08149       inf%    278.34  
+2108/2187        subproblem          -inf    -160.08149       inf%    278.49  
+2109/2187        subproblem          -inf    -160.08149       inf%    278.61  
+2110/2187        subproblem          -inf    -160.08149       inf%    278.73  
+2111/2187        subproblem          -inf    -160.08149       inf%    278.86  
+2112/2187        subproblem          -inf    -160.08149       inf%    278.98  
+2113/2187        subproblem          -inf    -160.08149       inf%    279.11  
+2114/2187        subproblem          -inf    -160.08149       inf%    279.23  
+2115/2187        subproblem          -inf    -160.08149       inf%    279.38  
+2116/2187        subproblem          -inf    -160.08149       inf%    279.51  
+2117/2187        subproblem          -inf    -160.08149       inf%    279.63  
+2118/2187        subproblem          -inf    -160.08149       inf%    279.75  
+2119/2187        subproblem          -inf    -160.08149       inf%    279.88  
+2120/2187        subproblem          -inf    -160.08149       inf%    280.00  
+2121/2187        subproblem          -inf    -160.08149       inf%    280.13  
+2122/2187        subproblem          -inf    -160.08149       inf%    280.27  
+2123/2187        subproblem          -inf    -160.08149       inf%    280.40  
+2124/2187        subproblem          -inf    -160.08149       inf%    280.52  
+2125/2187        subproblem          -inf    -160.08149       inf%    280.65  
+2126/2187        subproblem          -inf    -160.08149       inf%    280.77  
+2127/2187        subproblem          -inf    -160.08149       inf%    280.90  
+2128/2187        subproblem          -inf    -160.08149       inf%    281.03  
+2129/2187        subproblem          -inf    -160.08149       inf%    281.17  
+2130/2187        subproblem          -inf    -160.08149       inf%    281.30  
+2131/2187        subproblem          -inf    -160.08149       inf%    281.42  
+2132/2187        subproblem          -inf    -160.08149       inf%    281.54  
+2133/2187        subproblem          -inf    -160.08149       inf%    281.67  
+2134/2187        subproblem          -inf    -160.08149       inf%    281.78  
+2135/2187        subproblem          -inf    -160.08149       inf%    281.92  
+2136/2187        subproblem          -inf    -160.08149       inf%    282.04  
+2137/2187        subproblem          -inf    -160.08149       inf%    282.15  
+2138/2187        subproblem          -inf    -160.08149       inf%    282.27  
+2139/2187        subproblem          -inf    -160.08149       inf%    282.38  
+2140/2187        subproblem          -inf    -160.08149       inf%    282.50  
+2141/2187        subproblem          -inf    -160.08149       inf%    282.61  
+2142/2187        subproblem          -inf    -160.08149       inf%    282.73  
+2143/2187        subproblem          -inf    -160.08149       inf%    282.87  
+2144/2187        subproblem          -inf    -160.08149       inf%    282.98  
+2145/2187        subproblem          -inf    -160.08149       inf%    283.10  
+2146/2187        subproblem          -inf    -160.08149       inf%    283.21  
+2147/2187        subproblem          -inf    -160.08149       inf%    283.33  
+2148/2187        subproblem          -inf    -160.08149       inf%    283.45  
+2149/2187        subproblem          -inf    -160.08149       inf%    283.56  
+2150/2187        subproblem          -inf    -160.08149       inf%    283.70  
+2151/2187        subproblem          -inf    -160.08149       inf%    283.82  
+2152/2187        subproblem          -inf    -160.08149       inf%    283.93  
+2153/2187        subproblem          -inf    -160.08149       inf%    284.05  
+2154/2187        subproblem          -inf    -160.08149       inf%    284.17  
+2155/2187        subproblem          -inf    -160.08149       inf%    284.28  
+2156/2187        subproblem          -inf    -160.08149       inf%    284.40  
+2157/2187        subproblem          -inf    -160.08149       inf%    284.54  
+2158/2187        subproblem          -inf    -160.08149       inf%    284.65  
+2159/2187        subproblem          -inf    -160.08149       inf%    284.77  
+2160/2187        subproblem          -inf    -160.08149       inf%    284.89  
+2161/2187        subproblem          -inf    -160.08149       inf%    285.01  
+2162/2187        subproblem          -inf    -160.08149       inf%    285.14  
+2163/2187        subproblem          -inf    -160.08149       inf%    285.26  
+2164/2187        subproblem          -inf    -160.08149       inf%    285.41  
+2165/2187        subproblem          -inf    -160.08149       inf%    285.53  
+2166/2187        subproblem          -inf    -160.08149       inf%    285.66  
+2167/2187        subproblem          -inf    -160.08149       inf%    285.78  
+2168/2187        subproblem          -inf    -160.08149       inf%    285.91  
+2169/2187        subproblem          -inf    -160.08149       inf%    286.03  
+2170/2187        subproblem          -inf    -160.08149       inf%    286.15  
+2171/2187        subproblem          -inf    -160.08149       inf%    286.29  
+2172/2187        subproblem          -inf    -160.08149       inf%    286.41  
+2173/2187        subproblem          -inf    -160.08149       inf%    286.53  
+2174/2187        subproblem          -inf    -160.08149       inf%    286.64  
+2175/2187        subproblem          -inf    -160.08149       inf%    286.76  
+2176/2187        subproblem          -inf    -160.08149       inf%    286.88  
+2177/2187        subproblem          -inf    -160.08149       inf%    287.00  
+2178/2187        subproblem          -inf    -160.08149       inf%    287.11  
+2179/2187        subproblem          -inf    -160.08149       inf%    287.26  
+2180/2187        subproblem          -inf    -160.08149       inf%    287.38  
+2181/2187        subproblem          -inf    -160.08149       inf%    287.51  
+2182/2187        subproblem          -inf    -160.08149       inf%    287.63  
+2183/2187        subproblem          -inf    -160.08149       inf%    287.75  
+2184/2187        subproblem          -inf    -160.08149       inf%    287.86  
+2185/2187        subproblem          -inf    -160.08149       inf%    287.99  
+2186/2187        subproblem          -inf    -160.08149       inf%    288.13  
+2187/2187        subproblem          -inf    -160.08149       inf%    288.26  
+2187/2187                      -160.08149    -160.08149      0.00%    288.26  
+GDPopt exiting--all discrete solutions have been enumerated.
+
+Solved in 2187 iterations and 288.25579 seconds
+Optimal objective value -160.0814911805
+Relative optimality gap 0.00000%
+
+Problem: 
+- Name: unknown
+  Lower bound: -160.08149118049542
+  Upper bound: -160.08149118049542
+  Number of objectives: 1
+  Number of constraints: 2275
+  Number of variables: 1299
+  Number of binary variables: 18
+  Number of integer variables: 0
+  Number of continuous variables: 1281
+  Number of nonzeros: None
+  Sense: 1
+  Number of disjunctions: 7
+Solver: 
+- Name: GDPopt (22, 5, 13) - enumerate
+  Status: ok
+  User time: 288.2557494947687
+  Wallclock time: 288.2557494947687
+  Termination condition: optimal
+  Iterations: 2187
+  Timing: main_timer_start_time: 5860553.15705415
+nlp: 287.9688813155517
+total: 288.2557494947687
+

@@ -1,0 +1,148 @@
+Starting GDPopt version 22.5.13 using enumerate algorithm
+iterlim: None
+time_limit: 900
+tee: true
+logger: <Logger pyomo.contrib.gdpopt (INFO)>
+nlp_solver: gams
+nlp_solver_args:
+  solver: knitro
+minlp_solver: baron
+minlp_solver_args:
+local_minlp_solver: bonmin
+local_minlp_solver_args:
+small_dual_tolerance: 1e-08
+integer_tolerance: 1e-05
+constraint_tolerance: 1e-06
+variable_tolerance: 1e-08
+subproblem_initialization_method: <function restore_vars_to_original_values_enumerate at 0x7fcb70b8e3e0>
+call_before_subproblem_solve: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+call_after_subproblem_solve: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+call_after_subproblem_feasible: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+force_subproblem_nlp: false
+subproblem_presolve: true
+tighten_nlp_var_bounds: false
+round_discrete_vars: true
+max_fbbt_iterations: 3
+mip_solver: gurobi
+mip_solver_args:
+
+If you use this software, you may cite the following:
+            - Implementation:
+            Chen, Q; Johnson, ES; Bernal, DE; Valentin, R; Kale, S;
+            Bates, J; Siirola, JD; Grossmann, IE.
+            Pyomo.GDP: an ecosystem for logic based modeling and optimization
+            development.
+            Optimization and Engineering, 2021.
+Original model has 1183 constraints (819 nonlinear) and 4 disjunctions, with 741 variables, of which 9 are binary, 0 are integer, and 732 are continuous.
+     1/81        subproblem          -inf     -12.41400       inf%      0.60  *
+     2/81        subproblem          -inf     -13.14446       inf%      1.09  *
+     3/81        subproblem          -inf     -13.14446       inf%      1.17  
+     4/81        subproblem          -inf     -13.14446       inf%      1.24  
+     5/81        subproblem          -inf     -16.01351       inf%      1.72  *
+     6/81        subproblem          -inf     -16.01351       inf%      2.22  
+     7/81        subproblem          -inf     -16.01351       inf%      2.29  
+     8/81        subproblem          -inf     -16.01351       inf%      2.36  
+     9/81        subproblem          -inf     -16.01351       inf%      2.43  
+    10/81        subproblem          -inf     -16.01351       inf%      2.50  
+    11/81        subproblem          -inf     -16.01351       inf%      2.58  
+    12/81        subproblem          -inf     -16.01351       inf%      2.65  
+    13/81        subproblem          -inf     -16.01351       inf%      2.72  
+    14/81        subproblem          -inf     -23.30469       inf%      3.17  *
+    15/81        subproblem          -inf     -23.30469       inf%      3.66  
+    16/81        subproblem          -inf     -23.30469       inf%      3.73  
+    17/81        subproblem          -inf     -23.30469       inf%      3.81  
+    18/81        subproblem          -inf     -23.30469       inf%      4.26  
+    19/81        subproblem          -inf     -23.30469       inf%      4.34  
+    20/81        subproblem          -inf     -23.30469       inf%      4.41  
+    21/81        subproblem          -inf     -23.30469       inf%      4.48  
+    22/81        subproblem          -inf     -23.30469       inf%      4.55  
+    23/81        subproblem          -inf     -23.30469       inf%      4.62  
+    24/81        subproblem          -inf     -23.30469       inf%      4.70  
+    25/81        subproblem          -inf     -23.30469       inf%      4.77  
+    26/81        subproblem          -inf     -23.30469       inf%      4.84  
+    27/81        subproblem          -inf     -23.30469       inf%      4.93  
+    28/81        subproblem          -inf     -23.30469       inf%      5.00  
+    29/81        subproblem          -inf     -23.30469       inf%      5.07  
+    30/81        subproblem          -inf     -23.30469       inf%      5.14  
+    31/81        subproblem          -inf     -23.30469       inf%      5.21  
+    32/81        subproblem          -inf     -23.30469       inf%      5.28  
+    33/81        subproblem          -inf     -23.30469       inf%      5.35  
+    34/81        subproblem          -inf     -23.30469       inf%      5.42  
+    35/81        subproblem          -inf     -23.30469       inf%      5.49  
+    36/81        subproblem          -inf     -23.30469       inf%      5.56  
+    37/81        subproblem          -inf     -23.30469       inf%      5.62  
+    38/81        subproblem          -inf     -23.30469       inf%      5.69  
+    39/81        subproblem          -inf     -23.30469       inf%      5.76  
+    40/81        subproblem          -inf     -23.30469       inf%      5.83  
+    41/81        subproblem          -inf     -23.30469       inf%      5.91  
+    42/81        subproblem          -inf     -23.30469       inf%      5.97  
+    43/81        subproblem          -inf     -23.30469       inf%      6.04  
+    44/81        subproblem          -inf     -23.30469       inf%      6.11  
+    45/81        subproblem          -inf     -23.30469       inf%      6.17  
+    46/81        subproblem          -inf     -23.30469       inf%      6.24  
+    47/81        subproblem          -inf     -23.30469       inf%      6.31  
+    48/81        subproblem          -inf     -23.30469       inf%      6.38  
+    49/81        subproblem          -inf     -23.30469       inf%      6.45  
+    50/81        subproblem          -inf     -23.30469       inf%      6.52  
+    51/81        subproblem          -inf     -23.30469       inf%      6.58  
+    52/81        subproblem          -inf     -23.30469       inf%      6.65  
+    53/81        subproblem          -inf     -23.30469       inf%      6.72  
+    54/81        subproblem          -inf     -23.30469       inf%      7.20  
+    55/81        subproblem          -inf     -23.30469       inf%      7.68  
+    56/81        subproblem          -inf     -23.30469       inf%      7.75  
+    57/81        subproblem          -inf     -23.30469       inf%      7.82  
+    58/81        subproblem          -inf     -23.30469       inf%      7.90  
+    59/81        subproblem          -inf     -23.30469       inf%      7.97  
+    60/81        subproblem          -inf     -23.30469       inf%      8.04  
+    61/81        subproblem          -inf     -23.30469       inf%      8.12  
+    62/81        subproblem          -inf     -23.30469       inf%      8.19  
+    63/81        subproblem          -inf     -23.30469       inf%      8.26  
+    64/81        subproblem          -inf     -23.30469       inf%      8.34  
+    65/81        subproblem          -inf     -23.30469       inf%      8.41  
+    66/81        subproblem          -inf     -23.30469       inf%      8.48  
+    67/81        subproblem          -inf     -23.30469       inf%      8.54  
+    68/81        subproblem          -inf     -23.30469       inf%      8.61  
+    69/81        subproblem          -inf     -23.30469       inf%      8.68  
+    70/81        subproblem          -inf     -23.30469       inf%      8.75  
+    71/81        subproblem          -inf     -23.30469       inf%      8.81  
+    72/81        subproblem          -inf     -23.30469       inf%      8.88  
+    73/81        subproblem          -inf     -23.30469       inf%      8.95  
+    74/81        subproblem          -inf     -23.30469       inf%      9.02  
+    75/81        subproblem          -inf     -23.30469       inf%      9.09  
+    76/81        subproblem          -inf     -23.30469       inf%      9.16  
+    77/81        subproblem          -inf     -23.30469       inf%      9.23  
+    78/81        subproblem          -inf     -23.30469       inf%      9.31  
+    79/81        subproblem          -inf     -23.30469       inf%      9.38  
+    80/81        subproblem          -inf     -23.30469       inf%      9.45  
+    81/81        subproblem          -inf     -23.30469       inf%      9.52  
+    81/81                       -23.30469     -23.30469      0.00%      9.52  
+GDPopt exiting--all discrete solutions have been enumerated.
+
+Solved in 81 iterations and 9.52391 seconds
+Optimal objective value -23.3046886488
+Relative optimality gap 0.00000%
+
+Problem: 
+- Name: unknown
+  Lower bound: -23.304688648798592
+  Upper bound: -23.304688648798592
+  Number of objectives: 1
+  Number of constraints: 1183
+  Number of variables: 741
+  Number of binary variables: 9
+  Number of integer variables: 0
+  Number of continuous variables: 732
+  Number of nonzeros: None
+  Sense: 1
+  Number of disjunctions: 4
+Solver: 
+- Name: GDPopt (22, 5, 13) - enumerate
+  Status: ok
+  User time: 9.523876369930804
+  Wallclock time: 9.523876369930804
+  Termination condition: optimal
+  Iterations: 81
+  Timing: main_timer_start_time: 5822736.349651459
+nlp: 9.437789104878902
+total: 9.523876369930804
+

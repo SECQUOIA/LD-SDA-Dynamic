@@ -1,0 +1,167 @@
+--- Job model.gms Start 02/26/24 01:23:14 44.3.0 8b8fb1cb LEX-LEG x86 64bit/Linux
+--- Applying:
+    /local/scratch/a/peng372/opt/gams/44.3/gmsprmun.txt
+--- GAMS Parameters defined
+    Input /tmp/tmpyghl6tlv/model.gms
+    Output /tmp/tmpyghl6tlv/output.lst
+    ScrDir /tmp/tmpyghl6tlv/225a/
+    SysDir /local/scratch/a/peng372/opt/gams/44.3/
+    CurDir /tmp/tmpyghl6tlv/
+    LogOption 3
+Licensee: Prof. Ignacio E. Grossmann                     G240103|0002AS-GEN
+          Carnegie Mellon University, Dept. of Chemical Engineering  DCE375
+          /local/scratch/a/peng372/opt/gams/44.3/gamslice.txt
+          License Admin: Ignacio E. Grossmann,                             
+          Evaluation license: Not for commercial or production use
+Processor information: 1 socket(s), 48 core(s), and 96 thread(s) available
+GAMS 44.3.0   Copyright (C) 1987-2023 GAMS Development. All rights reserved
+--- Starting compilation
+--- model.gms(61379) 13 Mb
+--- Starting execution: elapsed 0:00:00.083
+--- model.gms(41959) 14 Mb
+--- Generating MINLP model GAMS_MODEL
+--- model.gms(41963) 19 Mb
+--- Reset Solvelink = 2
+---   12,672 rows  6,691 columns  35,799 non-zeroes
+---   69,026 nl-code  9,828 nl-non-zeroes
+---   102 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.000E+00, 1.000E+00] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 3.000E+02] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.448E-02, 3.000E+02] - Zero values observed as well
+--- model.gms(41963) 16 Mb
+--- Executing BARON (Solvelink=2): elapsed 0:00:00.143
+
+GAMS/BARON       44.3.0 8b8fb1cb Sep 1, 2023           LEG x86 64bit/Linux    
+
+===========================================================================
+ BARON version 23.6.22. Built: LNX-64 Thu Jun 22 20:08:45 EDT 2023
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC, ILOG CPLEX                             
+ For NLP: MINOS, SNOPT, External NLP, IPOPT, FILTERSQP
+===========================================================================
+ Doing local search
+ Preprocessing found feasible solution with value -206.360
+ Solving bounding LP
+ Starting multi-start local search
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+          1+            1           120.17     -810.229         -206.360       
+          1+            1           152.76     -809.383         -206.360       
+          1             1           285.25     -645.112         -206.360       
+          3             2           553.30     -645.112         -206.360       
+          4             3           766.66     -645.112         -206.360       
+          4             3           849.21     -645.112         -206.360       
+          5             3           880.26     -645.112         -206.360       
+          6             4           912.98     -645.112         -206.360       
+*         6             4           927.70     -645.112         -212.009       
+          6+            4           982.41     -645.112         -212.009       
+          7+            4          1012.96     -645.112         -212.009       
+          8             5          1087.83     -645.112         -212.009       
+          9             5          1119.07     -645.112         -212.009       
+         11+            6          1149.54     -645.112         -212.009       
+         14             8          1199.20     -645.112         -212.009       
+         15+            9          1236.40     -645.112         -212.009       
+         15+            9          1267.79     -645.112         -212.009       
+         20            10          1396.73     -645.112         -212.009       
+         27            13          1428.33     -645.112         -212.009       
+         32            16          1458.91     -645.112         -212.009       
+         36+           17          1494.65     -645.112         -212.009       
+         40            18          1525.30     -645.112         -212.009       
+         42            19          1556.93     -580.762         -212.009       
+         48            23          1592.18     -534.468         -212.009       
+         57+           26          1652.73     -526.210         -212.009       
+         61            28          1682.82     -526.210         -212.009       
+         78            31          1714.27     -493.891         -212.009       
+        103            34          1745.05     -484.837         -212.009       
+        135            35          1775.57     -480.108         -212.009       
+        179            35          1805.58     -479.567         -212.009       
+        184+           35          1853.18     -479.567         -212.009       
+        208            36          1883.90     -479.556         -212.009       
+        229            37          1914.15     -479.556         -212.009       
+        247            39          1944.87     -479.556         -212.009       
+        262            42          1975.87     -479.556         -212.009       
+        277            46          2005.96     -479.556         -212.009       
+        296            48          2036.72     -477.337         -212.009       
+        301+           49          2095.73     -477.337         -212.009       
+        339            49          2125.98     -472.912         -212.009       
+        384            49          2156.52     -472.912         -212.009       
+        403            54          2187.00     -470.582         -212.009       
+        421            60          2217.69     -470.582         -212.009       
+        442            65          2248.42     -470.582         -212.009       
+        460            67          2279.58     -469.818         -212.009       
+        482            67          2310.67     -465.646         -212.009       
+        503            68          2341.09     -465.646         -212.009       
+        521            70          2371.26     -465.646         -212.009       
+        536            74          2402.28     -465.646         -212.009       
+        552            78          2432.83     -465.646         -212.009       
+        571            84          2464.93     -464.966         -212.009       
+        588            91          2496.44     -464.966         -212.009       
+        611            91          2527.44     -464.966         -212.009       
+        630            95          2558.98     -464.717         -212.009       
+        638            97          3612.62     -464.717         -212.009       
+
+                    *** Max. allowable time exceeded ***      
+
+ Wall clock time:                  3612.73
+ Total CPU time used:              3612.62
+
+ Total no. of BaR iterations:     638
+ Best solution found at node:       6
+ Max. no. of nodes in memory:      97
+ 
+ All done
+===========================================================================
+
+Solution      = -212.008787156755  found at node 6
+Best possible = -464.717070272
+Absolute gap  = 252.708283115245  optca = 1E-9
+Relative gap  = 0.54378954267235  optcr = 0.0001
+
+--- Reading solution for model GAMS_MODEL
+--- Executing after solve: elapsed 1:00:13.008
+--- model.gms(41966) 16 Mb
+--- model.gms(61379) 19 Mb
+--- Putfile results /tmp/tmpyghl6tlv/results.dat
+--- Putfile statresults /tmp/tmpyghl6tlv/resultsstat.dat
+*** Status: Normal completion
+--- Job model.gms Stop 02/26/24 02:23:27 elapsed 1:00:13.042
+
+Problem: 
+- Name: /tmp/tmpyghl6tlv/model.gms
+  Lower bound: -464.717070272
+  Upper bound: -212.00878715675478
+  Number of objectives: 1
+  Number of constraints: 12672.0
+  Number of variables: 6691.0
+  Number of binary variables: None
+  Number of integer variables: 102.0
+  Number of continuous variables: 6589.0
+  Number of nonzeros: 35799.0
+  Sense: minimize
+Solver: 
+- Name: GAMS (44, 3, 0, 0)
+  Status: ok
+  Return code: 0
+  Message: None
+  User time: 3612.916999985464
+  System time: None
+  Wallclock time: None
+  Termination condition: optimal
+  Termination message: None
+Solution: 
+- number of solutions: 0
+  number of solutions displayed: 0
+

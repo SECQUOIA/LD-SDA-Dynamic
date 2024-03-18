@@ -1,0 +1,224 @@
+--- Job model.gms Start 02/26/24 00:22:28 44.3.0 8b8fb1cb LEX-LEG x86 64bit/Linux
+--- Applying:
+    /local/scratch/a/peng372/opt/gams/44.3/gmsprmun.txt
+--- GAMS Parameters defined
+    Input /tmp/tmpq6o4v3qq/model.gms
+    Output /tmp/tmpq6o4v3qq/output.lst
+    ScrDir /tmp/tmpq6o4v3qq/225a/
+    SysDir /local/scratch/a/peng372/opt/gams/44.3/
+    CurDir /tmp/tmpq6o4v3qq/
+    LogOption 3
+Licensee: Prof. Ignacio E. Grossmann                     G240103|0002AS-GEN
+          Carnegie Mellon University, Dept. of Chemical Engineering  DCE375
+          /local/scratch/a/peng372/opt/gams/44.3/gamslice.txt
+          License Admin: Ignacio E. Grossmann,                             
+          Evaluation license: Not for commercial or production use
+Processor information: 1 socket(s), 48 core(s), and 96 thread(s) available
+GAMS 44.3.0   Copyright (C) 1987-2023 GAMS Development. All rights reserved
+--- Starting compilation
+--- model.gms(24227) 6 Mb
+--- Starting execution: elapsed 0:00:00.042
+--- model.gms(16363) 7 Mb
+--- Generating MINLP model GAMS_MODEL
+--- model.gms(16367) 11 Mb
+--- Reset Solvelink = 2
+---   6,057 rows  1,750 columns  24,741 non-zeroes
+---   36,812 nl-code  5,733 nl-non-zeroes
+---   102 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.000E+00, 1.000E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 3.000E+02] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.448E-02, 1.000E+06] - Zero values observed as well
+--- model.gms(16367) 9 Mb
+--- Executing BARON (Solvelink=2): elapsed 0:00:00.072
+
+GAMS/BARON       44.3.0 8b8fb1cb Sep 1, 2023           LEG x86 64bit/Linux    
+
+===========================================================================
+ BARON version 23.6.22. Built: LNX-64 Thu Jun 22 20:08:45 EDT 2023
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC, ILOG CPLEX                             
+ For NLP: MINOS, SNOPT, External NLP, IPOPT, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Preprocessing found feasible solution with value -31.6794
+ Preprocessing found feasible solution with value -85.8270
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+*         1             1            27.17     -896.040         -146.879       
+          1             1            49.21     -673.928         -146.879       
+          4+            3            82.89     -673.928         -146.879       
+          4+            3           113.53     -673.928         -146.879       
+          4+            3           145.72     -673.928         -146.879       
+          4+            3           179.41     -673.928         -146.879       
+          4+            3           211.12     -673.928         -146.879       
+          4+            3           249.27     -673.928         -146.879       
+          4+            3           283.62     -673.928         -146.879       
+          4+            3           313.69     -673.928         -146.879       
+          4+            3           349.23     -673.928         -146.879       
+          4+            3           381.41     -673.928         -146.879       
+          4+            3           412.47     -673.928         -146.879       
+          4+            3           449.66     -673.928         -146.879       
+          4+            3           482.88     -673.928         -146.879       
+          4+            3           522.66     -673.928         -146.879       
+          4+            3           554.55     -673.928         -146.879       
+          4+            3           590.01     -673.928         -146.879       
+          4+            3           622.12     -673.928         -146.879       
+          4+            3           659.27     -673.928         -146.879       
+          4+            3           692.96     -673.928         -146.879       
+          4+            3           723.42     -673.928         -146.879       
+          4+            3           756.66     -673.928         -146.879       
+          4+            3           789.87     -673.928         -146.879       
+          4+            3           820.06     -673.928         -146.879       
+          4+            3           853.48     -673.928         -146.879       
+          4+            3           885.60     -673.928         -146.879       
+          4+            3           918.82     -673.928         -146.879       
+          4+            3           953.08     -673.928         -146.879       
+          4+            3           987.73     -673.928         -146.879       
+          4+            3          1020.90     -673.928         -146.879       
+          4+            3          1052.83     -673.928         -146.879       
+          4+            3          1086.27     -673.928         -146.879       
+          4+            3          1118.89     -673.928         -146.879       
+          4+            3          1153.67     -673.928         -146.879       
+          4+            3          1186.57     -673.928         -146.879       
+          4+            3          1218.60     -673.928         -146.879       
+          4+            3          1250.08     -673.928         -146.879       
+          4+            3          1281.80     -673.928         -146.879       
+          4+            3          1314.82     -673.928         -146.879       
+          4+            3          1345.60     -673.928         -146.879       
+          4+            3          1378.77     -673.928         -146.879       
+          4+            3          1409.01     -673.928         -146.879       
+          4+            3          1443.91     -673.928         -146.879       
+          4+            3          1475.66     -673.928         -146.879       
+          4+            3          1505.83     -673.928         -146.879       
+          4+            3          1537.85     -673.928         -146.879       
+          4+            3          1572.20     -673.928         -146.879       
+          4+            3          1605.94     -673.928         -146.879       
+          4+            3          1637.13     -673.928         -146.879       
+          4+            3          1670.77     -673.928         -146.879       
+          4+            3          1706.23     -673.928         -146.879       
+          4+            3          1739.64     -673.928         -146.879       
+          4+            3          1778.60     -673.928         -146.879       
+          4+            3          1808.90     -673.928         -146.879       
+          4+            3          1846.53     -673.928         -146.879       
+          4+            3          1880.45     -673.928         -146.879       
+          4+            3          1912.66     -673.928         -146.879       
+          4+            3          1944.90     -673.928         -146.879       
+          4+            3          1977.37     -673.928         -146.879       
+          4+            3          2010.40     -673.928         -146.879       
+          4+            3          2041.08     -673.928         -146.879       
+          4+            3          2073.04     -673.928         -146.879       
+          4+            3          2106.30     -673.928         -146.879       
+          4+            3          2137.76     -673.928         -146.879       
+          4+            3          2172.75     -673.928         -146.879       
+          4+            3          2205.37     -673.928         -146.879       
+          4+            3          2243.19     -673.928         -146.879       
+          4+            3          2273.30     -673.928         -146.879       
+          4+            3          2308.19     -673.928         -146.879       
+          4+            3          2344.41     -673.928         -146.879       
+          4+            3          2375.81     -673.928         -146.879       
+          4+            3          2407.56     -673.928         -146.879       
+          4+            3          2438.71     -673.928         -146.879       
+          4+            3          2474.38     -673.928         -146.879       
+          4+            3          2506.87     -673.928         -146.879       
+          4+            3          2541.40     -673.928         -146.879       
+          4+            3          2576.10     -673.928         -146.879       
+          4+            3          2610.68     -673.928         -146.879       
+          4+            3          2644.64     -673.928         -146.879       
+          4+            3          2674.88     -673.928         -146.879       
+          4+            3          2707.73     -673.928         -146.879       
+          4+            3          2738.87     -673.928         -146.879       
+          4+            3          2771.62     -673.928         -146.879       
+          4+            3          2805.95     -673.928         -146.879       
+          4+            3          2837.36     -673.928         -146.879       
+          4+            3          2872.61     -673.928         -146.879       
+          4+            3          2904.18     -673.928         -146.879       
+          4+            3          2935.60     -673.928         -146.879       
+          4+            3          2966.18     -673.928         -146.879       
+          4+            3          3001.33     -673.928         -146.879       
+          4+            3          3036.54     -673.928         -146.879       
+          4+            3          3069.93     -673.928         -146.879       
+          4+            3          3106.15     -673.928         -146.879       
+          4+            3          3140.15     -673.928         -146.879       
+          4+            3          3170.75     -673.928         -146.879       
+          4+            3          3201.56     -673.928         -146.879       
+          4+            3          3233.48     -673.928         -146.879       
+          4+            3          3265.04     -673.928         -146.879       
+          4+            3          3302.19     -673.928         -146.879       
+          4+            3          3338.75     -673.928         -146.879       
+          4+            3          3372.43     -673.928         -146.879       
+          4+            3          3404.42     -673.928         -146.879       
+          4+            3          3437.33     -673.928         -146.879       
+          4+            3          3471.49     -673.928         -146.879       
+          4+            3          3503.40     -673.928         -146.879       
+          4+            3          3536.55     -673.928         -146.879       
+          4+            3          3567.33     -673.928         -146.879       
+          4+            3          3598.15     -673.928         -146.879       
+          4             2          3600.09     -673.928         -146.879       
+
+                    *** Max. allowable time exceeded ***      
+
+ Wall clock time:                  3600.19
+ Total CPU time used:              3600.09
+
+ Total no. of BaR iterations:       4
+ Best solution found at node:       1
+ Max. no. of nodes in memory:       3
+ 
+ All done
+===========================================================================
+
+Solution      = -146.878501204701  found at node 1
+Best possible = -673.928482716
+Absolute gap  = 527.049981511299  optca = 1E-9
+Relative gap  = 0.782056249332621  optcr = 0.0001
+
+--- Reading solution for model GAMS_MODEL
+--- Executing after solve: elapsed 1:00:00.333
+--- model.gms(16370) 9 Mb
+--- model.gms(24227) 11 Mb
+--- Putfile results /tmp/tmpq6o4v3qq/results.dat
+--- Putfile statresults /tmp/tmpq6o4v3qq/resultsstat.dat
+*** Status: Normal completion
+--- Job model.gms Stop 02/26/24 01:22:28 elapsed 1:00:00.348
+
+Problem: 
+- Name: /tmp/tmpq6o4v3qq/model.gms
+  Lower bound: -673.928482716
+  Upper bound: -146.87850120470085
+  Number of objectives: 1
+  Number of constraints: 6057.0
+  Number of variables: 1750.0
+  Number of binary variables: None
+  Number of integer variables: 102.0
+  Number of continuous variables: 1648.0
+  Number of nonzeros: 24741.0
+  Sense: minimize
+Solver: 
+- Name: GAMS (44, 3, 0, 0)
+  Status: ok
+  Return code: 0
+  Message: None
+  User time: 3600.2879998879507
+  System time: None
+  Wallclock time: None
+  Termination condition: optimal
+  Termination message: None
+Solution: 
+- number of solutions: 0
+  number of solutions displayed: 0
+

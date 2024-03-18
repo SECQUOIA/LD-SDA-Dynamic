@@ -1,0 +1,144 @@
+--- Job model.gms Start 02/26/24 00:17:37 44.3.0 8b8fb1cb LEX-LEG x86 64bit/Linux
+--- Applying:
+    /local/scratch/a/peng372/opt/gams/44.3/gmsprmun.txt
+--- GAMS Parameters defined
+    Input /tmp/tmpugd3yneh/model.gms
+    Output /tmp/tmpugd3yneh/output.lst
+    ScrDir /tmp/tmpugd3yneh/225a/
+    SysDir /local/scratch/a/peng372/opt/gams/44.3/
+    CurDir /tmp/tmpugd3yneh/
+    LogOption 3
+Licensee: Prof. Ignacio E. Grossmann                     G240103|0002AS-GEN
+          Carnegie Mellon University, Dept. of Chemical Engineering  DCE375
+          /local/scratch/a/peng372/opt/gams/44.3/gamslice.txt
+          License Admin: Ignacio E. Grossmann,                             
+          Evaluation license: Not for commercial or production use
+Processor information: 1 socket(s), 48 core(s), and 96 thread(s) available
+GAMS 44.3.0   Copyright (C) 1987-2023 GAMS Development. All rights reserved
+--- Starting compilation
+--- model.gms(13349) 4 Mb
+--- Starting execution: elapsed 0:00:00.024
+--- model.gms(9005) 5 Mb
+--- Generating MINLP model GAMS_MODEL
+--- model.gms(9009) 8 Mb
+--- Reset Solvelink = 2
+---   3,319 rows  968 columns  13,365 non-zeroes
+---   20,452 nl-code  3,185 nl-non-zeroes
+---   52 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.000E+00, 1.000E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 3.000E+02] - Zero values observed as well
+--- Matrix    [min, max] : [ 4.000E-02, 1.000E+06] - Zero values observed as well
+--- model.gms(9009) 6 Mb
+--- Executing BARON (Solvelink=2): elapsed 0:00:00.040
+
+GAMS/BARON       44.3.0 8b8fb1cb Sep 1, 2023           LEG x86 64bit/Linux    
+
+===========================================================================
+ BARON version 23.6.22. Built: LNX-64 Thu Jun 22 20:08:45 EDT 2023
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC, ILOG CPLEX                             
+ For NLP: MINOS, SNOPT, External NLP, IPOPT, FILTERSQP
+===========================================================================
+ Doing local search
+ Preprocessing found feasible solution with value -16.3810
+ Solving bounding LP
+ Starting multi-start local search
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+*         1             1            11.04     -496.040         -41.6293       
+          1             1            13.78     -317.041         -41.6293       
+          4+            3            43.89     -317.041         -41.6293       
+          4+            3            75.15     -317.041         -41.6293       
+          4+            3           105.98     -317.041         -41.6293       
+          4+            3           136.22     -317.041         -41.6293       
+          4+            3           167.16     -317.041         -41.6293       
+          4+            3           198.52     -317.041         -41.6293       
+          4+            3           230.28     -317.041         -41.6293       
+          4+            3           260.65     -317.041         -41.6293       
+          4+            3           290.92     -317.041         -41.6293       
+          4+            3           323.15     -317.041         -41.6293       
+          4+            3           353.94     -317.041         -41.6293       
+          4+            3           384.27     -317.041         -41.6293       
+          4+            3           415.57     -317.041         -41.6293       
+          4+            3           448.25     -317.041         -41.6293       
+          4+            3           478.34     -317.041         -41.6293       
+          4+            3           509.47     -317.041         -41.6293       
+          4+            3           540.06     -317.041         -41.6293       
+          4+            3           570.54     -317.041         -41.6293       
+          4+            3           601.37     -317.041         -41.6293       
+          4+            3           632.17     -317.041         -41.6293       
+          4+            3           662.70     -317.041         -41.6293       
+          4+            3           694.98     -317.041         -41.6293       
+          4+            3           726.03     -317.041         -41.6293       
+          4+            3           757.51     -317.041         -41.6293       
+          4+            3           787.88     -317.041         -41.6293       
+          4+            3           819.49     -317.041         -41.6293       
+          4+            3           851.86     -317.041         -41.6293       
+          4+            3           882.47     -317.041         -41.6293       
+          4             2           900.11     -317.041         -41.6293       
+
+                    *** Max. allowable time exceeded ***      
+
+ Wall clock time:                   900.14
+ Total CPU time used:               900.11
+
+ Total no. of BaR iterations:       4
+ Best solution found at node:       1
+ Max. no. of nodes in memory:       3
+ 
+ All done
+===========================================================================
+
+Solution      = -41.6293089657933  found at node 1
+Best possible = -317.041491974
+Absolute gap  = 275.412183008207  optca = 1E-9
+Relative gap  = 0.868694445302423  optcr = 0.0001
+
+--- Reading solution for model GAMS_MODEL
+--- Executing after solve: elapsed 0:15:00.227
+--- model.gms(9012) 6 Mb
+--- model.gms(13349) 8 Mb
+--- Putfile results /tmp/tmpugd3yneh/results.dat
+--- Putfile statresults /tmp/tmpugd3yneh/resultsstat.dat
+*** Status: Normal completion
+--- Job model.gms Stop 02/26/24 00:32:37 elapsed 0:15:00.236
+
+Problem: 
+- Name: /tmp/tmpugd3yneh/model.gms
+  Lower bound: -317.041491974
+  Upper bound: -41.629308965793314
+  Number of objectives: 1
+  Number of constraints: 3319.0
+  Number of variables: 968.0
+  Number of binary variables: None
+  Number of integer variables: 52.0
+  Number of continuous variables: 916.0
+  Number of nonzeros: 13365.0
+  Sense: minimize
+Solver: 
+- Name: GAMS (44, 3, 0, 0)
+  Status: ok
+  Return code: 0
+  Message: None
+  User time: 900.2010001335293
+  System time: None
+  Wallclock time: None
+  Termination condition: optimal
+  Termination message: None
+Solution: 
+- number of solutions: 0
+  number of solutions displayed: 0
+

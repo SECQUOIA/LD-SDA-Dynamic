@@ -1,0 +1,3354 @@
+Starting GDPopt version 22.5.13 using GLOA algorithm
+iterlim: None
+time_limit: 1800
+tee: true
+logger: <Logger pyomo.contrib.gdpopt (INFO)>
+integer_tolerance: 1e-05
+constraint_tolerance: 1e-06
+variable_tolerance: 1e-08
+subproblem_initialization_method: <function restore_vars_to_original_values at 0x7f9ea3266340>
+call_before_subproblem_solve: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+call_after_subproblem_solve: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+call_after_subproblem_feasible: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+force_subproblem_nlp: false
+subproblem_presolve: true
+tighten_nlp_var_bounds: false
+round_discrete_vars: true
+max_fbbt_iterations: 3
+init_strategy: None
+init_algorithm: set_covering
+custom_init_disjuncts: []
+max_slack: 1000.0
+OA_penalty_factor: 1000.0
+set_cover_iterlim: 8
+discrete_problem_transformation: gdp.bigm
+call_before_discrete_problem_solve: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+call_after_discrete_problem_solve: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+call_before_master_solve: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+call_after_master_solve: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+mip_presolve: true
+calc_disjunctive_bounds: false
+obbt_disjunctive_bounds: false
+mip_solver: gurobi
+mip_solver_args:
+nlp_solver: gams
+nlp_solver_args:
+  solver: conopt
+minlp_solver: baron
+minlp_solver_args:
+local_minlp_solver: bonmin
+local_minlp_solver_args:
+small_dual_tolerance: 1e-08
+bound_tolerance: 1e-06
+
+If you use this software, you may cite the following:
+            - Implementation:
+            Chen, Q; Johnson, ES; Bernal, DE; Valentin, R; Kale, S;
+            Bates, J; Siirola, JD; Grossmann, IE.
+            Pyomo.GDP: an ecosystem for logic based modeling and optimization
+            development.
+            Optimization and Engineering, 2021.
+
+- GLOA algorithm:
+        Lee, S; Grossmann, IE.
+        A Global Optimization Algorithm for Nonconvex Generalized
+        Disjunctive Programming and Applications to Process Systems.
+        Comp. and Chem. Eng. 2001, 25, 1675-1697.
+        DOI: 10.1016/S0098-1354(01)00732-3.
+Original model has 2639 constraints (1911 nonlinear) and 8 disjunctions, with 1485 variables, of which 21 are binary, 0 are integer, and 1464 are continuous.
+Objective is nonlinear. Moving it to constraint set.
+---Starting GDPopt initialization---
+Starting set covering initialization.
+=============================================================================================
+Iteration | Subproblem Type | Lower Bound | Upper Bound |   Gap    | Time(s)
+
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+        0        subproblem          -inf    -122.69353       inf%      2.06  *
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+        0        subproblem          -inf    -122.69353       inf%      4.78  
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+        0        subproblem          -inf    -165.56266       inf%      8.15  *
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+        0        subproblem          -inf    -165.56266       inf%     11.64  
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+        0        subproblem          -inf    -165.56266       inf%     15.52  
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+        0        subproblem          -inf    -165.56266       inf%     19.74  
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+        0        subproblem          -inf    -165.56266       inf%     24.32  
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+        0        subproblem          -inf    -165.56266       inf%     29.11  
+Iteration limit reached for set covering initialization without covering all disjuncts.
+Finished discrete problem initialization in 29.30s and 8 iterations 
+
+=============================================================================================
+Iteration | Subproblem Type | Lower Bound | Upper Bound |   Gap    | Time(s)
+
+        1          discrete    -800.00000    -165.56266    383.20%     32.78  
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+WARNING: Unsupported expression type for FBBT: <class
+'pyomo.dae.integral.ScalarIntegral'>. Bounds will not be improved in this part
+of the tree.
+        1        subproblem    -800.00000    -165.56266    383.20%     34.27  
+MILP discrete problem is now infeasible. GDPopt has explored or cut off all feasible discrete configurations.
+        2                      -165.56266    -165.56266      0.00%     38.46  
+GDPopt exiting--bounds have converged or crossed.
+
+Solved in 2 iterations and 38.46342 seconds
+Optimal objective value -165.5626633932
+Relative optimality gap 0.00000%
+
+Problem: 
+- Name: unknown
+  Lower bound: -165.56266339316858
+  Upper bound: -165.56266339316858
+  Number of objectives: 1
+  Number of constraints: 2639
+  Number of variables: 1485
+  Number of binary variables: 21
+  Number of integer variables: 0
+  Number of continuous variables: 1464
+  Number of nonzeros: None
+  Sense: 1
+  Number of disjunctions: 8
+Solver: 
+- Name: GDPopt (22, 5, 13) - GLOA
+  Status: ok
+  User time: 38.463385039940476
+  Wallclock time: 38.463385039940476
+  Termination condition: optimal
+  Iterations: 2
+  Timing: integer cut generation: 0.0003703385591506958
+main_timer_start_time: 5831818.322849645
+mip: 7.072464933618903
+nlp: 1.8857264583930373
+total: 38.463385039940476
+

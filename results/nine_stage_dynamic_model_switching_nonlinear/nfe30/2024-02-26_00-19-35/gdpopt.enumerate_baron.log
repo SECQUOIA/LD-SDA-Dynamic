@@ -1,0 +1,67 @@
+Starting GDPopt version 22.5.13 using enumerate algorithm
+iterlim: None
+time_limit: 3600
+tee: true
+logger: <Logger pyomo.contrib.gdpopt (INFO)>
+nlp_solver: gams
+nlp_solver_args:
+  solver: baron
+minlp_solver: baron
+minlp_solver_args:
+local_minlp_solver: bonmin
+local_minlp_solver_args:
+small_dual_tolerance: 1e-08
+integer_tolerance: 1e-05
+constraint_tolerance: 1e-06
+variable_tolerance: 1e-08
+subproblem_initialization_method: <function restore_vars_to_original_values_enumerate at 0x7f097eece480>
+call_before_subproblem_solve: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+call_after_subproblem_solve: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+call_after_subproblem_feasible: <class 'pyomo.contrib.gdpopt.util._DoNothing'>
+force_subproblem_nlp: false
+subproblem_presolve: true
+tighten_nlp_var_bounds: false
+round_discrete_vars: true
+max_fbbt_iterations: 3
+mip_solver: gurobi
+mip_solver_args:
+
+If you use this software, you may cite the following:
+            - Implementation:
+            Chen, Q; Johnson, ES; Bernal, DE; Valentin, R; Kale, S;
+            Bates, J; Siirola, JD; Grossmann, IE.
+            Pyomo.GDP: an ecosystem for logic based modeling and optimization
+            development.
+            Optimization and Engineering, 2021.
+Original model has 3003 constraints (2184 nonlinear) and 9 disjunctions, with 1671 variables, of which 24 are binary, 0 are integer, and 1647 are continuous.
+  1/19683        subproblem          -inf     -28.59674       inf%   3600.38  *
+GDPopt exiting--Did not converge bounds before time limit of 3600 seconds. 
+
+Solved in 1 iterations and 3600.38684 seconds
+Optimal objective value -28.5967392020
+Relative optimality gap inf%
+
+Problem: 
+- Name: unknown
+  Lower bound: -inf
+  Upper bound: -28.596739201950623
+  Number of objectives: 1
+  Number of constraints: 3003
+  Number of variables: 1671
+  Number of binary variables: 24
+  Number of integer variables: 0
+  Number of continuous variables: 1647
+  Number of nonzeros: None
+  Sense: 1
+  Number of disjunctions: 9
+Solver: 
+- Name: GDPopt (22, 5, 13) - enumerate
+  Status: ok
+  User time: 3600.3868010435253
+  Wallclock time: 3600.3868010435253
+  Termination condition: maxTimeLimit
+  Iterations: 1
+  Timing: main_timer_start_time: 5873872.034035619
+nlp: 3600.098015253432
+total: 3600.3868010435253
+

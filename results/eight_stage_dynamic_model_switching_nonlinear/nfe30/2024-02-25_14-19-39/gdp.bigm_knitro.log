@@ -1,0 +1,197 @@
+--- Job model.gms Start 02/25/24 14:19:53 44.3.0 8b8fb1cb LEX-LEG x86 64bit/Linux
+--- Applying:
+    /local/scratch/a/peng372/opt/gams/44.3/gmsprmun.txt
+--- GAMS Parameters defined
+    Input /tmp/tmphccppupc/model.gms
+    Output /tmp/tmphccppupc/output.lst
+    ScrDir /tmp/tmphccppupc/225a/
+    SysDir /local/scratch/a/peng372/opt/gams/44.3/
+    CurDir /tmp/tmphccppupc/
+    LogOption 3
+Licensee: Prof. Ignacio E. Grossmann                     G240103|0002AS-GEN
+          Carnegie Mellon University, Dept. of Chemical Engineering  DCE375
+          /local/scratch/a/peng372/opt/gams/44.3/gamslice.txt
+          License Admin: Ignacio E. Grossmann,                             
+          Evaluation license: Not for commercial or production use
+Processor information: 1 socket(s), 48 core(s), and 96 thread(s) available
+GAMS 44.3.0   Copyright (C) 1987-2023 GAMS Development. All rights reserved
+--- Starting compilation
+--- model.gms(14510) 4 Mb
+--- $echo File /tmp/tmphccppupc/knitro.opt
+--- model.gms(21488) 6 Mb
+--- Starting execution: elapsed 0:00:00.038
+--- model.gms(14509) 6 Mb
+--- Generating MINLP model GAMS_MODEL
+--- model.gms(14516) 10 Mb
+---   5,365 rows  1,554 columns  21,877 non-zeroes
+---   32,722 nl-code  5,096 nl-non-zeroes
+---   89 discrete-columns
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 1.000E+00, 1.000E+06] - Zero values observed as well
+--- Bound     [min, max] : [ 1.000E+00, 3.000E+02] - Zero values observed as well
+--- Matrix    [min, max] : [ 3.571E-02, 1.000E+06] - Zero values observed as well
+--- model.gms(14516) 8 Mb
+--- Executing KNITRO (Solvelink=5): elapsed 0:00:00.059
+
+KNITRO           44.3.0 8b8fb1cb Sep 1, 2023           LEG x86 64bit/Linux    
+
+--- Artelys Knitro Optimizer 13.2.0
+
+Reading parameter(s) from "/tmp/tmphccppupc/knitro.opt"
+>>  mip_multistart 1
+Finished reading from "/tmp/tmphccppupc/knitro.opt"
+
+--- GMO Q Extraction (ThreePass): 0.00s
+--- GMO setup time: 0.00s
+--- Set initial levels for 0 / 1553 variables.
+--- Set initial marginals for 0 / 1553 variables.
+--- Set initial marginals for 0 / 5364 equations.
+
+=======================================
+          Commercial License
+         Artelys Knitro 13.2.0
+=======================================
+
+No start point provided -- Knitro computing one.
+
+concurrent_evals:        0
+datacheck:               0
+hessian_no_f:            1
+maxtime_real:            1800
+numthreads:              1
+mip_maxtime_real:        1800
+mip_multistart           1
+mip_opt_gap_abs:         0
+Knitro changing mip_method from AUTO to 1.
+Knitro changing mip_rootalg from AUTO to 1.
+Knitro changing mip_lpalg from AUTO to 3.
+Knitro changing mip_branchrule from AUTO to 2.
+Knitro changing mip_selectrule from AUTO to 2.
+Knitro changing mip_mir from AUTO to 2.
+Knitro changing mip_clique from AUTO to 0.
+Knitro changing mip_zerohalf from AUTO to 0.
+Knitro changing mip_liftproject from AUTO to 0.
+Knitro changing mip_knapsack from AUTO to 1.
+Knitro changing mip_gomory from AUTO to 0.
+Knitro changing mip_rounding from AUTO to 3.
+Knitro changing mip_heuristic_strategy from AUTO to 1.
+Knitro changing mip_heuristic_feaspump from AUTO to 1.
+Knitro changing mip_heuristic_misqp from AUTO to 0.
+Knitro changing mip_heuristic_mpec from AUTO to 1.
+Knitro changing mip_heuristic_diving from AUTO to 0.
+Knitro changing mip_heuristic_lns from AUTO to 0.
+Knitro changing mip_pseudoinit from AUTO to 1.
+
+Problem Characteristics
+-----------------------
+Objective goal:  Minimize
+Objective type:  quadratic
+Number of variables:                               1553
+    bounded below only:                               0
+    bounded above only:                               0
+    bounded below and above:                       1553
+    fixed:                                            0
+    free:                                             0
+Number of binary variables:                          89
+Number of integer variables:                          0
+Number of constraints:                             5364
+    linear equalities:                              750
+    quadratic equalities:                             0
+    gen. nonlinear equalities:                        0
+    linear one-sided inequalities:                  246
+    quadratic one-sided inequalities:              1456
+    gen. nonlinear one-sided inequalities:         2912
+    linear two-sided inequalities:                    0
+    quadratic two-sided inequalities:                 0
+    gen. nonlinear two-sided inequalities:            0
+Number of nonzeros in Jacobian:                   21148
+Number of nonzeros in Hessian:                      728
+
+Knitro detected 21 GUB constraints
+Knitro derived 4 knapsack covers after examining 268 constraints
+Knitro using Branch and Bound method with 1 thread.
+
+       Nodes        Best solution   Best bound      Gap       Time 
+   Expl  |  Unexpl      value         value                  (secs)
+   ---------------  -------------   ----------      ---      ------
+      0       0                           -inf                0.047
+      1       2                       -701.187                0.192
+      1       2     -28.4737   FP     -701.187   2362.57%     4.476
+     10      11     -28.4737          -507.660   1682.90%    15.442
+     19      18     -119.435 LEAF     -340.127    184.78%    21.102
+     20      19     -119.435          -340.127    184.78%    21.491
+     28      21     -122.694 LEAF     -288.835    135.41%    30.414
+     29      20     -142.120 LEAF     -276.289     94.41%    30.803
+     30      19     -142.120          -276.289     94.41%    31.621
+     35      14     -188.449 LEAF     -258.689     37.27%    50.022
+     40      11     -188.449          -232.858     23.57%    62.147
+     50       3     -188.449          -192.341      2.06%    82.223
+     51       2     -188.449          -188.449      0.00%    82.574
+
+EXIT: Optimal solution found (assuming convexity).
+
+Final Statistics for MIP
+------------------------
+Final objective value               =  -1.88449493311775e+02
+Final bound value                   =  -1.88449493311775e+02
+Final optimality gap (abs / rel)    =  0.00e+00 / 0.00e+00 (0.00%)
+# of root cutting plane rounds      =  0
+# of restarts                       =  0
+# of nodes processed                =  51 (76.929s)
+# of strong branching evaluations   =  0 (0.000s)
+# of function evaluations           =  12143 (4.328s)
+# of gradient evaluations           =  8674 (4.933s)
+# of hessian evaluations            =  8727 (3.971s)
+# of hessian-vector evaluations     =  0
+# of subproblems processed          =  57 (82.466s)
+Total program time (secs)           =  82.57433 (82.545 CPU time)
+Time spent in evaluations (secs)    =  13.23257
+
+Cuts statistics (gen / add)
+---------------------------
+Knapsack cuts                       =  4 / 0
+Mixed-integer rounding cuts         =  0 / 0
+
+Heuristics statistics (calls / successes / time)
+------------------------------------------------
+Feasibility pump                    =  1 / 1 / 4.284s
+Rounding heuristic                  =  0 / 0 / 0.038s
+MPEC heuristic                      =  1 / 0 / 1.257s
+
+===========================================================================
+
+--- Reading solution for model GAMS_MODEL
+--- Executing after solve: elapsed 0:01:22.650
+--- model.gms(14519) 8 Mb
+--- model.gms(21488) 10 Mb
+--- Putfile results /tmp/tmphccppupc/results.dat
+--- Putfile statresults /tmp/tmphccppupc/resultsstat.dat
+*** Status: Normal completion
+--- Job model.gms Stop 02/25/24 14:21:16 elapsed 0:01:22.664
+
+Problem: 
+- Name: /tmp/tmphccppupc/model.gms
+  Lower bound: -188.4494933117753
+  Upper bound: -188.4494933117753
+  Number of objectives: 1
+  Number of constraints: 5365.0
+  Number of variables: 1554.0
+  Number of binary variables: None
+  Number of integer variables: 89.0
+  Number of continuous variables: 1465.0
+  Number of nonzeros: 21877.0
+  Sense: minimize
+Solver: 
+- Name: GAMS (44, 3, 0, 0)
+  Status: ok
+  Return code: 0
+  Message: None
+  User time: 82.6100000180304
+  System time: None
+  Wallclock time: None
+  Termination condition: optimal
+  Termination message: None
+Solution: 
+- number of solutions: 0
+  number of solutions displayed: 0
+
