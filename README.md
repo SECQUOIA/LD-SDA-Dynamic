@@ -3,7 +3,7 @@ This repository includes the source code and results associated with the paper t
 
 # Installation
 
-All numerical models are written using the [DAE](https://pyomo.readthedocs.io/en/stable/modeling_extensions/dae.html) and [GDP](https://pyomo.readthedocs.io/en/latest/modeling_extensions/gdp/modeling.html) modules in [Pyomo](https://pyomo.readthedocs.io/en/latest/index.html). Use Python 3.11 or newer in a virtual environment. Install the runtime packages with:
+All numerical models are written using the [DAE](https://pyomo.readthedocs.io/en/stable/modeling_extensions/dae.html) and [GDP](https://pyomo.readthedocs.io/en/latest/modeling_extensions/gdp/modeling.html) modules in [Pyomo](https://pyomo.readthedocs.io/en/latest/index.html). Use Python 3.12 or newer in a virtual environment. Install the runtime packages with:
 
 ```shell
 pip3 install -r requirements.txt
@@ -25,7 +25,7 @@ python -m pip_audit -r requirements-dev.txt
 ```
 
 CI runs on pull requests and `main`, and weekly to catch new vulnerabilities.
-It tests Python 3.11–3.13, builds and discretizes every model in both mode-transfer
+It tests Python 3.12–3.13, builds and discretizes every model in both mode-transfer
 configurations, applies Big-M and hull reformulations, checks GDPopt plugin
 availability, and runs the plotting and LaTeX scripts against recorded results.
 Generated outputs go into temporary directories. Licensed solver benchmarks
@@ -33,7 +33,7 @@ must be run separately with GAMS and the appropriate solver licenses.
 
 Dependabot checks Python packages and GitHub Actions weekly. A trusted `main`
 workflow enables GitHub's native auto-merge for its PRs. Repository rules require
-all three test lanes, the dependency audit, and CodeQL, with the branch up to date
+both test lanes, the dependency audit, and CodeQL, with the branch up to date
 before merging. The workflow avoids PRs with blocking reviews or unresolved
 threads and never runs PR code with write credentials. It deletes only unchanged
 merged Dependabot branches and explicitly starts CI on `main` when a token-made

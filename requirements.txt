@@ -1,4 +1,4 @@
-# Runtime dependencies for the models and result/plot scripts (Python 3.11+).
+# Runtime dependencies for the models and result/plot scripts (Python 3.12+).
 pyomo==6.10.1
 numpy==2.4.6
 pandas==3.0.6
