@@ -24,7 +24,11 @@ async function automate({github, context, core}) {
         live.reviewThreads.pageInfo.hasNextPage ||
         live.reviewThreads.nodes.some(thread => !thread.isResolved)) continue;
     if (live.mergeStateStatus === 'CLEAN') {
-      core.info(`PR #${pr.number} already has green checks; awaiting its next branch refresh to enable native auto-merge.`);
+      // GitHub cannot enable native auto-merge after every required gate passes.
+      // Merge that exact head directly; the repository still enforces every gate.
+      await github.rest.pulls.merge({
+        ...repo, pull_number: pr.number, sha: pr.head.sha, merge_method: 'squash',
+      });
       continue;
     }
     // Native auto-merge can land workflow updates without a stored PAT.

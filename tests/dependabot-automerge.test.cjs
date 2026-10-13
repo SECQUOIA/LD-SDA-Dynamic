@@ -35,7 +35,10 @@ function fixture({sha = 'tested-head', review = null, resolved = true,
       }}};
     },
     rest: {
-      pulls: {list: () => {}, get: async () => ({data: merged ? closed : pr})},
+      pulls: {
+        list: () => {}, get: async () => ({data: merged ? closed : pr}),
+        merge: async args => {calls.push(['merge', args]); merged = true; return {data: {merged: true}};},
+      },
       repos: {getBranch: async () => ({data: {commit: {sha: 'main-head'}}})},
       actions: {
         listWorkflowRuns: async args => {
@@ -63,9 +66,15 @@ test('enables native auto-merge while repository-required CI gates are pending',
 
 test('stale heads, blocking reviews, unresolved threads, and already enabled PRs are skipped', async () => {
   for (const options of [{sha: 'new-head'}, {review: 'CHANGES_REQUESTED'},
-    {review: 'REVIEW_REQUIRED'}, {resolved: false}, {enabled: true}, {mergeState: 'CLEAN'}]) {
+    {review: 'REVIEW_REQUIRED'}, {resolved: false}, {enabled: true}]) {
     const f = fixture(options); await automate(f.args); assert.deepEqual(f.calls, []);
   }
+});
+
+test('already green PRs merge at the verified SHA under the same required repository gates', async () => {
+  const f = fixture({mergeState: 'CLEAN'}); await automate(f.args);
+  assert.deepEqual(f.calls.map(call => call[0]), ['merge', 'delete', 'dispatch']);
+  assert.equal(f.calls[0][1].sha, 'tested-head');
 });
 
 test('deletes only the unchanged merged bot branch and starts CI on main', async () => {
