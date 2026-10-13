@@ -31,13 +31,13 @@ availability, and runs the plotting and LaTeX scripts against recorded results.
 Generated outputs go into temporary directories. Licensed solver benchmarks
 must be run separately with GAMS and the appropriate solver licenses.
 
-Dependabot checks Python packages and GitHub Actions weekly. Its PRs are merged
-only after all test lanes, the dependency audit, and other reported checks pass,
-with no blocking reviews or unresolved review threads. The merge workflow uses
-trusted `main` code and verifies the exact PR head. It deletes only the merged
-Dependabot branch and explicitly starts CI on `main` because merges made with
-`GITHUB_TOKEN` do not trigger push workflows. A half-hourly check retries PRs
-whose other checks finish after CI.
+Dependabot checks Python packages and GitHub Actions weekly. A trusted `main`
+workflow enables GitHub's native auto-merge for its PRs. Repository rules require
+all three test lanes, the dependency audit, and CodeQL, with the branch up to date
+before merging. The workflow avoids PRs with blocking reviews or unresolved
+threads and never runs PR code with write credentials. It deletes only unchanged
+merged Dependabot branches and explicitly starts CI on `main` when a token-made
+merge suppresses the push event. A half-hourly check reconciles delayed merges.
 
 # Usage
 

@@ -1,9 +1,12 @@
 name: Dependabot auto-merge
 
 on:
+  pull_request_target:
+    types: [opened, reopened, synchronize]
+    branches: [main]
   workflow_run:
     workflows: [CI, CodeQL]
-    types: [completed]
+    types: [requested, completed]
   schedule:
     - cron: '17,47 * * * *'
   workflow_dispatch:

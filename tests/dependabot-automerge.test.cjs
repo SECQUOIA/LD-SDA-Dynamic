@@ -1,36 +1,14 @@
 const {test} = require('node:test');
 const assert = require('node:assert/strict');
-const {eligible, green} = require('../.github/scripts/dependabot-automerge.cjs');
 const automate = require('../.github/scripts/dependabot-automerge.cjs');
+const {eligible} = automate;
 
-const names = ['Test (Python 3.11)', 'Test (Python 3.12)', 'Test (Python 3.13)', 'Dependency audit'];
-const passing = () => ({pageInfo: {hasNextPage: false}, nodes: names.map(name => ({
-  __typename: 'CheckRun', name, status: 'COMPLETED', conclusion: 'SUCCESS',
-}))});
+const repo = {owner: 'SECQUOIA', repo: 'LD-SDA-Dynamic'};
+const pr = {number: 1, state: 'open', user: {login: 'dependabot[bot]'}, draft: false,
+  base: {ref: 'main'}, head: {sha: 'tested-head', ref: 'dependabot/pip/numpy-2',
+    repo: {full_name: 'SECQUOIA/LD-SDA-Dynamic'}}};
 
-test('requires all CI lanes and no unfinished or failed additional checks', () => {
-  assert.equal(green(passing()), true);
-  assert.equal(green(null), false);
-  const missing = passing(); missing.nodes.pop();
-  assert.equal(green(missing), false);
-  for (const conclusion of ['FAILURE', 'CANCELLED', 'TIMED_OUT', null]) {
-    const failed = passing(); failed.nodes[0].conclusion = conclusion;
-    assert.equal(green(failed), false);
-  }
-  for (const state of ['PENDING', 'FAILURE', 'ERROR']) {
-    const extra = passing(); extra.nodes.push({__typename: 'StatusContext', state});
-    assert.equal(green(extra), false);
-  }
-  const pending = passing(); pending.nodes[0].status = 'IN_PROGRESS';
-  assert.equal(green(pending), false);
-  const truncated = passing(); truncated.pageInfo.hasNextPage = true;
-  assert.equal(green(truncated), false);
-});
-
-test('merges only non-draft Dependabot PRs from this repository into main', () => {
-  const repo = {owner: 'SECQUOIA', repo: 'LD-SDA-Dynamic'};
-  const pr = {user: {login: 'dependabot[bot]'}, draft: false, base: {ref: 'main'},
-    head: {ref: 'dependabot/pip/numpy-2', repo: {full_name: 'SECQUOIA/LD-SDA-Dynamic'}}};
+test('accepts only this repository’s non-draft Dependabot PRs targeting main', () => {
   assert.equal(eligible(pr, repo), true);
   assert.equal(eligible({...pr, user: {login: 'someone'}}, repo), false);
   assert.equal(eligible({...pr, draft: true}, repo), false);
@@ -40,77 +18,69 @@ test('merges only non-draft Dependabot PRs from this repository into main', () =
 });
 
 function fixture({sha = 'tested-head', review = null, resolved = true,
-  conclusion = 'success', branchSha = 'tested-head', mergeError = null} = {}) {
-  const repo = {owner: 'SECQUOIA', repo: 'LD-SDA-Dynamic'};
-  const pr = {number: 1, state: 'open', user: {login: 'dependabot[bot]'},
-    draft: false, base: {ref: 'main'}, head: {sha: 'tested-head',
-      ref: 'dependabot/pip/numpy-2', repo: {full_name: `${repo.owner}/${repo.repo}`}}};
+  mergeState = 'BLOCKED', enabled = false, merged = false,
+  branchSha = 'tested-head', branchMissing = false, ciExists = false} = {}) {
   const calls = [];
-  let merged = false;
+  const closed = {...pr, state: 'closed', merged: true, merged_at: new Date().toISOString()};
   const github = {
-    paginate: async () => [pr],
-    graphql: async () => ({repository: {pullRequest: {
-      headRefOid: sha, reviewDecision: review,
-      reviewThreads: {nodes: [{isResolved: resolved}], pageInfo: {hasNextPage: false}},
-      commits: {nodes: [{commit: {statusCheckRollup: {contexts: passing()}}}]},
-    }}}),
+    paginate: async (method, args) => args.state === 'open' ? [pr] : (merged ? [closed] : []),
+    graphql: async (query, args) => {
+      if (query.startsWith('mutation')) {
+        calls.push(['enable', args]); return {};
+      }
+      return {repository: {pullRequest: {id: 'pr-id', headRefOid: sha,
+        reviewDecision: review, mergeStateStatus: mergeState,
+        autoMergeRequest: enabled ? {enabledAt: 'today'} : null,
+        reviewThreads: {nodes: [{isResolved: resolved}], pageInfo: {hasNextPage: false}},
+      }}};
+    },
     rest: {
-      pulls: {
-        list: () => {},
-        get: async () => ({data: {...pr, merged}}),
-        merge: async args => {
-          calls.push(['merge', args]);
-          if (mergeError) throw {status: mergeError};
-          merged = true; return {data: {merged: true}};
-        },
-      },
+      pulls: {list: () => {}, get: async () => ({data: merged ? closed : pr})},
+      repos: {getBranch: async () => ({data: {commit: {sha: 'main-head'}}})},
       actions: {
         listWorkflowRuns: async args => {
-          assert.equal(args.workflow_id, 'ci.yml');
-          assert.equal(args.head_sha, pr.head.sha);
-          assert.equal(args.event, 'pull_request');
-          return {data: {workflow_runs: [{id: 1, head_sha: pr.head.sha,
-            head_branch: pr.head.ref, status: 'completed', conclusion}]}};
+          assert.equal(args.workflow_id, 'ci.yml'); assert.equal(args.head_sha, 'main-head');
+          return {data: {workflow_runs: ciExists ? [{head_sha: 'main-head', head_branch: 'main'}] : []}};
         },
-        createWorkflowDispatch: async args => { calls.push(['dispatch', args]); },
+        createWorkflowDispatch: async args => {calls.push(['dispatch', args]);},
       },
       git: {
-        getRef: async () => ({data: {object: {sha: branchSha}}}),
-        deleteRef: async args => { calls.push(['delete', args]); },
+        getRef: async () => {
+          if (branchMissing) throw {status: 404};
+          return {data: {object: {sha: branchSha}}};
+        },
+        deleteRef: async args => {calls.push(['delete', args]);},
       },
     },
   };
   return {args: {github, context: {repo}, core: {info: () => {}}}, calls};
 }
 
-test('verifies the tested head, then merges, deletes its branch, and dispatches main CI', async () => {
-  const f = fixture();
-  await automate(f.args);
-  assert.deepEqual(f.calls.map(call => call[0]), ['merge', 'delete', 'dispatch']);
-  assert.equal(f.calls[0][1].sha, 'tested-head');
-  assert.equal(f.calls[1][1].ref, 'heads/dependabot/pip/numpy-2');
-  assert.equal(f.calls[2][1].ref, 'main');
+test('enables native auto-merge while repository-required CI gates are pending', async () => {
+  const f = fixture(); await automate(f.args);
+  assert.deepEqual(f.calls, [['enable', {id: 'pr-id'}]]);
 });
 
-test('stale heads, blocking reviews, unresolved threads, and failed CI prevent merging', async () => {
+test('stale heads, blocking reviews, unresolved threads, and already enabled PRs are skipped', async () => {
   for (const options of [{sha: 'new-head'}, {review: 'CHANGES_REQUESTED'},
-    {review: 'REVIEW_REQUIRED'}, {resolved: false}, {conclusion: 'failure'}]) {
-    const f = fixture(options);
-    await automate(f.args);
-    assert.deepEqual(f.calls, []);
+    {review: 'REVIEW_REQUIRED'}, {resolved: false}, {enabled: true}, {mergeState: 'CLEAN'}]) {
+    const f = fixture(options); await automate(f.args); assert.deepEqual(f.calls, []);
   }
 });
 
-test('never deletes a branch that moved after merging', async () => {
-  const f = fixture({branchSha: 'new-work'});
-  await automate(f.args);
-  assert.deepEqual(f.calls.map(call => call[0]), ['merge', 'dispatch']);
+test('deletes only the unchanged merged bot branch and starts CI on main', async () => {
+  const f = fixture({merged: true}); await automate(f.args);
+  assert.deepEqual(f.calls.map(call => call[0]), ['delete', 'dispatch']);
+  assert.equal(f.calls[0][1].ref, 'heads/dependabot/pip/numpy-2');
+  assert.equal(f.calls[1][1].ref, 'main');
 });
 
-test('GitHub merge gates and head races leave the PR and branch intact', async () => {
-  for (const mergeError of [405, 409]) {
-    const f = fixture({mergeError});
-    await automate(f.args);
-    assert.deepEqual(f.calls.map(call => call[0]), ['merge']);
-  }
+test('retains a moved branch and does not dispatch duplicate main CI', async () => {
+  const f = fixture({merged: true, branchSha: 'new-work', ciExists: true});
+  await automate(f.args); assert.deepEqual(f.calls, []);
+});
+
+test('already deleted bot branches still allow missing main CI to be dispatched', async () => {
+  const f = fixture({merged: true, branchMissing: true}); await automate(f.args);
+  assert.deepEqual(f.calls.map(call => call[0]), ['dispatch']);
 });
