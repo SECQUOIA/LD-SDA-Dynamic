@@ -245,7 +245,7 @@ plt.tight_layout()
 
 # Save the figure to a PDF file
 plt.savefig(
-    '/home/albertlee/repos/visualization/LDSDA_path.pdf', # Change the path to your desired location
+    'figures/LDSDA_path.pdf',
     format='pdf',
     bbox_inches='tight',
 )

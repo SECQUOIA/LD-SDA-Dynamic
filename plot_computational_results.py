@@ -82,6 +82,8 @@ for stage in json_file_folder_dict:
     result_list.append(result)
 
 result = pd.concat(result_list).reset_index(drop=True)
+# Stage coordinates receive fractional offsets to separate overlapping markers.
+result['Stage'] = result['Stage'].astype(float)
 
 time_limit = {4: 900, 5: 900, 6: 900, 7: 1800, 8: 1800, 9: 3600}
 for stage in time_limit:
