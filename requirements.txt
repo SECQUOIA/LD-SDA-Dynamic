@@ -1,5 +1,7 @@
 # Runtime dependencies for the models and result/plot scripts (Python 3.12+).
 pyomo==6.10.1
+# Pyomo's LD-SDA logical-to-linear transformation requires SymPy.
+sympy==1.14.0
 numpy==2.5.3
 pandas==3.0.6
 matplotlib==3.11.2

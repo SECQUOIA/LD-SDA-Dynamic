@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite the paper and identify the paper snapshot tag or exact commit used."
+title: LD-SDA-Dynamic
+license: MIT
+repository-code: "https://github.com/SECQUOIA/LD-SDA-Dynamic"
+authors:
+  - family-names: Peng
+    given-names: Zedong
+  - family-names: Lee
+    given-names: Albert
+  - family-names: Bernal Neira
+    given-names: David E.
+    orcid: "https://orcid.org/0000-0002-8308-5016"
+preferred-citation:
+  type: conference-paper
+  title: Addressing Discrete Dynamic Optimization via a Logic-Based Discrete-Steepest Descent Algorithm
+  authors:
+    - family-names: Peng
+      given-names: Zedong
+    - family-names: Lee
+      given-names: Albert
+    - family-names: Bernal Neira
+      given-names: David E.
+  collection-title: "2024 IEEE 63rd Conference on Decision and Control (CDC)"
+  year: 2024
+  start: 1664
+  end: 1669
+  doi: "10.1109/CDC56724.2024.10886477"

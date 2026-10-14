@@ -38,6 +38,8 @@ jobs:
           cache-dependency-path: requirements*.txt
       - run: python -m pip install -r requirements-dev.txt
       - run: python -m pip check
+      - name: Verify frozen paper artifacts
+        run: python scripts/verify_paper_snapshot.py
       - run: python -m compileall -q models benchmark.py LDSDA_visualization.py plot_search_path.py plot_computational_results.py result2latex.py
       - run: python -m pytest -q
       - run: node --test tests/dependabot-automerge.test.cjs

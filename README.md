@@ -1,5 +1,9 @@
-# LD-DSA-Dynamic
+# LD-SDA-Dynamic
 This repository includes the source code and results associated with the paper titled **"Addressing Discrete Dynamic Optimization via a Logic-Based Discrete-Steepest Descent Algorithm"**, authored by Zedong Peng, Albert Lee, and David E. Bernal Neira.
+
+Published in *2024 IEEE CDC*, pp. 1664–1669, DOI: [10.1109/CDC56724.2024.10886477](https://doi.org/10.1109/CDC56724.2024.10886477). See [paper provenance and frozen releases](paper/README.md) for the preserved historical revision, solver versions, experimental settings, and integrity checks. `main` remains maintained; use the protected paper release tags for permanent references.
+
+This repository is licensed under the [MIT license](LICENSE). Citation metadata is available in [CITATION.cff](CITATION.cff).
 
 # Installation
 
@@ -20,6 +24,7 @@ unrelated packages from that export are not needed to run these scripts.
 ```shell
 python -m pip install -r requirements-dev.txt
 python -m pytest -q
+python scripts/verify_paper_snapshot.py
 node --test tests/dependabot-automerge.test.cjs
 python -m pip_audit -r requirements-dev.txt
 ```
@@ -42,5 +47,13 @@ merge suppresses the push event. A half-hourly check reconciles delayed merges.
 # Usage
 
 ```shell
-sh -x run.sh
+sh run.sh --help
+sh run.sh --stages 4 --strategies gdpopt.ldsda --nlp-solvers knitro --dry-run
 ```
+
+The launcher runs in the foreground and returns failures to the calling shell.
+Set `PYTHON=/path/to/python` to select an interpreter. Actual solves require GAMS
+on `PATH` and licenses for the selected solvers. New output is written under
+`benchmark-runs/`, with a unique directory per invocation; published results in
+`results/` remain frozen. See the [reproduction commands](paper/README.md#running-maintained-benchmarks)
+for the paper's stage counts, discretization settings, and time limits.
