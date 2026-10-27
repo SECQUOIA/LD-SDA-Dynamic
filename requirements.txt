@@ -3,7 +3,7 @@ pyomo==6.10.1
 # Pyomo's LD-SDA logical-to-linear transformation requires SymPy.
 sympy==1.14.0
 numpy==2.5.4
-pandas==3.0.6
+pandas==3.1.0
 matplotlib==3.11.2
 seaborn==0.13.2
 # pandas.DataFrame.to_latex uses Jinja2.
